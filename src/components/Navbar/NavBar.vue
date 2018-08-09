@@ -15,7 +15,7 @@
       <div class="collapse navbar-collapse center" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="">
-            <a href="#">Home</a>
+            <a href="#/">Home</a>
           </li>
           <li>
             <a href="#/people">People</a>

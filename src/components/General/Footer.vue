@@ -33,6 +33,10 @@ export default {
 #footer {
     /* background: #007b5e !important; */
 }
+#footer-wrapper{
+	background: #333;
+	margin-top: 10px;
+}
 #footer h5{
 	padding-left: 10px;
     border-left: 3px solid #eeeeee;
