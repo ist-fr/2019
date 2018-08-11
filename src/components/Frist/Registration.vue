@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     
-    
+    <!-- <register></register> -->
     <div class="row justify-content-md-center">
         <!-- <label>Registration Fee</label> -->
         <div class="col-sm"> </div>
@@ -10,7 +10,7 @@
         </div>
         <div class="col-sm"> </div>
     </div>
-    <row class="justify-content-md-center">
+    <div class="justify-content-md-center">
         
         <h2>Registration Fee</h2>
         <tr>
@@ -42,8 +42,8 @@
             </td>
         </tr>
         </tbody></table>
-    </row>
-    <row>
+    </div>
+    <b-row>
     <p class="note">
         <label class="paccon-blue">Note:</label>
     </p>
@@ -55,8 +55,8 @@
         <li>Any fees deducted on our end must paid in cash upon registration.</li>
         <li>All on-site payments to the conference must be made in cash.</li>
     </ol>
-    </row>
-    <row>
+    </b-row>
+    <b-row>
     <p class="note">
             <label class="paccon-blue">Benefit for registration</label>
     </p>
@@ -66,36 +66,11 @@
               <li>Welcome reception on Wednesday evening</li>
               <li>Coffee breaks and lunches</li>
     </ul>
-    </row>
-    <row>
-    <label class="paccon-blue" id="topic-of-para">Cancellation Policy</label>
-    <p class="like-a-lists">
-            <label class="paccon-blue" id="topic-of-para">Cancellation Policy</label>
-            If circumstances or policies in your organization change and you can no longer attend PACCON
-            Conference, you may cancel your registration by providing written notice to PACCON Conference
-            Organizer.
-    </p>
-    </row>
-    <p class="note">
-            The PACCON Conference 2018 refund policy is as follows:
-    </p>
-    <ul class="registration">
-              <li>All cancellations received&nbsp;<label class="paccon-blue">by December 29, 2017:</label>&nbsp;50% refund of registration fee minus
-                administration charge.</li>
-              <li>All cancellations received&nbsp;<label class="paccon-blue">after December 29, 2017:</label>&nbsp;no refunds.</li>
-    </ul>
-    <p class="like-a-lists">
-            Please remember that cancelling your registration does not automatically cancel your hotel and travel
-            arrangements. Individuals are responsible for cancelling their own hotel and travel reservations.
-    </p>
-    <p class="like-a-lists">
-            <label class="paccon-blue" id="topic-of-para">Receipt Policy</label>
-            In case of issuing new receipt instead of the issued one (name or address change), the fee of 100 Baht
-            for Thai participants or 4 USD for participants outside Thailand will be charged per receipt.
-          </p>
+    </b-row>
 </div>
 </template>
 <script>
+import register from '@/components/Register/Register'
 export default {
   data () {
     return {
@@ -112,6 +87,9 @@ export default {
         }
       ]
     }
+  },
+  components: {
+    register
   }
 }
 </script>

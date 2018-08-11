@@ -1,17 +1,17 @@
 <template>
     <section id=timeline>
-	<h1>A Flexbox Timeline</h1>
-	<p class="leader">All cards must be the same height and width for space calculations on large screens.</p>
+	<h1>Important Date</h1>
+	<!-- <p class="leader">All cards must be the same height and width for space calculations on large screens.</p> -->
 	<div class="demo-card-wrapper">
 		<div class="demo-card demo-card--step1">
 			<div class="head">
 				<div class="number-box">
-					<span>01</span>
+					<span>15 <spand class="month">Aug</spand></span>
 				</div>
-				<h2><span class="small">Subtitle</span> Technology</h2>
+				<h2><span class="small">Subtitle</span> launching Website</h2>
 			</div>
 			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+				<p>Launching website containing the information about the symposium. </p>
 				<img src="http://placehold.it/1000x500" alt="Graphic">
 			</div>
 		</div>
@@ -19,12 +19,12 @@
 		<div class="demo-card demo-card--step2">
 			<div class="head">
 				<div class="number-box">
-					<span>02</span>
+					<span>25 <spand class="month">Aug</spand></span>
 				</div>
-				<h2><span class="small">Subtitle</span> Confidence</h2>
+				<h2><span class="small">Subtitle</span> Paper submition</h2>
 			</div>
 			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+				<p>Open resigration for submiting paper/project for presenting in the event. The submitting will take place in EasyChair Website. </p>
 				<img src="http://placehold.it/1000x500" alt="Graphic">
 			</div>
 		</div>
@@ -32,12 +32,12 @@
 		<div class="demo-card demo-card--step3">
 			<div class="head">
 				<div class="number-box">
-					<span>03</span>
+					<span>25 <spand class="month">Sep</spand></span>
 				</div>
-				<h2><span class="small">Subtitle</span> Adaptation</h2>
+				<h2><span class="small">Subtitle</span> Review State</h2>
 			</div>
 			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+				<p>Closing for submiting the paper and starting the review processs.</p>
 				<img src="http://placehold.it/1000x500" alt="Graphic">
 			</div>
 		</div>
@@ -45,12 +45,12 @@
 		<div class="demo-card demo-card--step4">
 			<div class="head">
 				<div class="number-box">
-					<span>04</span>
+					<span>10 <spand class="month">Nov</spand></span>
 				</div>
-				<h2><span class="small">Subtitle</span> Consistency</h2>
+				<h2><span class="small">Subtitle</span>Resualt Released</h2>
 			</div>
 			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+				<p>Relasese the accepted paper.</p>
 				<img src="http://placehold.it/1000x500" alt="Graphic">
 			</div>
 		</div>
@@ -58,16 +58,27 @@
 		<div class="demo-card demo-card--step5">
 			<div class="head">
 				<div class="number-box">
-					<span>05</span>
+					<span>10 <spand class="month">Nov</spand></span>
 				</div>
-				<h2><span class="small">Subtitle</span> Conversion</h2>
+				<h2><span class="small">Subtitle</span> Registration</h2>
 			</div>
 			<div class="body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis deserunt doloribus consequatur, laudantium odio dolorum laboriosam.</p>
+				<p>Open resigration for the symposium event.</p>
 				<img src="http://placehold.it/1000x500" alt="Graphic">
 			</div>
 		</div>
-    
+        <div class="demo-card demo-card--step6">
+			<div class="head">
+				<div class="number-box">
+					<span>20 <spand class="month">Dec</spand></span>
+				</div>
+				<h2><span class="small">Subtitle</span>Symposium Day</h2>
+			</div>
+			<div class="body">
+				<p>Event day that will be taking place</p>
+				<img src="http://placehold.it/1000x500" alt="Graphic">
+			</div>
+		</div>
 	</div>
 </section>
 </template>
@@ -77,6 +88,11 @@ export default {
 </script>
 
 <style lang="scss">
+
+
+.month{
+    color: red;
+}
 /* Media Queries */
 
 @mixin mq-xs {
@@ -182,7 +198,7 @@ body {
 
 #timeline {
   padding: 100px 0;
-  background: $background;
+//   background: $background;
   border-top: $border;
   border-bottom: $border;
   h1 {

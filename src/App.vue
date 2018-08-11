@@ -1,7 +1,8 @@
 
 <template>
   <div id="app">
-    <auth v-on:login="updateLogin($event)" v-bind:loggingIn="loggingIn"></auth>
+    <img id="logo" src='./assets/logo_istfr.svg' height="100px">
+    <!-- <navbar></navbar> -->
     <!-- <img src="./assets/logo.png" width="50px"> -->
     <router-view  v-bind:loggingIn="loggingIn"></router-view>
     <customFooter></customFooter>
@@ -9,11 +10,11 @@
 </template>
 
 <script>
-import auth from '@/components/NavBar/NavBar'
+import navbar from '@/components/Frist/NavBar'
 import customFooter from '@/components/General/Footer'
 export default {
   components: {
-    auth,
+    navbar,
     customFooter
   },
   name: 'app',
@@ -32,11 +33,16 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+#logo {
+  margin-left: 30px;
+  margin-top: 10px;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /* text-align: center; */
   color: #ddd;
 
   width: 100%;
@@ -44,5 +50,10 @@ export default {
 }
 body {
     background-color: #ffffff;
+    /* background-image: url("./assets/1.svg"); */
 }
+* {
+font-family: 'Arimo';
+}
+
 </style>

@@ -1,6 +1,7 @@
 <template>
     <div class="col-md-12">
-    
+      TBD/TBA<br>
+      (To Be Defined/ To Be Announced)
     </div>
 </template>
 <script>
@@ -26,19 +27,17 @@ export default {
         'Software Engineering (SWEN)',
         'Theory of Computation (TOCP)'
 
+      ],
+      program: [
+        'Research Talk',
+        'Industry Talk',
+        'Undergraduate Poster Session',
+        'Panel/TownHall',
+        'Keynote Speaker'
       ]
     }
   }
 }
 </script>
 <style>
-.block {
-  background-color: #444;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  /* border-style: solid; */
-  border-radius: 7px;
-  /* border-width: 2px 10px 4px 20px; */
-}
 </style>

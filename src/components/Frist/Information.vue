@@ -9,7 +9,7 @@ export default {
         {
           date: 15,
           month: 'August',
-          info: 'Website'
+          info: 'launching Website'
         },
         {
           date: 25,

@@ -2,16 +2,15 @@
     <div class="col-md-12">
     <div>
       <div v-for="speaker in speakers" :key="speaker.name">
-          <a :href="speaker.link">
-                <img :src="speaker.image"  height="250px">
+          <a href="http://www.vistec.ac.th/academic/faculty_detail.php?school=IST&id=55">
+                <img :src="speaker.image" height="250px">
                 <h2>{{speaker.name}}</h2>
             <p class="card-text">
-                {{speaker.info}}
+                Incremental Query Processing<br>Large-scale Scientific Databases<br>Distributed Systems
             </p>
           </a>
         </div>
       </div>
-    </div>
     </div>
 </template>
 <script>
@@ -20,11 +19,9 @@ export default {
     return {
       speakers: [
         {
-          name: 'Dusit Niyato',
-          info: 'Nanyang Technological University, Singapore',
-          topic: 'TBA',
-          image: 'http://www.ntu.edu.sg/home/dniyato/tao2018.jpg',
-          link: 'http://www.ntu.edu.sg/home/dniyato/'
+          name: 'Assoc. Prof. Dr. Sarana Nutanong',
+          image: 'http://www.vistec.ac.th/uploads/staff/e1fad935c6752ccd81949fce3d7035e1.png',
+          website: ''
         }
       ]
     }
