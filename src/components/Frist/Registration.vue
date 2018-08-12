@@ -1,7 +1,7 @@
 <template>
 <div class="container">
     
-    <!-- <register></register> -->
+    <register></register>
     <div class="row justify-content-md-center">
         <!-- <label>Registration Fee</label> -->
         <div class="col-sm"> </div>

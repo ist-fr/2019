@@ -1,5 +1,9 @@
 <template>
   <div class="contrainner">
+    <submit></submit>
+    <div class="row">
+
+    </div>
     <div class="row">
       <h2>Online submission</h2>
       - Open submission 25 aug
@@ -34,6 +38,7 @@
   </div>
 </template>
 <script>
+import submit from '@/components/Register/Submit'
 export default {
   data () {
     return {
@@ -160,6 +165,9 @@ export default {
     selectPerson (person) {
       console.log(person)
     }
+  },
+  components: {
+    submit
   }
 }
 </script>

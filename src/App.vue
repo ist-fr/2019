@@ -1,7 +1,7 @@
 
 <template>
   <div id="app">
-    <img id="logo" src='./assets/logo_istfr.svg' height="100px">
+    <img id="logo" src='./assets/logo_istfr.svg' height="150px" width="550px">
     <!-- <navbar></navbar> -->
     <!-- <img src="./assets/logo.png" width="50px"> -->
     <router-view  v-bind:loggingIn="loggingIn"></router-view>

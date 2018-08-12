@@ -31,7 +31,7 @@ export default {
 }
 #footer-wrapper {
 
-    
+     text-align: center;
 }
 #footer {
     /* background: #007b5e !important; */
