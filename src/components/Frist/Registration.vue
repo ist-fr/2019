@@ -41,7 +41,6 @@
             </tbody></table>
             </td>
         </tr>
-        </tbody></table>
     </div>
     <b-row>
     <p class="note">
