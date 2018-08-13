@@ -22,7 +22,7 @@
     </div>
     <div class="row">
       <h2>Submission area</h2>
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" v-for="(researchField, researchFieldKey) in researchFields" v-bind:key="researchField">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" v-for="(researchField, researchFieldKey) in researchFields" v-bind:key="researchFieldKey">
             <div class="icon-left">
               <!-- <i class="fa fa-thumbs-o-up fa-3x"></i>   -->
             </div>

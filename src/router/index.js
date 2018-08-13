@@ -24,7 +24,7 @@ export default new Router({
         {
           // UserProfile will be rendered inside User's <router-view>
           // when /user/:id/profile is matched
-          path: 'frist',
+          path: 'home',
           component: FristHome
         },
         {
@@ -36,7 +36,7 @@ export default new Router({
         {
           // UserProfile will be rendered inside User's <router-view>
           // when /user/:id/profile is matched
-          path: 'contractus',
+          path: 'contactus',
           component: Contact
         },
         {

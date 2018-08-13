@@ -3,38 +3,27 @@
     <div class="container">
       <div class="row">
         <form class="form-horizontal" @submit.prevent="search">
-          <div :class="{'form-group':true,'required':true,'has-error': errors.has('participantCategory')}">
-            <label class="control-label col-sm-2" for="participantCategory">Participant Category</label>
+
+
+          <h3>Leader</h3>
+          <div :class="{'form-group':true,'required':true,'has-error': errors.has('title1')}">
+            <label class="control-label col-sm-2" for="title1">title</label>
             <div class="col-sm-10">
-              <select v-model="participantCategory" class="form-control" name="participantCategory" options="participantCategory">
-                <option disabled value="">Select Category</option>
-                <option v-for="option in participantCategories" v-bind:value="option.value" v-bind:key="option.value">
-                  {{ option.text }}
-                </option>
-              </select>
-              <i v-show="errors.has('participantCategory')" class="fa fa-warning"></i>
-              <span v-show="errors.has('participantCategory')" class="help text-error">{{ errors.first('participantCategory') }}</span>
-            </div>
-          </div>
-          <div :class="{'form-group':true,'required':true,'has-error': errors.has('title')}">
-            <label class="control-label col-sm-2" for="title">Title</label>
-            <div class="col-sm-10">
-              <select v-model="title" class="form-control" name="title" options="titles">
-                <option disabled value="">Select Title</option>
+              <select v-model="title1" class="form-control" name="title1" options="titles">
+                <option disabled value="">Select title</option>
                 <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
                   {{ option.text }}
                 </option>
               </select>
-              <i v-show="errors.has('title')" class="fa fa-warning"></i>
-              <span v-show="errors.has('title')" class="help text-error">{{ errors.first('title') }}</span>
+              <i v-show="errors.has('title1')" class="fa fa-warning"></i>
+              <span v-show="errors.has('title1')" class="help text-error">{{ errors.first('title1') }}</span>
             </div>
           </div>
-          <h3>Leader</h3>
           <div :class="{'form-group':true, 'required':true, 'has-error': errors.has('firstName1')}">
             <label class="control-label col-sm-2" for="firstName1">First Name</label>
             <div class="col-sm-10 columns is-multiline">
               <p class="control has-icon has-icon-right">
-                <input v-model="firstName1" v-validate="'required'" name="firstName1" class="input form-control" type="text" placeholder="firstName1">
+                <input v-model="firstName1" v-validate="'required'" name="firstName1" class="input form-control" type="text" placeholder="firstName">
                 <i v-show="errors.has('firstName1')" class="fa fa-warning"></i>
                 <span v-show="errors.has('firstName1')" class="help text-error">{{ errors.first('firstName1') }}</span>
               </p>
@@ -44,7 +33,7 @@
             <label class="control-label col-sm-2" for="middleName1">Middle Name</label>
             <div class="col-sm-10 columns is-multiline">
               <p class="control has-icon has-icon-right">
-                <input v-model="middleName1" v-validate="'required'" name="middleName1" class="input form-control" type="text" placeholder="middleName1">
+                <input v-model="middleName1" v-validate="'required'" name="middleName1" class="input form-control" type="text" placeholder="middleName">
                 <i v-show="errors.has('middleName1')" class="fa fa-warning"></i>
                 <span v-show="errors.has('middleName1')" class="help text-error">{{ errors.first('middleName1') }}</span>
               </p>
@@ -54,7 +43,7 @@
             <label class="control-label col-sm-2" for="lastName1">Last Name</label>
             <div class="col-sm-10 columns is-multiline">
               <p class="control has-icon has-icon-right">
-                <input v-model="lastName1" v-validate="'required'" name="lastName1" class="input form-control" type="text" placeholder="lastName1">
+                <input v-model="lastName1" v-validate="'required'" name="lastName1" class="input form-control" type="text" placeholder="lastName">
                 <i v-show="errors.has('lastName1')" class="fa fa-warning"></i>
                 <span v-show="errors.has('lastName1')" class="help text-error">{{ errors.first('lastName1') }}</span>
               </p>
@@ -64,7 +53,7 @@
             <label class="control-label col-sm-2" for="email1">Email</label>
             <div class="col-sm-10 columns is-multiline">
               <p class="control has-icon has-icon-right">
-              <input v-model="email1" name="email1" v-validate="'required|email'" class="input form-control" type="text" placeholder="email1" required>
+              <input v-model="email1" name="email1" v-validate="'required|email'" class="input form-control" type="text" placeholder="email" required>
               <i v-show="errors.has('email1')" class="fa fa-warning"></i>
               <span v-show="errors.has('email1')" class="help text-error">{{ errors.first('email1') }}</span>
               </p>
@@ -80,13 +69,26 @@
               </p>
             </div>
           </div>   
-          <h3>Second member</h3>
+          <h3 v->Second member</h3>
+          <div :class="{'form-group':true,'required':true,'has-error': errors.has('title2')}">
+            <label class="control-label col-sm-2" for="title2">title</label>
+            <div class="col-sm-10">
+              <select v-model="title2" class="form-control" name="title2" options="titles">
+                <option disabled value="">Select title</option>
+                <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
+                  {{ option.text }}
+                </option>
+              </select>
+              <i v-show="errors.has('title2')" class="fa fa-warning"></i>
+              <span v-show="errors.has('title2')" class="help text-error">{{ errors.first('title2') }}</span>
+            </div>
+          </div>
           <div :class="{'form-group':true,'has-error': errors.has('firstName2')}">
             <label class="control-label col-sm-2" for="firstName2">First Name</label>
             <div class="col-sm-10">
-              <input v-model="firstName2" name="firstName2" class="input form-control" type="text" placeholder="First Name 2" required>
+              <input v-model="firstName2" name="firstName2" class="input form-control" type="text" placeholder="First Name" required>
               <i v-show="errors.has('firstName2')" class="fa fa-warning"></i>
-              <span v-show="errors.has('firstName2')" class="help text-error">{{ errors.first('First Name 2') }}</span>
+              <span v-show="errors.has('firstName2')" class="help text-error">{{ errors.first('First Name') }}</span>
             </div>
           </div>
           <div :class="{'form-group':true,'has-error': errors.has('middleName2')}">
@@ -122,12 +124,25 @@
             </div>
           </div>
           <h3>Third member</h3>
+          <div :class="{'form-group':true,'required':true,'has-error': errors.has('title3')}">
+            <label class="control-label col-sm-2" for="title3">title</label>
+            <div class="col-sm-10">
+              <select v-model="title3" class="form-control" name="title3" options="titles">
+                <option disabled value="">Select title</option>
+                <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
+                  {{ option.text }}
+                </option>
+              </select>
+              <i v-show="errors.has('title3')" class="fa fa-warning"></i>
+              <span v-show="errors.has('title3')" class="help text-error">{{ errors.first('title3') }}</span>
+            </div>
+          </div>
           <div :class="{'form-group':true,'has-error': errors.has('firstName3')}">
             <label class="control-label col-sm-2" for="firstName3">First Name</label>
             <div class="col-sm-10">
-              <input v-model="firstName3" name="firstName3" class="input form-control" type="text" placeholder="First Name 2" required>
+              <input v-model="firstName3" name="firstName3" class="input form-control" type="text" placeholder="First Name" required>
               <i v-show="errors.has('firstName3')" class="fa fa-warning"></i>
-              <span v-show="errors.has('firstName3')" class="help text-error">{{ errors.first('First Name 2') }}</span>
+              <span v-show="errors.has('firstName3')" class="help text-error">{{ errors.first('First Name') }}</span>
             </div>
           </div>
           <div :class="{'form-group':true,'has-error': errors.has('middleName3')}">
@@ -163,12 +178,25 @@
             </div>
           </div>
           <h3>Fourth member</h3>
+          <div :class="{'form-group':true,'required':true,'has-error': errors.has('title4')}">
+            <label class="control-label col-sm-2" for="title4">title</label>
+            <div class="col-sm-10">
+              <select v-model="title4" class="form-control" name="title4" options="titles">
+                <option disabled value="">Select title</option>
+                <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
+                  {{ option.text }}
+                </option>
+              </select>
+              <i v-show="errors.has('title4')" class="fa fa-warning"></i>
+              <span v-show="errors.has('title4')" class="help text-error">{{ errors.first('title4') }}</span>
+            </div>
+          </div>
           <div :class="{'form-group':true,'has-error': errors.has('firstName4')}">
             <label class="control-label col-sm-2" for="firstName4">First Name</label>
             <div class="col-sm-10">
-              <input v-model="firstName4" name="firstName4" class="input form-control" type="text" placeholder="First Name 2" required>
+              <input v-model="firstName4" name="firstName4" class="input form-control" type="text" placeholder="First Name" required>
               <i v-show="errors.has('firstName4')" class="fa fa-warning"></i>
-              <span v-show="errors.has('firstName4')" class="help text-error">{{ errors.first('First Name 2') }}</span>
+              <span v-show="errors.has('firstName4')" class="help text-error">{{ errors.first('First Name') }}</span>
             </div>
           </div>
           <div :class="{'form-group':true,'has-error': errors.has('middleName4')}">
@@ -204,12 +232,25 @@
             </div>
           </div>
           <h3>Fifth member</h3>
+          <div :class="{'form-group':true,'required':true,'has-error': errors.has('title5')}">
+            <label class="control-label col-sm-2" for="title5">title</label>
+            <div class="col-sm-10">
+              <select v-model="title5" class="form-control" name="title5" options="titles">
+                <option disabled value="">Select title</option>
+                <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
+                  {{ option.text }}
+                </option>
+              </select>
+              <i v-show="errors.has('title5')" class="fa fa-warning"></i>
+              <span v-show="errors.has('title5')" class="help text-error">{{ errors.first('title5') }}</span>
+            </div>
+          </div>
           <div :class="{'form-group':true,'has-error': errors.has('firstName5')}">
             <label class="control-label col-sm-2" for="firstName5">First Name</label>
             <div class="col-sm-10">
-              <input v-model="firstName5" name="firstName5" class="input form-control" type="text" placeholder="First Name 2" required>
+              <input v-model="firstName5" name="firstName5" class="input form-control" type="text" placeholder="First Name" required>
               <i v-show="errors.has('firstName5')" class="fa fa-warning"></i>
-              <span v-show="errors.has('firstName5')" class="help text-error">{{ errors.first('First Name 2') }}</span>
+              <span v-show="errors.has('firstName5')" class="help text-error">{{ errors.first('First Name') }}</span>
             </div>
           </div>
           <div :class="{'form-group':true,'has-error': errors.has('middleName5')}">
@@ -324,6 +365,28 @@
               </p>
             </div>
           </div>
+          <div :class="{'form-group':true,'required':true,'has-error': errors.has('abstract')}">
+            <label class="control-label col-sm-2" for="abstract">Abstract</label>
+            <div class="col-sm-10 columns is-multiline">
+              <p class="control has-icon has-icon-right">
+              <textarea  rows="5" v-model="abstract" name="abstract" v-validate="'required'" class="input form-control" type="text" placeholder="abstract" required></textarea>
+              <i v-show="errors.has('abstract')" class="fa fa-warning"></i>
+              <span v-show="errors.has('abstract')" class="help text-error">{{ errors.first('abstract') }}</span>
+              </p>
+            </div>
+          </div>
+          <div :class="{'form-group':true,'required':true,'has-error': errors.has('keywords')}">
+            <label class="control-label col-sm-2" for="keywords">Keywords</label>
+            <div class="col-sm-10 columns is-multiline">
+              <p class="control has-icon has-icon-right">
+              <input-tag :tags.sync="keywords" :limit="10" validate="text" v-model="keywords" name="keywords"  v-validate="'required'" required></input-tag>
+              <!-- <textarea  rows="5"  class="input form-control" type="text" placeholder="keywords" required></textarea> -->
+              <i v-show="errors.has('keywords')" class="fa fa-warning"></i>
+              <span v-show="errors.has('keywords')" class="help text-error">{{ errors.first('keywords')}}</span>
+              </p>
+            </div>
+          </div>
+          <vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions"></vue-dropzone>
         </form>
       </div>
      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" v-on:click="postPost()">Submit</button>
@@ -334,8 +397,9 @@
 <script>
 import myDatepicker from 'vue-datepicker/vue-datepicker-es6.vue'
 import axios from 'axios'
-import moment from 'moment'
-
+import InputTag from 'vue-input-tag'
+import vue2Dropzone from 'vue2-dropzone'
+import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 const BASE_URL = 'http://128.199.88.139:3000/api/'
 
 export default {
@@ -353,30 +417,35 @@ export default {
         { text: 'Mrs', value: 'Mrs' },
         { text: 'Miss', value: 'Miss' }
       ],
+      title1: '',
       firstName1: '',
       middleName1: '',
       lastName1: '',
-      mail1: '',
+      email1: '',
       phone1: '',
+      title2: '',
       firstName2: '',
       middleName2: '',
       lastName2: '',
-      mail2: '',
+      email2: '',
       phone2: '',
+      title3: '',
       firstName3: '',
       middleName3: '',
       lastName3: '',
-      mail3: '',
+      email3: '',
       phone3: '',
+      title4: '',
       firstName4: '',
       middleName4: '',
       lastName4: '',
-      mail4: '',
+      email4: '',
       phone4: '',
+      title5: '',
       firstName5: '',
       middleName5: '',
       lastName5: '',
-      mail5: '',
+      email5: '',
       phone5: '',
       university: '',
       department: '',
@@ -386,15 +455,20 @@ export default {
       province: '',
       postalCode: '',
       country: '',
+      abstract: '',
+      keywords: [],
       option: {
         format: 'DD-MM-YYYY'
+      },
+      dropzoneOptions: {
+        url: 'https://httpbin.org/post',
+        thumbnailWidth: 150,
+        maxFilesize: 0.5,
+        headers: { 'My-Awesome-Header': 'header value' }
       }
     }
   },
   computed: {
-    status: function () {
-      return moment(this.endDate.time).startOf('day').isSameOrAfter(moment().startOf('day')) ? 'Active' : 'Expired'
-    }
   },
   props: {
     loggingIn: {
@@ -402,7 +476,9 @@ export default {
     }
   },
   components: {
-    'date-picker': myDatepicker
+    'date-picker': myDatepicker,
+    InputTag,
+    'vue-dropzone': vue2Dropzone
   },
   // Pushes posts to the server when called.
   methods: {
@@ -416,8 +492,6 @@ export default {
             soNumber: this.soNumber,
             endUser: this.endUser,
             product: this.product,
-            startDate: this.startDate.time,
-            endDate: this.endDate.time,
             note: this.note,
             maCondition: this.maCondition,
             numService: this.numService,
@@ -436,7 +510,6 @@ export default {
     }
   },
   created () {
-    console.log(this.endDate.time)
     axios.get(BASE_URL + 'products')
       .then(response => {
         console.log('get')

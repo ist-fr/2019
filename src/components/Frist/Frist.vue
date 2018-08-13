@@ -23,7 +23,7 @@ export default {
     return {
       url: this.$route.query.page,
       menu: [
-        'FRIST',
+        'Home',
         'Committee',
         'Program',
         'Speaker',
@@ -32,7 +32,7 @@ export default {
         'Venue',
         // 'Accommodation',
         'Information',
-        'Contract Us'
+        'Contact Us'
       ]
     }
   },
