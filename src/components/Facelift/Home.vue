@@ -1,167 +1,71 @@
 <template>
   <div class="home">
-    <announce></announce>
-    <div id="search-area" class="container search-box-container">
-      <div class="inner-addon left-addon">
-        <i class="fa fa-search"></i>
-        <input class="form-control mr-sm-2" type="text" v-model="search" @click="scollTo('#search-area')" @input="scollTo('#search-area')" placeholder="ค้นหารายชื่อ">
+    <navbar></navbar>
+    <header class="header-gradient">
+      <div class="container-logo text-center">
+        <img class="img-logo" src="../../assets/logo_istfr_white.svg" alt="Logo">
       </div>
-    </div>
-    <div class="container result-area" style="height:80vh;">
-      <div class="row">
-      </div>
-    </div>
+      <!-- <div class="container text-center">
+        <h1>Welcome to Scrolling Nav</h1>
+        <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+      </div> -->
+    </header>
+    <announcement></announcement>
+    <committee></committee>
+    <program></program>
   </div>
 </template>
 
 <script>
-  import scrollToElement from 'scroll-to-element'
-  import announce from '@/components/Facelift/Announce'
+  import Announcement from '@/components/Facelift/Announcement'
+  import Committee from '@/components/Facelift/Committee'
+  import Program from '@/components/Facelift/Program'
+  import Navbar from '@/components/Facelift/Navbar'
   export default {
     name: 'Home',
-    methods: {
-      scollTo (e) {
-        scrollToElement(e, {
-          offset: -10,
-          ease: 'outBack',
-          duration: 500
-        })
-      }
-    },
+    methods: {},
     components: {
-      announce
+      Announcement,
+      Committee,
+      Program,
+      Navbar
     },
-    data () {
-      return {
-        search: '',
-        majorGroups: ['marketing', 'content', 'programming', 'design'],
-        announcementList: []
-      }
-    }
+    data () {}
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-  .inner-addon {
-    position: relative;
+<style>
+  header {
+    padding: 90px 5% 100px;
+  }
+
+  @media (min-width: 992px) {
+    header {
+      padding: 90px 20% 100px;
+    }
   }
   
-  
-  /* style icon */
-  
-  .inner-addon .fa {
-    position: absolute;
-    padding: 10px;
-    pointer-events: none;
+  section {
+    padding: 60px 0;
   }
-  
-  
-  /* align icon */
-  
-  .left-addon .fa {
-    left: 0px;
+
+  .navbar {
+    background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 71, 111) 100%) !important;
+    font-weight: 800;
+    font-size: small;
   }
-  
-  .right-addon .fa {
-    right: 0px;
+
+  .nav-container {
+    min-width: 100% !important;
+    max-width: 100% !important;
   }
-  
-  .input-group-addon {
-    background: #282a36;
-    color: #bd93f9;
-    border-color: transparent;
+
+  .container-logo {
+    width: 100%;
   }
-  
-  * {
-    border-radius: 0px;
-  }
-  
-  .fa {
-    color: #bd93f9;
-    font-size: 1.5em;
-  }
-  
-  .search-box-container {
-    position: relative;
-    margin-top: 3%;
-    margin-bottom: 10px;
-    background: #282a36;
-    padding: 12px 25px;
-  }
-  
-  .not-found-text {
-    color: #f8f8f2;
-    margin-top: 10%;
-    font-size: 2.5em;
-  }
-  
-  .list-header {
-    border-radius: 0px;
-    background: #282a36;
-    border: 0;
-    color: #bd93f9;
-    font-weight: 700;
-  }
-  
-  .list-item {
-    border-radius: 0px;
-    background: #303844;
-    /*border-color:#bd93f9;
-          border-top:0px;*/
-    margin-top: 5px;
-    color: #f8f8f2;
-  }
-  
-  .item-ref {
-    padding: 0;
-  }
-  
-  .list-group {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  }
-  
-  .form-control:hover,
-  .form-control:focus {
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    border-bottom: 2px solid #bd93f9;
-  }
-  
-  .form-control {
-    font-size: 1.5em;
-    font-family: "Athiti", sans-serif;
-    font-weight: 600;
-    padding-left: 50px;
-    border-radius: 0px;
-    background: transparent;
-    color: #f8f8f2;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    border-bottom: 2px solid #636c71;
-  }
-  
-  .font-400 {
-    font-weight: 600;
-  }
-  
-  h1,
-  h2 {
-    font-weight: normal;
-  }
-  
-  ul {
-    padding: 0;
-  }
-  
-  li {
-    margin: 0 10px;
-  }
-  
-  a {
-    color: #42b983;
+
+  .header-gradient {
+    background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 71, 111) 100%) !important;
   }
 </style>
