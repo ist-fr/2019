@@ -4,7 +4,6 @@
     <img id="logo" src='./assets/logo_istfr.svg' height="150px" width="550px">
     <!-- <navbar></navbar> -->
     <!-- <img src="./assets/logo.png" width="50px"> -->
-    <router-view  v-bind:loggingIn="loggingIn"></router-view>
     <customFooter></customFooter>
   </div>
 </template>
@@ -17,18 +16,7 @@ export default {
     navbar,
     customFooter
   },
-  name: 'app',
-  data () {
-    return {
-      loggingIn: false
-    }
-  },
-  methods: {
-    updateLogin (isLogin) {
-      console.log(isLogin)
-      this.loggingIn = isLogin
-    }
-  }
+  name: 'app'
 }
 </script>
 
@@ -39,7 +27,7 @@ export default {
   margin-top: 10px;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: '', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
