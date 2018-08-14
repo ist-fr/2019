@@ -2,12 +2,16 @@
   <div class="contrainner">
     <submit></submit>
     <div class="row">
+      IST-FR symposium goal is show the protential of Thailand researcher to the prublic.
+      Thailand have a lot go high quality research but nueeded an oppatunity to show their protential.
+      We IST-FR want to be show floor to the research to meet both academic and industrial.
+      Calling for paper
 
     </div>
     <div class="row">
       <h2>Online submission</h2>
       - Open submission 25 aug
-      - Close submission 25 sep
+      - Close submission 25 sep 23:59 (GMT +7)
       - Result released 10
     </div>
       <div class="row">

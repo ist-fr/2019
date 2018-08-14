@@ -31,7 +31,7 @@ export default {
         'Submission',
         'Venue',
         // 'Accommodation',
-        'Information',
+        // 'Information',
         'Contact Us'
       ]
     }

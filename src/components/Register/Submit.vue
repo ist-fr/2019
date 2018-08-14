@@ -9,7 +9,7 @@
           <div :class="{'form-group':true,'required':true,'has-error': errors.has('title1')}">
             <label class="control-label col-sm-2" for="title1">title</label>
             <div class="col-sm-10">
-              <select v-model="title1" class="form-control" name="title1" options="titles">
+              <select v-model="title1" class="form-control" name="title1" options="titles" v-validate="'required'">
                 <option disabled value="">Select title</option>
                 <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
                   {{ option.text }}
@@ -70,8 +70,8 @@
             </div>
           </div>   
           <h3 v->Second member</h3>
-          <div :class="{'form-group':true,'required':true,'has-error': errors.has('title2')}">
-            <label class="control-label col-sm-2" for="title2">title</label>
+          <div :class="{'form-group':true,'required':false,'has-error': errors.has('title2')}">
+            <label class="control-label col-sm-2" for="title2">Title</label>
             <div class="col-sm-10">
               <select v-model="title2" class="form-control" name="title2" options="titles">
                 <option disabled value="">Select title</option>
@@ -118,13 +118,13 @@
           <div :class="{'form-group':true,'has-error': errors.has('phone2')}">
             <label class="control-label col-sm-2" for="phone2">Phone No</label>
             <div class="col-sm-10">
-              <input v-model="phone2" name="phone2" class="input form-control" type="text" placeholder="phonr No" required>
+              <input v-model="phone2" name="phone2" class="input form-control" type="text" placeholder="phone No" required>
               <i v-show="errors.has('phone2')" class="fa fa-warning"></i>
               <span v-show="errors.has('phone2')" class="help text-error">{{ errors.first('phone') }}</span>
             </div>
           </div>
           <h3>Third member</h3>
-          <div :class="{'form-group':true,'required':true,'has-error': errors.has('title3')}">
+          <div :class="{'form-group':true,'required':false,'has-error': errors.has('title3')}">
             <label class="control-label col-sm-2" for="title3">title</label>
             <div class="col-sm-10">
               <select v-model="title3" class="form-control" name="title3" options="titles">
@@ -172,13 +172,13 @@
           <div :class="{'form-group':true,'has-error': errors.has('phone3')}">
             <label class="control-label col-sm-2" for="phone3">Phone No</label>
             <div class="col-sm-10">
-              <input v-model="phone3" name="phone3" class="input form-control" type="text" placeholder="phonr No" required>
+              <input v-model="phone3" name="phone3" class="input form-control" type="text" placeholder="phone No" required>
               <i v-show="errors.has('phone3')" class="fa fa-warning"></i>
               <span v-show="errors.has('phone3')" class="help text-error">{{ errors.first('phone') }}</span>
             </div>
           </div>
           <h3>Fourth member</h3>
-          <div :class="{'form-group':true,'required':true,'has-error': errors.has('title4')}">
+          <div :class="{'form-group':true,'required':false,'has-error': errors.has('title4')}">
             <label class="control-label col-sm-2" for="title4">title</label>
             <div class="col-sm-10">
               <select v-model="title4" class="form-control" name="title4" options="titles">
@@ -226,13 +226,13 @@
           <div :class="{'form-group':true,'has-error': errors.has('phone4')}">
             <label class="control-label col-sm-2" for="phone4">Phone No</label>
             <div class="col-sm-10">
-              <input v-model="phone4" name="phone4" class="input form-control" type="text" placeholder="phonr No" required>
+              <input v-model="phone4" name="phone4" class="input form-control" type="text" placeholder="phone No" required>
               <i v-show="errors.has('phone4')" class="fa fa-warning"></i>
               <span v-show="errors.has('phone4')" class="help text-error">{{ errors.first('phone') }}</span>
             </div>
           </div>
           <h3>Fifth member</h3>
-          <div :class="{'form-group':true,'required':true,'has-error': errors.has('title5')}">
+          <div :class="{'form-group':true,'required':false,'has-error': errors.has('title5')}">
             <label class="control-label col-sm-2" for="title5">title</label>
             <div class="col-sm-10">
               <select v-model="title5" class="form-control" name="title5" options="titles">
@@ -280,20 +280,30 @@
           <div :class="{'form-group':true,'has-error': errors.has('phone5')}">
             <label class="control-label col-sm-2" for="phone5">Phone No</label>
             <div class="col-sm-10">
-              <input v-model="phone5" name="phone5" class="input form-control" type="text" placeholder="phonr No" required>
+              <input v-model="phone5" name="phone5" class="input form-control" type="text" placeholder="phone No" required>
               <i v-show="errors.has('phone5')" class="fa fa-warning"></i>
               <span v-show="errors.has('phone5')" class="help text-error">{{ errors.first('phone') }}</span>
             </div>
           </div>
           <br>
           <h3>General Infomation</h3>
-          <div :class="{'form-group':true,'required':true,'has-error': errors.has('university')}">
-            <label class="control-label col-sm-2" for="university">University</label>
+          <div :class="{'form-group':true,'required':true,'has-error': errors.has('teamName')}">
+            <label class="control-label col-sm-2" for="teamName">Team Name</label>
             <div class="col-sm-10 columns is-multiline">
               <p class="control has-icon has-icon-right">
-              <input v-model="university" name="university" v-validate="'required'" class="input form-control" type="text" placeholder="university" required>
-              <i v-show="errors.has('university')" class="fa fa-warning"></i>
-              <span v-show="errors.has('university')" class="help text-error">{{ errors.first('university') }}</span>
+              <input v-model="teamName" name="teamName" v-validate="'required'" class="input form-control" type="text" placeholder="teamName" required>
+              <i v-show="errors.has('teamName')" class="fa fa-warning"></i>
+              <span v-show="errors.has('teamName')" class="help text-error">{{ errors.first('teamName') }}</span>
+              </p>
+            </div>
+          </div>
+          <div :class="{'form-group':true,'required':true,'has-error': errors.has('institution')}">
+            <label class="control-label col-sm-2" for="institution">Institution</label>
+            <div class="col-sm-10 columns is-multiline">
+              <p class="control has-icon has-icon-right">
+              <input v-model="institution" name="institution" v-validate="'required'" class="input form-control" type="text" placeholder="institution" required>
+              <i v-show="errors.has('institution')" class="fa fa-warning"></i>
+              <span v-show="errors.has('institution')" class="help text-error">{{ errors.first('institution') }}</span>
               </p>
             </div>
           </div>
@@ -311,7 +321,8 @@
             <label class="control-label col-sm-2" for="maillingAddress1">Mailling Address 1</label>
             <div class="col-sm-10 columns is-multiline">
               <p class="control has-icon has-icon-right">
-              <input v-model="maillingAddress1" name="maillingAddress1" v-validate="'required'" class="input form-control" type="text" placeholder="Mailling Address 1" required>
+              <textarea v-model="maillingAddress1" name="maillingAddress1" v-validate="'required'" class="input form-control" type="text" placeholder="Mailling Address 1" required rows=3>
+              </textarea>
               <i v-show="errors.has('maillingAddress1')" class="fa fa-warning"></i>
               <span v-show="errors.has('maillingAddress1')" class="help text-error">{{ errors.first('Mailling Address 1') }}</span>
               </p>
@@ -365,6 +376,16 @@
               </p>
             </div>
           </div>
+          <div :class="{'form-group':true,'required':true,'has-error': errors.has('paperTitle')}">
+            <label class="control-label col-sm-2" for="paperTitle">Paper Title</label>
+            <div class="col-sm-10 columns is-multiline">
+              <p class="control has-icon has-icon-right">
+              <textarea  rows="5" v-model="paperTitle" name="paperTitle" v-validate="'required'" class="input form-control" type="text" placeholder="paperTitle" required></textarea>
+              <i v-show="errors.has('paperTitle')" class="fa fa-warning"></i>
+              <span v-show="errors.has('paperTitle')" class="help text-error">{{ errors.first('paperTitle') }}</span>
+              </p>
+            </div>
+          </div>
           <div :class="{'form-group':true,'required':true,'has-error': errors.has('abstract')}">
             <label class="control-label col-sm-2" for="abstract">Abstract</label>
             <div class="col-sm-10 columns is-multiline">
@@ -384,13 +405,30 @@
               <i v-show="errors.has('keywords')" class="fa fa-warning"></i>
               <span v-show="errors.has('keywords')" class="help text-error">{{ errors.first('keywords')}}</span>
               </p>
+              <span class="small">
+              * tab to add new keyword (max 10)
+            </span>
             </div>
           </div>
-          <vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions"></vue-dropzone>
+            <div :class="{'form-group':true,'required':true,'has-error': errors.has('attachment')}">
+            <label class="control-label col-sm-2" for="keywords">Attachments</label>
+            <div class="col-sm-10 columns is-multiline">
+              <p class="control has-icon has-icon-right">
+              <!-- <vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions" v-model="attachment" name="attachment"  v-validate="''" required></vue-dropzone> -->
+              <vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions"></vue-dropzone>
+              <!-- <textarea  rows="5"  class="input form-control" type="text" placeholder="keywords" required></textarea> -->
+              <i v-show="errors.has('attachment')" class="fa fa-warning"></i>
+              <span v-show="errors.has('attachment')" class="help text-error">{{ errors.first('attachment')}}</span>
+              </p>
+            </div>
+          </div>
         </form>
       </div>
      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" v-on:click="postPost()">Submit</button>
     </div>
+    introduction
+    contribution
+
   </div>
 </template>
 
@@ -447,7 +485,8 @@ export default {
       lastName5: '',
       email5: '',
       phone5: '',
-      university: '',
+      teamName: '',
+      institution: '',
       department: '',
       maillingAddress1: '',
       maillingAddress2: '',
@@ -456,19 +495,33 @@ export default {
       postalCode: '',
       country: '',
       abstract: '',
+      paperTitle: '',
       keywords: [],
+      attachment: '',
       option: {
         format: 'DD-MM-YYYY'
       },
       dropzoneOptions: {
-        url: 'https://httpbin.org/post',
+        url: 'http://128.199.88.139:11115/upload',
         thumbnailWidth: 150,
-        maxFilesize: 0.5,
-        headers: { 'My-Awesome-Header': 'header value' }
+        maxFilesize: 500,
+        headers: {
+          'Cache-Control': '',
+          'X-Requested-With': ''
+        },
+        addRemoveLinks: true,
+        autoProcessQueue: true,
+        params: {
+          teamName: '',
+          university: ''
+        }
       }
     }
   },
   computed: {
+    currentTeamName () {
+      return this.teamName
+    }
   },
   props: {
     loggingIn: {
@@ -509,16 +562,13 @@ export default {
       })
     }
   },
+  watch: {
+    teamName () {
+      this.dropzoneOptions.params.teamName = this.teamName
+      this.dropzoneOptions.params.university = this.institution
+    }
+  },
   created () {
-    axios.get(BASE_URL + 'products')
-      .then(response => {
-        console.log('get')
-        console.log(response)
-        this.products = response.data
-      })
-      .catch(e => {
-        console.log(e)
-      })
   }
 }
 </script>
