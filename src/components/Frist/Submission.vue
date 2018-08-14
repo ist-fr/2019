@@ -10,6 +10,18 @@
       Theme Academic Excellence in Data Science through academic and industry collaboration research
 
     </div>
+    <h3> Criteria </h3>
+    <ul>
+      <li>
+        Undergraduate research in science or Engineering feilds
+      </li>
+      <li>
+        Research has been done during 2017/2018 academic years
+      </li>
+      <li>
+        Research must have scientific process and basic knowledge in computer science, computer Engineering or information science
+      </li>
+    </ul>
     <div class="row">
       <h2>Online submission</h2>
       - Open submission 25 aug
@@ -20,6 +32,7 @@
       <h2>Poster presentration</h2>
       - poster presentration @venu on 20 dec
     </div>
+    Prize total 17,500 BAHT
     <div class="row">
       <h2>Prizes</h2>
       First Place: 10,000
