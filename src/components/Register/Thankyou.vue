@@ -1,5 +1,8 @@
 <template>
-    
+    <div>
+        Thank you for submittion
+        
+    </div>
 </template>
 <script>
 export default {
