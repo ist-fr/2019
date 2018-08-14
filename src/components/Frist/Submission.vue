@@ -6,8 +6,9 @@
       Thailand have a lot go high quality research but nueeded an oppatunity to show their protential.
       We IST-FR want to be show floor o the research to meet both academic and industrial.
       Calling for papers, We invite all bachelor degree student for suppe project.
+    
+      Theme Academic Excellence in Data Science through adcademic and industry collaboration research
 
-        
     </div>
     <div class="row">
       <h2>Online submission</h2>
