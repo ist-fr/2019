@@ -467,7 +467,6 @@ export default {
       participantCategory: '',
       participantCategories: {
       },
-      title: '',
       titles: [
         { text: 'Prof', value: 'Prof' },
         { text: 'Dr', value: 'Dr' },
