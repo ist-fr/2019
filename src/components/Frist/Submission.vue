@@ -6,8 +6,7 @@
       Thailand has a lot go high-quality research but needed an opportunity to show their potential.
       We IST-FR want to be a show floor o the research to meet both academic and industrial.
       Calling for papers, We invite all bachelor degree student for submitting a project.
-    
-      Theme Academic Excellence in Data Science through academic and industry collaboration research
+      Out theme of the even is <b> Academic Excellence in Data Science through academic and industry collaboration research </b>
 
     </div>
     <h3> Criteria </h3>
@@ -20,6 +19,12 @@
       </li>
       <li>
         Research must have scientific process and basic knowledge in computer science, computer Engineering or information science
+      </li>
+      <li>
+        Research format that accepted include Full/Short paper, journal, report, thesis
+      </li>
+      <li>
+        attachment submittion can include, but not limited to, paper, poster file, presentration file, manualscript, source code
       </li>
     </ul>
     <div class="row">

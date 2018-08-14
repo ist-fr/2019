@@ -61,7 +61,7 @@
             <label class="control-label col-sm-2" for="question">Question and Comment</label>
             <div class="col-sm-10 columns is-multiline">
               <p class="control has-icon has-icon-right">
-                <input v-model="question" v-validate="'required'" name="question" class="input form-control" type="text" placeholder="question">
+                <textarea v-model="question" v-validate="'required'" name="question" class="input form-control" type="text" placeholder="question" rows=10></textarea>
                 <i v-show="errors.has('question')" class="fa fa-warning"></i>
                 <span v-show="errors.has('question')" class="help text-error">{{ errors.first('question') }}</span>
               </p>
@@ -79,7 +79,7 @@
 import myDatepicker from 'vue-datepicker/vue-datepicker-es6.vue'
 import axios from 'axios'
 
-const BASE_URL = 'http://128.199.88.139:3000/api/'
+const BASE_URL = 'http://128.199.88.139:11111/api/'
 
 export default {
   name: 'hello',
@@ -114,22 +114,16 @@ export default {
       this.$validator.validateAll().then(result => {
         if (result) {
           console.log('in')
-          axios.post(BASE_URL + `alerts/`, {
-            company: this.company,
-            customer: this.customer,
-            soNumber: this.soNumber,
-            endUser: this.endUser,
-            product: this.product,
-            startDate: this.startDate.time,
-            endDate: this.endDate.time,
-            note: this.note,
-            maCondition: this.maCondition,
-            numService: this.numService,
-            status: this.status
+          axios.post(BASE_URL + `questions/`, {
+            subject: this.subject,
+            organization: this.organization,
+            country: this.country,
+            email: this.email,
+            question: this.question
           })
             .then(response => {
+              console.log(response)
               console.log('send')
-              window.location.href = '#/view'
             })
             .catch(e => {
               console.log(e)

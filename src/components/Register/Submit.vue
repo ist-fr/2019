@@ -360,7 +360,7 @@
             <label class="control-label col-sm-2" for="postalCode">Postal Code</label>
             <div class="col-sm-10 columns is-multiline">
               <p class="control has-icon has-icon-right">
-              <input v-model="postalCode" name="postalCode" v-validate="'required|number'" class="input form-control" type="text" placeholder="postalCode" required>
+              <input v-model="postalCode" name="postalCode" v-validate="'required|numeric'" class="input form-control" type="text" placeholder="postalCode" required>
               <i v-show="errors.has('postalCode')" class="fa fa-warning"></i>
               <span v-show="errors.has('postalCode')" class="help text-error">{{ errors.first('postalCode') }}</span>
               </p>
@@ -474,15 +474,15 @@ export default {
         { text: 'Mrs', value: 'Mrs' },
         { text: 'Miss', value: 'Miss' }
       ],
-      title1: '',
-      firstName1: '',
-      middleName1: '',
-      lastName1: '',
-      email1: '',
-      phone1: '',
-      title2: '',
-      firstName2: '',
-      middleName2: '',
+      title1: '1',
+      firstName1: '1',
+      middleName1: '1',
+      lastName1: '1',
+      email1: 'asd@asd.afa',
+      phone1: '1',
+      title2: '1',
+      firstName2: '1',
+      middleName2: '1',
       lastName2: '',
       email2: '',
       phone2: '',
@@ -504,18 +504,18 @@ export default {
       lastName5: '',
       email5: '',
       phone5: '',
-      teamName: '',
-      institution: '',
-      department: '',
-      maillingAddress1: '',
+      teamName: 'aaa',
+      institution: 'aaa',
+      department: 'aaa',
+      maillingAddress1: 'aaa',
       maillingAddress2: '',
-      city: '',
-      province: '',
-      postalCode: '',
-      country: '',
-      abstract: '',
-      paperTitle: '',
-      keywords: [],
+      city: 'aaa',
+      province: 'aaa',
+      postalCode: '111',
+      country: 'aa',
+      abstract: 'aaa',
+      paperTitle: 'aaa',
+      keywords: ['asd', 'asd'],
       attachment: '',
       currentFiles: [],
       option: {
@@ -565,19 +565,52 @@ export default {
         if (result) {
           console.log('in')
           axios.post(BASE_URL, {
-            company: this.company,
-            customer: this.customer,
-            soNumber: this.soNumber,
-            endUser: this.endUser,
-            product: this.product,
-            note: this.note,
-            maCondition: this.maCondition,
-            numService: this.numService,
-            status: this.status
+            title1: this.title1,
+            firstName1: this.firstName1,
+            middleName1: this.middleName1,
+            lastName1: this.lastName1,
+            email1: this.email1,
+            phone1: this.phone1,
+            title2: this.title2,
+            firstName2: this.firstName2,
+            middleName2: this.middleName2,
+            lastName2: this.lastName2,
+            email2: this.email2,
+            phone2: this.phone2,
+            title3: this.title3,
+            firstName3: this.firstName3,
+            middleName3: this.middleName3,
+            lastName3: this.lastName3,
+            email3: this.email3,
+            phone3: this.phone3,
+            title4: this.title4,
+            firstName4: this.firstName4,
+            middleName4: this.middleName4,
+            lastName4: this.lastName4,
+            email4: this.email4,
+            phone4: this.phone4,
+            title5: this.title5,
+            firstName5: this.firstName5,
+            middleName5: this.middleName5,
+            lastName5: this.lastName5,
+            email5: this.email5,
+            phone5: this.phone5,
+            teamName: this.teamName,
+            institution: this.institution,
+            department: this.department,
+            maillingAddress1: this.maillingAddress1,
+            maillingAddress2: this.maillingAddress2,
+            city: this.city,
+            province: this.province,
+            postalCode: this.postalCode,
+            country: this.country,
+            abstract: this.abstract,
+            paperTitle: this.paperTitle,
+            keywords: this.keywords
           })
             .then(response => {
+              console.log(response)
               console.log('send')
-              window.location.href = '#/view'
             })
             .catch(e => {
               console.log(e)
@@ -587,9 +620,8 @@ export default {
       })
     },
     submit () {
-      // this.postPost()
-      console.log(this.submitForm)
-      this.upload(this.submitForm)
+      this.postPost()
+      // this.upload(this.submitForm)
     },
     upload (formData) {
       let url = `http://128.199.88.139:11115/upload`
