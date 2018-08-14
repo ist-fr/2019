@@ -458,7 +458,7 @@ import InputTag from 'vue-input-tag'
 import vue2Dropzone from 'vue2-dropzone'
 import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 
-const BASE_URL = 'http://128.199.88.139:3000/api/'
+const BASE_URL = 'http://128.199.88.139:11111/api/submissions'
 
 export default {
   name: 'hello',
@@ -564,7 +564,7 @@ export default {
       this.$validator.validateAll().then(result => {
         if (result) {
           console.log('in')
-          axios.post(BASE_URL + `alerts/`, {
+          axios.post(BASE_URL, {
             company: this.company,
             customer: this.customer,
             soNumber: this.soNumber,
