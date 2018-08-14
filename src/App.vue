@@ -3,6 +3,7 @@
   <div id="app">
     <img id="logo" src='./assets/logo_istfr.svg' height="150px" width="550px">
     <!-- <navbar></navbar> -->
+    <router-view></router-view>
     <!-- <img src="./assets/logo.png" width="50px"> -->
     <customFooter></customFooter>
   </div>

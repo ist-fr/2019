@@ -2,12 +2,12 @@
   <div class="contrainner">
     <submit></submit>
     <div class="row">
-      IST-FR symposium goal is show the protential of Thailand researcher to the prublic.
-      Thailand have a lot go high quality research but nueeded an oppatunity to show their protential.
-      We IST-FR want to be show floor o the research to meet both academic and industrial.
-      Calling for papers, We invite all bachelor degree student for suppe project.
+      IST-FR symposium goal is to show the potential of Thailand researcher to the public.
+      Thailand has a lot go high-quality research but needed an opportunity to show their potential.
+      We IST-FR want to be a show floor o the research to meet both academic and industrial.
+      Calling for papers, We invite all bachelor degree student for submitting a project.
     
-      Theme Academic Excellence in Data Science through adcademic and industry collaboration research
+      Theme Academic Excellence in Data Science through academic and industry collaboration research
 
     </div>
     <div class="row">

@@ -413,7 +413,7 @@
             <div :class="{'form-group':true,'required':true,'has-error': errors.has('attachment')}">
             <label class="control-label col-sm-2" for="keywords">Attachments</label>
             <div class="col-sm-10 columns is-multiline">
-              <p class="control has-icon has-icon-right">
+              <div class="control has-icon has-icon-right">
               <!-- <vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions" v-model="attachment" name="attachment"  v-validate="''" required></vue-dropzone> -->
               <!-- <vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions"></vue-dropzone> -->
               <!-- <input type="file" name="fileToUpload" id="fileToUpload"> -->
@@ -437,7 +437,7 @@
                 </div>
               <i v-show="errors.has('attachment')" class="fa fa-warning"></i>
               <span v-show="errors.has('attachment')" class="help text-error">{{ errors.first('attachment')}}</span>
-              </p>
+              </div>
             </div>
           </div>
         </form>
