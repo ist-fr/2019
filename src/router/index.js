@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Frist from '@/components/Frist/Frist'
+// import Frist from '@/components/Frist/Frist'
 
 // FRIST
 import Accommodation from '@/components/Frist/Accommodation'
@@ -13,10 +13,20 @@ import Program from '@/components/Frist/Program.vue'
 import Submission from '@/components/Frist/Submission'
 import Venue from '@/components/Frist/Venue'
 import FristHome from '@/components/Frist/Home'
+import Home from '@/components/Facelift/Home'
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {
+      path: '/facelift',
+      children: [
+        {
+          path: 'home',
+          component: Home
+        }
+      ]
+    },
     {
       path: '/',
       children: [
