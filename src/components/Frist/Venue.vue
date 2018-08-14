@@ -19,6 +19,10 @@
       <img src="https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/37012105_2101124146876706_480306862726578176_o.jpg?_nc_cat=0&oh=339619beab9be50bffaae04bc90bb656&oe=5BCAF4C4">
       <img src="http://a49.co.th/Images/A49/Project/Vidyasirimedhi-Institute-of-Science-and-Technology-and-Kamnoetvidya-Science-Academy-(VISTEC-&-KVIS)-201803082356055.jpg?maxwidth=675">
       <img src="https://f.ptcdn.info/965/027/000/1422631417-1402570696-o.jpg">
+      <img src="http://www.l-and-e.com/sites/default/files/styles/360_image/public/project_360/Vidyasirimedhi%20Institute%20of%20Science%20and%20Technology%20%20VISTEC%20%28%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%AA%E0%B8%B4%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A1%E0%B8%98%E0%B8%B5%29-04.png?itok=Hvx6Ax1T">
+      <img src="http://www.l-and-e.com/sites/default/files/styles/360_image/public/project_360/Vidyasirimedhi%20Institute%20of%20Science%20and%20Technology%20%20VISTEC%20%28%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%AA%E0%B8%B4%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A1%E0%B8%98%E0%B8%B5%29-01.png?itok=D9jP3YHZ">
+      <img src="http://www.l-and-e.com/sites/default/files/styles/360_image/public/project_360/Vidyasirimedhi%20Institute%20of%20Science%20and%20Technology%20%20VISTEC%20%28%E0%B8%AA%E0%B8%96%E0%B8%B2%E0%B8%9A%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%AA%E0%B8%B4%E0%B8%A3%E0%B8%B4%E0%B9%80%E0%B8%A1%E0%B8%98%E0%B8%B5%29-02.png?itok=iiuXbUWr">
+      <ing scr="http://l49.co.th/Images/L49/Project/RAIST-&-KWIT-201503200204291.jpg?maxwidth=1350">
     </div>
 </template>
 <script>
