@@ -19,7 +19,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Frist,
       children: [
         {
           path: 'home',

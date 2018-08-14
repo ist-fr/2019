@@ -1,48 +1,65 @@
 
 <template>
   <div id="app">
-    <img id="logo" src='./assets/logo_istfr.svg' height="150px" width="550px">
+    <!-- <img id="logo" src='./assets/logo_istfr.svg' height="150px" width="550px"> -->
     <!-- <navbar></navbar> -->
     <router-view></router-view>
     <!-- <img src="./assets/logo.png" width="50px"> -->
-    <customFooter></customFooter>
+    <!-- <customFooter></customFooter> -->
   </div>
 </template>
 
 <script>
-import navbar from '@/components/Frist/NavBar'
-import customFooter from '@/components/General/Footer'
-export default {
-  components: {
-    navbar,
-    customFooter
-  },
-  name: 'app'
-}
+  // import navbar from '@/components/Frist/NavBar'
+  // import customFooter from '@/components/General/Footer'
+  export default {
+    components: {
+      // navbar,
+      // customFooter
+    },
+    name: 'app'
+  }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Arimo');
-#logo {
-  margin-left: 30px;
-  margin-top: 10px;
-}
-#app {
-  font-family: '', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
-  color: #ddd;
-
-  width: 100%;
-  height: 100%;
-}
-body {
-    background-color: #ffffff;
-    /* background-image: url("./assets/1.svg"); */
-}
-* {
-font-family: 'Arimo';
-}
-
+  /*cyan #8be9fd */
+  
+  .active {
+    background: #1c1e26;
+  }
+  
+  .navbar-brand-lg {
+    color: #8be9fd !important;
+    text-align: center !important;
+  }
+  
+  li {
+    cursor: pointer;
+  }
+  
+  .logo {
+    min-width: 10%;
+    min-height: 10%;
+    max-width: 18%;
+    max-height: 18%;
+    float: left;
+  }
+  
+  .navbar-brand {
+    color: #8be9fd !important;
+    text-align: center !important;
+  }
+  
+  .nav-link {
+    color: #8be9fd !important;
+  }
+  
+  .nav-link:hover {
+    color: #77c7d8 !important;
+  }
+  
+  .bg-inverse {
+    /*background-color:transparent!important; */
+    background-color: #282a36 !important;
+  }
 </style>
