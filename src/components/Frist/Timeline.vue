@@ -6,7 +6,7 @@
 		<div class="demo-card demo-card--step1">
 			<div class="head">
 				<div class="number-box">
-					<span>15 <spand class="month">Aug</spand></span>
+					<span>15 <span class="month">Aug</span></span>
 				</div>
 				<h2><span class="small">Subtitle</span> launching Website</h2>
 			</div>

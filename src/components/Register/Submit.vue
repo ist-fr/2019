@@ -69,7 +69,7 @@
               </p>
             </div>
           </div>   
-          <h3 v->Second member</h3>
+          <h3>Second member</h3>
           <div :class="{'form-group':true,'required':false,'has-error': errors.has('title2')}">
             <label class="control-label col-sm-2" for="title2">Title</label>
             <div class="col-sm-10">

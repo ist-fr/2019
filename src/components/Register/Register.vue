@@ -183,7 +183,6 @@
 <script>
 import myDatepicker from 'vue-datepicker/vue-datepicker-es6.vue'
 import axios from 'axios'
-import moment from 'moment'
 
 const BASE_URL = 'http://128.199.88.139:3000/api/'
 
@@ -225,9 +224,6 @@ export default {
     }
   },
   computed: {
-    status: function () {
-      return moment(this.endDate.time).startOf('day').isSameOrAfter(moment().startOf('day')) ? 'Active' : 'Expired'
-    }
   },
   props: {
     loggingIn: {
@@ -269,7 +265,6 @@ export default {
     }
   },
   created () {
-    console.log(this.endDate.time)
     axios.get(BASE_URL + 'products')
       .then(response => {
         console.log('get')
