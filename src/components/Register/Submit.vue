@@ -415,8 +415,26 @@
             <div class="col-sm-10 columns is-multiline">
               <p class="control has-icon has-icon-right">
               <!-- <vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions" v-model="attachment" name="attachment"  v-validate="''" required></vue-dropzone> -->
-              <vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions"></vue-dropzone>
-              <!-- <textarea  rows="5"  class="input form-control" type="text" placeholder="keywords" required></textarea> -->
+              <!-- <vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions"></vue-dropzone> -->
+              <!-- <input type="file" name="fileToUpload" id="fileToUpload"> -->
+              <div class="dropbox">
+                <input type="file" multiple @change="filesChange($event.target.name, $event.target.files)" class="input-file">
+                    <p v-if="!haveFile">
+                    Drag your file(s) here to begin<br> or click to browse
+                    </p>
+                    <div v-if="haveFile" >
+                      <ul classs="list-group list-group-body">
+                        <li class="list-group-item" v-for="file in this.currentFiles" v-bind:key="file.name">
+                            <div class="col-xs-6 text-left" style=" "> <a><span class="glyphicon glyphicon-file" aria-hidden="true"></span>{{file.name}} </a> </div>
+                            <div class="col-xs-3" style="">{{file.size/1000}} KB</div>
+                            <div class="col-xs-3" style="">{{formatDate(file.lastModified)}}</div>
+                        </li>
+                        <li >
+                          
+                        </li>
+                      </ul>
+                    </div>
+                </div>
               <i v-show="errors.has('attachment')" class="fa fa-warning"></i>
               <span v-show="errors.has('attachment')" class="help text-error">{{ errors.first('attachment')}}</span>
               </p>
@@ -424,7 +442,7 @@
           </div>
         </form>
       </div>
-     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" v-on:click="postPost()">Submit</button>
+     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" v-on:click="submit()">Submit</button>
     </div>
     introduction
     contribution
@@ -435,9 +453,11 @@
 <script>
 import myDatepicker from 'vue-datepicker/vue-datepicker-es6.vue'
 import axios from 'axios'
+import moment from 'moment'
 import InputTag from 'vue-input-tag'
 import vue2Dropzone from 'vue2-dropzone'
 import 'vue2-dropzone/dist/vue2Dropzone.min.css'
+
 const BASE_URL = 'http://128.199.88.139:3000/api/'
 
 export default {
@@ -498,9 +518,11 @@ export default {
       paperTitle: '',
       keywords: [],
       attachment: '',
+      currentFiles: [],
       option: {
         format: 'DD-MM-YYYY'
       },
+      submitForm: null,
       dropzoneOptions: {
         url: 'http://128.199.88.139:11115/upload',
         thumbnailWidth: 150,
@@ -515,7 +537,8 @@ export default {
           teamName: '',
           university: ''
         }
-      }
+      },
+      haveFile: false
     }
   },
   computed: {
@@ -535,6 +558,9 @@ export default {
   },
   // Pushes posts to the server when called.
   methods: {
+    formatDate (date) {
+      return moment(date).format('MMMM Do YYYY')
+    },
     postPost () {
       this.$validator.validateAll().then(result => {
         if (result) {
@@ -560,11 +586,51 @@ export default {
           return
         }
       })
+    },
+    submit () {
+      // this.postPost()
+      console.log(this.submitForm)
+      this.upload(this.submitForm)
+    },
+    upload (formData) {
+      let url = `http://128.199.88.139:11115/upload`
+      this.uploading = true
+      axios.post(url, formData, {
+        timeout: 50000000
+      })
+      // get data
+      .then(response => {
+        console.log(response.data)
+      })
+    },
+    filesChange (fieldName, fileList) {
+      this.currentFiles = fileList
+      console.log(fileList)
+      // handle file changes
+      const formData = new FormData()
+
+      if (!fileList.length) {
+        this.haveFile = false
+        return
+      }
+      this.haveFile = true
+      // append the files to FormData
+      Array
+      .from(Array(fileList.length).keys())
+      .map(x => {
+        formData.append('files', fileList[x], fileList[x].name)
+      })
+      formData.append('teamName', this.teamName)
+      formData.append('university', this.institution)
+      // save it
+      this.submitForm = formData
     }
   },
   watch: {
     teamName () {
       this.dropzoneOptions.params.teamName = this.teamName
+    },
+    institution () {
       this.dropzoneOptions.params.university = this.institution
     }
   },
@@ -602,4 +668,32 @@ a {
    content:" *";
    color:red;
 }
+.dropbox {
+    outline: 2px dashed grey; /* the dash box */
+    outline-offset: -10px;
+    background: lightcyan;
+    color: dimgray;
+    padding: 10px 10px;
+    min-height: 200px; /* minimum height */
+    position: relative;
+    cursor: pointer;
+  }
+
+  .input-file {
+    opacity: 0; /* invisible but it's there! */
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .dropbox:hover {
+    background: lightblue; /* when mouse over to the drop zone, change color */
+  }
+
+  .dropbox p {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 50px 0;
+  }
 </style>
