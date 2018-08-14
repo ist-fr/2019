@@ -20,7 +20,7 @@ export default {
       speakers: [
         {
           name: 'Dusit Niyato',
-          info: 'Nanyang Technological University, Singapore',
+          info: 'IEEE Fellow, citation: 19755, h-index: 67,  150+ publications, 5 books, 190+ conference, Nanyang Technological University, Singapore',
           topic: 'TBA',
           image: 'http://www.ntu.edu.sg/home/dniyato/tao2018.jpg',
           link: 'http://www.ntu.edu.sg/home/dniyato/'
