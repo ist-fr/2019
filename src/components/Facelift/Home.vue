@@ -18,8 +18,9 @@
     <accomodation class="bg-dark"></accomodation>
     <registration class="bg-light"></registration>
     <submission class="bg-dark"></submission>
-    <gallery class="bg-light"></gallery>
-    <contact class="bg-dark"></contact>
+    <venue class="bg-light"></venue>
+    <faq class="bg-dark"></faq>
+    <contact class="bg-light"></contact>
     <cs-footer></cs-footer>
   </div>
 </template>
@@ -33,10 +34,11 @@
   import Accomodation from '@/components/Facelift/Accomodation'
   import Registration from '@/components/Facelift/Registration'
   import Submission from '@/components/Facelift/Submission'
-  import Gallery from '@/components/Facelift/Gallery'
+  import Venue from '@/components/Facelift/Venue'
   import Contact from '@/components/Facelift/Contact'
   import Navbar from '@/components/Facelift/Navbar'
   import CsFooter from '@/components/Facelift/Footer'
+  import Faq from '@/Components/Facelift/FAQ'
   export default {
     name: 'Home',
     methods: {},
@@ -49,10 +51,11 @@
       Accomodation,
       Registration,
       Submission,
-      Gallery,
+      Venue,
       Contact,
       Navbar,
-      CsFooter
+      CsFooter,
+      Faq
     }
   }
 </script>

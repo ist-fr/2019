@@ -13,6 +13,7 @@ import Router from 'vue-router'
 // import Submission from '@/components/Frist/Submission'
 // import Venue from '@/components/Frist/Venue'
 // import FristHome from '@/components/Frist/Home'
+import submissionForm from '@/components/Register/Submit'
 import Home from '@/components/Facelift/Home'
 Vue.use(Router)
 
@@ -95,6 +96,10 @@ export default new Router({
     {
       path: '/submission',
       component: Home
+    },
+    {
+      path: '/form/submission',
+      component: submissionForm
     }
   ]
 })

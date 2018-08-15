@@ -41,6 +41,9 @@
             <a class="nav-link js-scroll-trigger" href="#venue">VENUE</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
           </li>
         </ul>
