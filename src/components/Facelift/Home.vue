@@ -10,24 +10,45 @@
         <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
       </div> -->
     </header>
-    <announcements></announcements>
-    <committee></committee>
-    <program></program>
+    <announcements class="bg-light"></announcements>
+    <timeline class="bg-dark"></timeline>
+    <committee class="bg-light"></committee>
+    <program class="bg-dark"></program>
+    <speakers class="bg-light"></speakers>
+    <accomodation class="bg-dark"></accomodation>
+    <registration class="bg-light"></registration>
+    <submission class="bg-dark"></submission>
+    <gallery class="bg-light"></gallery>
+    <contact class="bg-dark"></contact>
   </div>
 </template>
 
 <script>
   import Announcements from '@/components/Facelift/Announcements'
+  import Timeline from '@/components/Facelift/Timeline'
   import Committee from '@/components/Facelift/Committee'
   import Program from '@/components/Facelift/Program'
+  import Speakers from '@/components/Facelift/Speakers'
+  import Accomodation from '@/components/Facelift/Accomodation'
+  import Registration from '@/components/Facelift/Registration'
+  import Submission from '@/components/Facelift/Submission'
+  import Gallery from '@/components/Facelift/Gallery'
+  import Contact from '@/components/Facelift/Contact'
   import Navbar from '@/components/Facelift/Navbar'
   export default {
     name: 'Home',
     methods: {},
     components: {
       Announcements,
+      Timeline,
       Committee,
       Program,
+      Speakers,
+      Accomodation,
+      Registration,
+      Submission,
+      Gallery,
+      Contact,
       Navbar
     },
     data () {}
@@ -51,7 +72,7 @@
   }
 
   .navbar {
-    background: linear-gradient(90deg, rgb(209, 111, 255) -0%,rgb(255, 71, 111) 100%) !important;
+    background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
     font-weight: 800;
     font-size: small;
   }
@@ -66,6 +87,14 @@
   }
 
   .header-jumbotron {
-    background: linear-gradient(90deg, rgb(209, 111, 255) -0%,rgb(255, 71, 111) 100%) !important;
+    background: linear-gradient(90deg, rgb(169, 115, 255) -0%,rgb(255, 71, 111) 100%) !important;
+  }
+
+  .bg-light {
+    background: linear-gradient(45deg, rgba(160, 92, 255, 0.3) -50%, rgba(160, 92, 255, 0.1) 90%) !important;
+  }
+
+  .bg-dark {
+    background: linear-gradient(45deg, rgba(255, 90, 128, 0.3) -50%, rgba(255, 90, 128, 0.1) 90%) !important;
   }
 </style>

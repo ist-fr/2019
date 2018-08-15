@@ -1,5 +1,5 @@
 <template>
-  <section id="committee" class="bg-light">
+  <section id="committee">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
