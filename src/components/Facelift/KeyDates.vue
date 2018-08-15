@@ -16,7 +16,7 @@
                 <div class="number-box">
                   <span>15<span class="month"> Aug</span></span>
                 </div>
-                <h2><span class="small">We're up</span>Website Launch</h2>
+                <h2><span class="small">IST-FR</span>Website Launch</h2>
               </div>
               <div class="body">
                 <img src="http://placehold.it/1000x500" alt="Graphic">
@@ -75,7 +75,7 @@
                 <div class="number-box">
                   <span>20 Dec</span>
                 </div>
-                <h2><span class="small">Mark the calendar</span>Symposium Day</h2>
+                <h2><span class="small">Gather for the</span>Symposium Day</h2>
               </div>
               <div class="body">
                 <img src="http://placehold.it/1000x500" alt="Graphic">
@@ -294,7 +294,6 @@ body {
       font-weight: 400;
       .number-box {
         display: inline;
-        float: left;
         margin: $inner-margin;
         padding: 10px;
         font-size: $number-size;
