@@ -71,6 +71,30 @@ export default new Router({
     //       component: Venue
     //     }
     //   ]
+    },
+    {
+      path: '/submission',
+      component: Home
+    },
+    {
+      path: '/accomodation',
+      component: Home
+    },
+    {
+      path: '/announements',
+      component: Home
+    },
+    {
+      path: '/commitee',
+      component: Home
+    },
+    {
+      path: '/contact',
+      component: Home
+    },
+    {
+      path: '/submission',
+      component: Home
     }
   ]
 })

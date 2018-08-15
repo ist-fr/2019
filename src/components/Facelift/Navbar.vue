@@ -44,6 +44,43 @@
             <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
           </li>
         </ul>
+              <!-- <b-list-group class="collapse navbar-collapse" id="navbarResponsive">
+        <ul  class="navbar-nav ml-auto">
+        <b-list-group-item class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top"><i class="fa fa-arrow-up"></i></a>
+          </b-list-group-item>
+          <b-list-group-item class="nav-item" href="#key-dates">
+            KEY DATES
+          </b-list-group-item>
+          <b-list-group-item class="nav-item" href="#announcements">
+            ANNOUNCEMENTS
+          </b-list-group-item>
+          <b-list-group-item class="nav-item" href="#committee">
+            COMMITTEE
+          </b-list-group-item>
+          <b-list-group-item class="nav-item" href="#program">
+            PROGRAM
+          </b-list-group-item>
+          <b-list-group-item class="nav-item" href="#speakers">
+            SPEAKERS
+          </b-list-group-item>
+          <b-list-group-item class="nav-item" href="#accomodation">
+            ACCOMODATION
+          </b-list-group-item>
+          <b-list-group-item class="nav-item" href="#registration">
+            REGISTRATION
+          </b-list-group-item>
+          <b-list-group-item class="nav-item"  href="#submission">
+            SUBMISSION
+          </b-list-group-item>
+          <b-list-group-item class="nav-item"  href="#venue">
+            VENUE
+          </b-list-group-item>
+          <b-list-group-item class="nav-item" href="#contact">
+            CONTACT
+          </b-list-group-item>
+        </ul>
+      </b-list-group> -->
       </div>
     </div>
   </nav>
