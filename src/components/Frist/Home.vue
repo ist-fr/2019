@@ -3,6 +3,11 @@
         <div class="block">
             <carousel></carousel>
           </div> 
+          IST-FR is a symposium.
+
+          created to show the protential of Thai research in Bachelor degreee.
+          IST-FR is created by Scalable Data Sytems Lab (SCADS)
+          
           <div class="col-md-12 block" v-for="announcement in announcements" v-bind:key="announcement.title">
               <h2 class="title">
                   <i class="fa fa-star"></i>
