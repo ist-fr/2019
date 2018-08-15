@@ -26,16 +26,19 @@
             <a class="nav-link js-scroll-trigger" href="#program">PROGRAM</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#speaker">SPEAKER</a>
+            <a class="nav-link js-scroll-trigger" href="#speakers">SPEAKERS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#speaker">ACCOMODATION</a>
+            <a class="nav-link js-scroll-trigger" href="#accomodation">ACCOMODATION</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#registration">REGISTRATION</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#submission">SUBMISSION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#gallery">GALLERY</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>

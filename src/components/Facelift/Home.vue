@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <navbar></navbar>
-    <header class="header-gradient">
+    <header class="header-jumbotron">
       <div class="container-logo text-center">
         <img class="img-logo" src="../../assets/logo_istfr_white.svg" alt="Logo">
       </div>
@@ -10,14 +10,14 @@
         <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
       </div> -->
     </header>
-    <announcement></announcement>
+    <announcements></announcements>
     <committee></committee>
     <program></program>
   </div>
 </template>
 
 <script>
-  import Announcement from '@/components/Facelift/Announcement'
+  import Announcements from '@/components/Facelift/Announcements'
   import Committee from '@/components/Facelift/Committee'
   import Program from '@/components/Facelift/Program'
   import Navbar from '@/components/Facelift/Navbar'
@@ -25,7 +25,7 @@
     name: 'Home',
     methods: {},
     components: {
-      Announcement,
+      Announcements,
       Committee,
       Program,
       Navbar
@@ -51,7 +51,7 @@
   }
 
   .navbar {
-    background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 71, 111) 100%) !important;
+    background: linear-gradient(90deg, rgb(209, 111, 255) -0%,rgb(255, 71, 111) 100%) !important;
     font-weight: 800;
     font-size: small;
   }
@@ -65,7 +65,7 @@
     width: 100%;
   }
 
-  .header-gradient {
-    background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 71, 111) 100%) !important;
+  .header-jumbotron {
+    background: linear-gradient(90deg, rgb(209, 111, 255) -0%,rgb(255, 71, 111) 100%) !important;
   }
 </style>
