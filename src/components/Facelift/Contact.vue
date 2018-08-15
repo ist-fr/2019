@@ -5,6 +5,15 @@
         <div class="col-lg-12 mx-auto">
           <h2>Contact</h2>
           <p class="lead">Feel free to reach us</p>
+
+    <div class="col-md-12">
+      Registration / Submission Organizer <br>
+      Telephone: 085-482-8989 <br>
+      facebook: <a href="https://www.facebook.com/Vidyasirimedhi/"> vistec </a> <br>
+      website: <a href="http://ist-fr.vistec.ac.th/">ist-ft</a> <br>
+      <question></question>
+    </div>
+
           <div class="mt-4 flex-center">
             <a class="social" href="https://www.facebook.com/Vidyasirimedhi">
               <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
@@ -24,6 +33,7 @@
             <!-- <a class="pin-ic">
               <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
             </a> -->
+            
             <a class="social" href="https://www.youtube.com/channel/UCyiO-CBG4J__S83jzq3k0pQ">
               <i class="fa fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
             </a>
@@ -42,7 +52,20 @@
     </div>
   </section>
 </template>
-
+<script>
+import question from '@/components/Register/Question'
+export default {
+  data () {
+    return {
+    }
+  },
+  components: {
+    question
+  },
+  method: {
+  }
+}
+</script>
 <style>
   .social {
     color: #212529;
