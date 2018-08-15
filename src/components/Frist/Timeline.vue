@@ -293,7 +293,6 @@ body {
       font-weight: 400;
       .number-box {
         display: inline;
-        float: left;
         margin: $inner-margin;
         padding: 10px;
         font-size: $number-size;

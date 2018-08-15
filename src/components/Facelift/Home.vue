@@ -10,8 +10,8 @@
         <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
       </div> -->
     </header>
-    <key-dates class="bg-dark"></key-dates>
-    <announcements class="bg-light"></announcements>
+    <key-dates class="bg-light"></key-dates>
+    <announcements class="bg-dark"></announcements>
     <committee class="bg-light"></committee>
     <program class="bg-dark"></program>
     <speakers class="bg-light"></speakers>
