@@ -3,7 +3,7 @@
     <navbar></navbar>
     <header class="header-jumbotron">
       <div class="container-logo text-center">
-        <img class="img-logo" src="../../assets/logo_istfr_white.svg" alt="Logo" height="300px" width="1000px">
+        <img class="img-logo" src="../../assets/logo_istfr_white.svg" alt="Logo">
       </div>
       <!-- <div class="container text-center">
         <h1>Welcome to Scrolling Nav</h1>
@@ -18,7 +18,7 @@
     <accomodation class="bg-dark"></accomodation>
     <registration class="bg-light"></registration>
     <submission class="bg-dark"></submission>
-    <gallery class="bg-light"></gallery>
+    <venue class="bg-light"></venue>
     <contact class="bg-dark"></contact>
     <cs-footer></cs-footer>
   </div>
@@ -33,7 +33,7 @@
   import Accomodation from '@/components/Facelift/Accomodation'
   import Registration from '@/components/Facelift/Registration'
   import Submission from '@/components/Facelift/Submission'
-  import Gallery from '@/components/Facelift/Gallery'
+  import Venue from '@/components/Facelift/Venue'
   import Contact from '@/components/Facelift/Contact'
   import Navbar from '@/components/Facelift/Navbar'
   import CsFooter from '@/components/Facelift/Footer'
@@ -49,7 +49,7 @@
       Accomodation,
       Registration,
       Submission,
-      Gallery,
+      Venue,
       Contact,
       Navbar,
       CsFooter
