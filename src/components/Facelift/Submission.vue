@@ -133,8 +133,13 @@ export default {
           'Scalable System',
           'Parallel Programs at a Large Scale'
         ],
-        // 'Interdisciplinary Information (IDIF)': [
-        // ],
+        'Interdisciplinary Information (IDIF)': [
+          'Bioinformatics',
+          'Biomedical and Health Informatics',
+          'Chemoinformatic',
+          'Pharmaceutical Informatics',
+          'Mathematical Informatics'
+        ],
         'Internet of Things (IOTS)': [
           'Energy saving schemes for IoT devices',
           'Enabling technologies for IoT',

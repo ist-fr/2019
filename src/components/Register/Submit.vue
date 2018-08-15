@@ -1,10 +1,8 @@
 <template>
   <div class="hello" >
     <div class="container">
-      <div class="row">
+      <div class="col-sm-12">
         <form class="form-horizontal" @submit.prevent="search">
-
-
           <h3>Leader</h3>
           <div :class="{'form-group':true,'required':true,'has-error': errors.has('title1')}">
             <label class="control-label col-sm-2" for="title1">title</label>
@@ -69,223 +67,233 @@
               </p>
             </div>
           </div>   
-          <h3>Second member</h3>
-          <div :class="{'form-group':true,'required':false,'has-error': errors.has('title2')}">
-            <label class="control-label col-sm-2" for="title2">Title</label>
-            <div class="col-sm-10">
-              <select v-model="title2" class="form-control" name="title2" options="titles">
-                <option disabled value="">Select title</option>
-                <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
-                  {{ option.text }}
-                </option>
-              </select>
-              <i v-show="errors.has('title2')" class="fa fa-warning"></i>
-              <span v-show="errors.has('title2')" class="help text-error">{{ errors.first('title2') }}</span>
+          <h3  v-b-toggle="'secondMember'" >Second member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
+          <b-collapse :id="'secondMember'" class="panel-collapse collapse in">
+              <div :class="{'form-group':true,'required':false,'has-error': errors.has('title2')}">
+              <label class="control-label col-sm-2" for="title2">Title</label>
+              <div class="col-sm-10">
+                <select v-model="title2" class="form-control" name="title2" options="titles">
+                  <option disabled value="">Select title</option>
+                  <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
+                    {{ option.text }}
+                  </option>
+                </select>
+                <i v-show="errors.has('title2')" class="fa fa-warning"></i>
+                <span v-show="errors.has('title2')" class="help text-error">{{ errors.first('title2') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('firstName2')}">
-            <label class="control-label col-sm-2" for="firstName2">First Name</label>
-            <div class="col-sm-10">
-              <input v-model="firstName2" name="firstName2" class="input form-control" type="text" placeholder="First Name" required>
-              <i v-show="errors.has('firstName2')" class="fa fa-warning"></i>
-              <span v-show="errors.has('firstName2')" class="help text-error">{{ errors.first('First Name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('firstName2')}">
+              <label class="control-label col-sm-2" for="firstName2">First Name</label>
+              <div class="col-sm-10">
+                <input v-model="firstName2" name="firstName2" class="input form-control" type="text" placeholder="First Name" required>
+                <i v-show="errors.has('firstName2')" class="fa fa-warning"></i>
+                <span v-show="errors.has('firstName2')" class="help text-error">{{ errors.first('First Name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('middleName2')}">
-            <label class="control-label col-sm-2" for="middleName2">Middle Name</label>
-            <div class="col-sm-10">
-              <input v-model="middleName2" name="middleName2" class="input form-control" type="text" placeholder="middle name" required>
-              <i v-show="errors.has('middleName2')" class="fa fa-warning"></i>
-              <span v-show="errors.has('middleName2')" class="help text-error">{{ errors.first('middle name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('middleName2')}">
+              <label class="control-label col-sm-2" for="middleName2">Middle Name</label>
+              <div class="col-sm-10">
+                <input v-model="middleName2" name="middleName2" class="input form-control" type="text" placeholder="middle name" required>
+                <i v-show="errors.has('middleName2')" class="fa fa-warning"></i>
+                <span v-show="errors.has('middleName2')" class="help text-error">{{ errors.first('middle name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('lastName2')}">
-            <label class="control-label col-sm-2" for="lastName2">Last Name</label>
-            <div class="col-sm-10">
-              <input v-model="lastName2" name="lastName2" class="input form-control" type="text" placeholder="last name" required>
-              <i v-show="errors.has('lastName2')" class="fa fa-warning"></i>
-              <span v-show="errors.has('lastName2')" class="help text-error">{{ errors.first('last name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('lastName2')}">
+              <label class="control-label col-sm-2" for="lastName2">Last Name</label>
+              <div class="col-sm-10">
+                <input v-model="lastName2" name="lastName2" class="input form-control" type="text" placeholder="last name" required>
+                <i v-show="errors.has('lastName2')" class="fa fa-warning"></i>
+                <span v-show="errors.has('lastName2')" class="help text-error">{{ errors.first('last name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('email2')}">
-            <label class="control-label col-sm-2" for="email2">Email</label>
-            <div class="col-sm-10">
-              <input v-model="email2" name="email2" class="input form-control" type="text" placeholder="email" required>
-              <i v-show="errors.has('email2')" class="fa fa-warning"></i>
-              <span v-show="errors.has('email2')" class="help text-error">{{ errors.first('email') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('email2')}">
+              <label class="control-label col-sm-2" for="email2">Email</label>
+              <div class="col-sm-10">
+                <input v-model="email2" name="email2" class="input form-control" type="text" placeholder="email" required>
+                <i v-show="errors.has('email2')" class="fa fa-warning"></i>
+                <span v-show="errors.has('email2')" class="help text-error">{{ errors.first('email') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('phone2')}">
-            <label class="control-label col-sm-2" for="phone2">Phone No</label>
-            <div class="col-sm-10">
-              <input v-model="phone2" name="phone2" class="input form-control" type="text" placeholder="phone No" required>
-              <i v-show="errors.has('phone2')" class="fa fa-warning"></i>
-              <span v-show="errors.has('phone2')" class="help text-error">{{ errors.first('phone') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('phone2')}">
+              <label class="control-label col-sm-2" for="phone2">Phone No</label>
+              <div class="col-sm-10">
+                <input v-model="phone2" name="phone2" class="input form-control" type="text" placeholder="phone No" required>
+                <i v-show="errors.has('phone2')" class="fa fa-warning"></i>
+                <span v-show="errors.has('phone2')" class="help text-error">{{ errors.first('phone') }}</span>
+              </div>
             </div>
-          </div>
-          <h3>Third member</h3>
-          <div :class="{'form-group':true,'required':false,'has-error': errors.has('title3')}">
-            <label class="control-label col-sm-2" for="title3">title</label>
-            <div class="col-sm-10">
-              <select v-model="title3" class="form-control" name="title3" options="titles">
-                <option disabled value="">Select title</option>
-                <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
-                  {{ option.text }}
-                </option>
-              </select>
-              <i v-show="errors.has('title3')" class="fa fa-warning"></i>
-              <span v-show="errors.has('title3')" class="help text-error">{{ errors.first('title3') }}</span>
+          </b-collapse>
+          <h3 v-b-toggle="'thirdMember'">Third member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
+          <b-collapse :id="'thirdMember'" class="panel-collapse collapse in">
+            <div :class="{'form-group':true,'required':false,'has-error': errors.has('title3')}">
+              <label class="control-label col-sm-2" for="title3">title</label>
+              <div class="col-sm-10">
+                <select v-model="title3" class="form-control" name="title3" options="titles">
+                  <option disabled value="">Select title</option>
+                  <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
+                    {{ option.text }}
+                  </option>
+                </select>
+                <i v-show="errors.has('title3')" class="fa fa-warning"></i>
+                <span v-show="errors.has('title3')" class="help text-error">{{ errors.first('title3') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('firstName3')}">
-            <label class="control-label col-sm-2" for="firstName3">First Name</label>
-            <div class="col-sm-10">
-              <input v-model="firstName3" name="firstName3" class="input form-control" type="text" placeholder="First Name" required>
-              <i v-show="errors.has('firstName3')" class="fa fa-warning"></i>
-              <span v-show="errors.has('firstName3')" class="help text-error">{{ errors.first('First Name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('firstName3')}">
+              <label class="control-label col-sm-2" for="firstName3">First Name</label>
+              <div class="col-sm-10">
+                <input v-model="firstName3" name="firstName3" class="input form-control" type="text" placeholder="First Name" required>
+                <i v-show="errors.has('firstName3')" class="fa fa-warning"></i>
+                <span v-show="errors.has('firstName3')" class="help text-error">{{ errors.first('First Name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('middleName3')}">
-            <label class="control-label col-sm-2" for="middleName3">Middle Name</label>
-            <div class="col-sm-10">
-              <input v-model="middleName3" name="middleName3" class="input form-control" type="text" placeholder="middle name" required>
-              <i v-show="errors.has('middleName3')" class="fa fa-warning"></i>
-              <span v-show="errors.has('middleName3')" class="help text-error">{{ errors.first('middle name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('middleName3')}">
+              <label class="control-label col-sm-2" for="middleName3">Middle Name</label>
+              <div class="col-sm-10">
+                <input v-model="middleName3" name="middleName3" class="input form-control" type="text" placeholder="middle name" required>
+                <i v-show="errors.has('middleName3')" class="fa fa-warning"></i>
+                <span v-show="errors.has('middleName3')" class="help text-error">{{ errors.first('middle name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('lastName3')}">
-            <label class="control-label col-sm-2" for="lastName3">Last Name</label>
-            <div class="col-sm-10">
-              <input v-model="lastName3" name="lastName3" class="input form-control" type="text" placeholder="last name" required>
-              <i v-show="errors.has('lastName3')" class="fa fa-warning"></i>
-              <span v-show="errors.has('lastName3')" class="help text-error">{{ errors.first('last name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('lastName3')}">
+              <label class="control-label col-sm-2" for="lastName3">Last Name</label>
+              <div class="col-sm-10">
+                <input v-model="lastName3" name="lastName3" class="input form-control" type="text" placeholder="last name" required>
+                <i v-show="errors.has('lastName3')" class="fa fa-warning"></i>
+                <span v-show="errors.has('lastName3')" class="help text-error">{{ errors.first('last name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('email3')}">
-            <label class="control-label col-sm-2" for="email3">Email</label>
-            <div class="col-sm-10">
-              <input v-model="email3" name="email3" class="input form-control" type="text" placeholder="email" required>
-              <i v-show="errors.has('email3')" class="fa fa-warning"></i>
-              <span v-show="errors.has('email3')" class="help text-error">{{ errors.first('email') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('email3')}">
+              <label class="control-label col-sm-2" for="email3">Email</label>
+              <div class="col-sm-10">
+                <input v-model="email3" name="email3" class="input form-control" type="text" placeholder="email" required>
+                <i v-show="errors.has('email3')" class="fa fa-warning"></i>
+                <span v-show="errors.has('email3')" class="help text-error">{{ errors.first('email') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('phone3')}">
-            <label class="control-label col-sm-2" for="phone3">Phone No</label>
-            <div class="col-sm-10">
-              <input v-model="phone3" name="phone3" class="input form-control" type="text" placeholder="phone No" required>
-              <i v-show="errors.has('phone3')" class="fa fa-warning"></i>
-              <span v-show="errors.has('phone3')" class="help text-error">{{ errors.first('phone') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('phone3')}">
+              <label class="control-label col-sm-2" for="phone3">Phone No</label>
+              <div class="col-sm-10">
+                <input v-model="phone3" name="phone3" class="input form-control" type="text" placeholder="phone No" required>
+                <i v-show="errors.has('phone3')" class="fa fa-warning"></i>
+                <span v-show="errors.has('phone3')" class="help text-error">{{ errors.first('phone') }}</span>
+              </div>
             </div>
-          </div>
-          <h3>Fourth member</h3>
-          <div :class="{'form-group':true,'required':false,'has-error': errors.has('title4')}">
-            <label class="control-label col-sm-2" for="title4">title</label>
-            <div class="col-sm-10">
-              <select v-model="title4" class="form-control" name="title4" options="titles">
-                <option disabled value="">Select title</option>
-                <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
-                  {{ option.text }}
-                </option>
-              </select>
-              <i v-show="errors.has('title4')" class="fa fa-warning"></i>
-              <span v-show="errors.has('title4')" class="help text-error">{{ errors.first('title4') }}</span>
+          </b-collapse>
+          <h3 v-b-toggle="'fourthMember'">Fourth member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
+          <b-collapse :id="'fourthMember'" class="panel-collapse collapse in">
+            <div :class="{'form-group':true,'required':false,'has-error': errors.has('title4')}">
+              <label class="control-label col-sm-2" for="title4">title</label>
+              <div class="col-sm-10">
+                <select v-model="title4" class="form-control" name="title4" options="titles">
+                  <option disabled value="">Select title</option>
+                  <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
+                    {{ option.text }}
+                  </option>
+                </select>
+                <i v-show="errors.has('title4')" class="fa fa-warning"></i>
+                <span v-show="errors.has('title4')" class="help text-error">{{ errors.first('title4') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('firstName4')}">
-            <label class="control-label col-sm-2" for="firstName4">First Name</label>
-            <div class="col-sm-10">
-              <input v-model="firstName4" name="firstName4" class="input form-control" type="text" placeholder="First Name" required>
-              <i v-show="errors.has('firstName4')" class="fa fa-warning"></i>
-              <span v-show="errors.has('firstName4')" class="help text-error">{{ errors.first('First Name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('firstName4')}">
+              <label class="control-label col-sm-2" for="firstName4">First Name</label>
+              <div class="col-sm-10">
+                <input v-model="firstName4" name="firstName4" class="input form-control" type="text" placeholder="First Name" required>
+                <i v-show="errors.has('firstName4')" class="fa fa-warning"></i>
+                <span v-show="errors.has('firstName4')" class="help text-error">{{ errors.first('First Name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('middleName4')}">
-            <label class="control-label col-sm-2" for="middleName4">Middle Name</label>
-            <div class="col-sm-10">
-              <input v-model="middleName4" name="middleName4" class="input form-control" type="text" placeholder="middle name" required>
-              <i v-show="errors.has('middleName4')" class="fa fa-warning"></i>
-              <span v-show="errors.has('middleName4')" class="help text-error">{{ errors.first('middle name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('middleName4')}">
+              <label class="control-label col-sm-2" for="middleName4">Middle Name</label>
+              <div class="col-sm-10">
+                <input v-model="middleName4" name="middleName4" class="input form-control" type="text" placeholder="middle name" required>
+                <i v-show="errors.has('middleName4')" class="fa fa-warning"></i>
+                <span v-show="errors.has('middleName4')" class="help text-error">{{ errors.first('middle name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('lastName4')}">
-            <label class="control-label col-sm-2" for="lastName4">Last Name</label>
-            <div class="col-sm-10">
-              <input v-model="lastName4" name="lastName4" class="input form-control" type="text" placeholder="last name" required>
-              <i v-show="errors.has('lastName4')" class="fa fa-warning"></i>
-              <span v-show="errors.has('lastName4')" class="help text-error">{{ errors.first('last name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('lastName4')}">
+              <label class="control-label col-sm-2" for="lastName4">Last Name</label>
+              <div class="col-sm-10">
+                <input v-model="lastName4" name="lastName4" class="input form-control" type="text" placeholder="last name" required>
+                <i v-show="errors.has('lastName4')" class="fa fa-warning"></i>
+                <span v-show="errors.has('lastName4')" class="help text-error">{{ errors.first('last name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('email4')}">
-            <label class="control-label col-sm-2" for="email4">Email</label>
-            <div class="col-sm-10">
-              <input v-model="email4" name="email4" class="input form-control" type="text" placeholder="email" required>
-              <i v-show="errors.has('email4')" class="fa fa-warning"></i>
-              <span v-show="errors.has('email4')" class="help text-error">{{ errors.first('email') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('email4')}">
+              <label class="control-label col-sm-2" for="email4">Email</label>
+              <div class="col-sm-10">
+                <input v-model="email4" name="email4" class="input form-control" type="text" placeholder="email" required>
+                <i v-show="errors.has('email4')" class="fa fa-warning"></i>
+                <span v-show="errors.has('email4')" class="help text-error">{{ errors.first('email') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('phone4')}">
-            <label class="control-label col-sm-2" for="phone4">Phone No</label>
-            <div class="col-sm-10">
-              <input v-model="phone4" name="phone4" class="input form-control" type="text" placeholder="phone No" required>
-              <i v-show="errors.has('phone4')" class="fa fa-warning"></i>
-              <span v-show="errors.has('phone4')" class="help text-error">{{ errors.first('phone') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('phone4')}">
+              <label class="control-label col-sm-2" for="phone4">Phone No</label>
+              <div class="col-sm-10">
+                <input v-model="phone4" name="phone4" class="input form-control" type="text" placeholder="phone No" required>
+                <i v-show="errors.has('phone4')" class="fa fa-warning"></i>
+                <span v-show="errors.has('phone4')" class="help text-error">{{ errors.first('phone') }}</span>
+              </div>
             </div>
-          </div>
-          <h3>Fifth member</h3>
-          <div :class="{'form-group':true,'required':false,'has-error': errors.has('title5')}">
-            <label class="control-label col-sm-2" for="title5">title</label>
-            <div class="col-sm-10">
-              <select v-model="title5" class="form-control" name="title5" options="titles">
-                <option disabled value="">Select title</option>
-                <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
-                  {{ option.text }}
-                </option>
-              </select>
-              <i v-show="errors.has('title5')" class="fa fa-warning"></i>
-              <span v-show="errors.has('title5')" class="help text-error">{{ errors.first('title5') }}</span>
+          </b-collapse>
+          
+          <h3 v-b-toggle="'fifththMember'">Fifth member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
+          <b-collapse :id="'fifththMember'" class="panel-collapse collapse in">
+            <div :class="{'form-group':true,'required':false,'has-error': errors.has('title5')}">
+              <label class="control-label col-sm-2" for="title5">title</label>
+              <div class="col-sm-10">
+                <select v-model="title5" class="form-control" name="title5" options="titles">
+                  <option disabled value="">Select title</option>
+                  <option v-for="option in titles" v-bind:value="option.value" v-bind:key="option.value">
+                    {{ option.text }}
+                  </option>
+                </select>
+                <i v-show="errors.has('title5')" class="fa fa-warning"></i>
+                <span v-show="errors.has('title5')" class="help text-error">{{ errors.first('title5') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('firstName5')}">
-            <label class="control-label col-sm-2" for="firstName5">First Name</label>
-            <div class="col-sm-10">
-              <input v-model="firstName5" name="firstName5" class="input form-control" type="text" placeholder="First Name" required>
-              <i v-show="errors.has('firstName5')" class="fa fa-warning"></i>
-              <span v-show="errors.has('firstName5')" class="help text-error">{{ errors.first('First Name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('firstName5')}">
+              <label class="control-label col-sm-2" for="firstName5">First Name</label>
+              <div class="col-sm-10">
+                <input v-model="firstName5" name="firstName5" class="input form-control" type="text" placeholder="First Name" required>
+                <i v-show="errors.has('firstName5')" class="fa fa-warning"></i>
+                <span v-show="errors.has('firstName5')" class="help text-error">{{ errors.first('First Name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('middleName5')}">
-            <label class="control-label col-sm-2" for="middleName5">Middle Name</label>
-            <div class="col-sm-10">
-              <input v-model="middleName5" name="middleName5" class="input form-control" type="text" placeholder="middle name" required>
-              <i v-show="errors.has('middleName5')" class="fa fa-warning"></i>
-              <span v-show="errors.has('middleName5')" class="help text-error">{{ errors.first('middle name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('middleName5')}">
+              <label class="control-label col-sm-2" for="middleName5">Middle Name</label>
+              <div class="col-sm-10">
+                <input v-model="middleName5" name="middleName5" class="input form-control" type="text" placeholder="middle name" required>
+                <i v-show="errors.has('middleName5')" class="fa fa-warning"></i>
+                <span v-show="errors.has('middleName5')" class="help text-error">{{ errors.first('middle name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('lastName5')}">
-            <label class="control-label col-sm-2" for="lastName5">Last Name</label>
-            <div class="col-sm-10">
-              <input v-model="lastName5" name="lastName5" class="input form-control" type="text" placeholder="last name" required>
-              <i v-show="errors.has('lastName5')" class="fa fa-warning"></i>
-              <span v-show="errors.has('lastName5')" class="help text-error">{{ errors.first('last name') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('lastName5')}">
+              <label class="control-label col-sm-2" for="lastName5">Last Name</label>
+              <div class="col-sm-10">
+                <input v-model="lastName5" name="lastName5" class="input form-control" type="text" placeholder="last name" required>
+                <i v-show="errors.has('lastName5')" class="fa fa-warning"></i>
+                <span v-show="errors.has('lastName5')" class="help text-error">{{ errors.first('last name') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('email5')}">
-            <label class="control-label col-sm-2" for="email5">Email</label>
-            <div class="col-sm-10">
-              <input v-model="email5" name="email5" class="input form-control" type="text" placeholder="email" required>
-              <i v-show="errors.has('email5')" class="fa fa-warning"></i>
-              <span v-show="errors.has('email5')" class="help text-error">{{ errors.first('email') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('email5')}">
+              <label class="control-label col-sm-2" for="email5">Email</label>
+              <div class="col-sm-10">
+                <input v-model="email5" name="email5" class="input form-control" type="text" placeholder="email" required>
+                <i v-show="errors.has('email5')" class="fa fa-warning"></i>
+                <span v-show="errors.has('email5')" class="help text-error">{{ errors.first('email') }}</span>
+              </div>
             </div>
-          </div>
-          <div :class="{'form-group':true,'has-error': errors.has('phone5')}">
-            <label class="control-label col-sm-2" for="phone5">Phone No</label>
-            <div class="col-sm-10">
-              <input v-model="phone5" name="phone5" class="input form-control" type="text" placeholder="phone No" required>
-              <i v-show="errors.has('phone5')" class="fa fa-warning"></i>
-              <span v-show="errors.has('phone5')" class="help text-error">{{ errors.first('phone') }}</span>
+            <div :class="{'form-group':true,'has-error': errors.has('phone5')}">
+              <label class="control-label col-sm-2" for="phone5">Phone No</label>
+              <div class="col-sm-10">
+                <input v-model="phone5" name="phone5" class="input form-control" type="text" placeholder="phone No" required>
+                <i v-show="errors.has('phone5')" class="fa fa-warning"></i>
+                <span v-show="errors.has('phone5')" class="help text-error">{{ errors.first('phone') }}</span>
+              </div>
             </div>
-          </div>
-          <br>
+            <br>
+          </b-collapse>
+          
           <h3>General Infomation</h3>
           <div :class="{'form-group':true,'required':true,'has-error': errors.has('teamName')}">
             <label class="control-label col-sm-2" for="teamName">Team Name</label>
@@ -390,7 +398,7 @@
             <label class="control-label col-sm-2" for="abstract">Abstract</label>
             <div class="col-sm-10 columns is-multiline">
               <p class="control has-icon has-icon-right">
-              <textarea  rows="5" v-model="abstract" name="abstract" v-validate="'required'" class="input form-control" type="text" placeholder="abstract" required></textarea>
+              <textarea  rows="8" v-model="abstract" name="abstract" v-validate="'required'" class="input form-control" type="text" placeholder="abstract" required></textarea>
               <i v-show="errors.has('abstract')" class="fa fa-warning"></i>
               <span v-show="errors.has('abstract')" class="help text-error">{{ errors.first('abstract') }}</span>
               </p>
@@ -474,7 +482,7 @@ export default {
         { text: 'Mrs', value: 'Mrs' },
         { text: 'Miss', value: 'Miss' }
       ],
-      title1: '1',
+      title1: '',
       firstName1: '1',
       middleName1: '1',
       lastName1: '1',
