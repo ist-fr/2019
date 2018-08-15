@@ -24,6 +24,10 @@ export default {
           topic: 'TBA',
           image: 'http://www.ntu.edu.sg/home/dniyato/tao2018.jpg',
           link: 'http://www.ntu.edu.sg/home/dniyato/'
+        },
+        {
+          name: 'Supasorn Suwajanakorn',
+          info: 'former research resident @ Google Brain. Synthesizing Obama: Learning Lip Sync from Audio'
         }
       ]
     }
