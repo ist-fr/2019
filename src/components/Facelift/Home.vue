@@ -10,8 +10,8 @@
         <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
       </div> -->
     </header>
+    <key-dates class="bg-dark"></key-dates>
     <announcements class="bg-light"></announcements>
-    <timeline class="bg-dark"></timeline>
     <committee class="bg-light"></committee>
     <program class="bg-dark"></program>
     <speakers class="bg-light"></speakers>
@@ -25,8 +25,8 @@
 </template>
 
 <script>
+  import KeyDates from '@/components/Facelift/KeyDates'
   import Announcements from '@/components/Facelift/Announcements'
-  import Timeline from '@/components/Facelift/Timeline'
   import Committee from '@/components/Facelift/Committee'
   import Program from '@/components/Facelift/Program'
   import Speakers from '@/components/Facelift/Speakers'
@@ -41,8 +41,8 @@
     name: 'Home',
     methods: {},
     components: {
+      KeyDates,
       Announcements,
-      Timeline,
       Committee,
       Program,
       Speakers,
@@ -59,12 +59,12 @@
 
 <style>
   header {
-    padding: 90px 5% 100px;
+    padding: 90px 5% 0;
   }
 
   @media (min-width: 992px) {
     header {
-      padding: 90px 20% 100px;
+      padding: 90px 20% 0;
     }
   }
   

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2>Announcements</h2>
-          <p class="lead">There has yet to be any announcements</p>
+          <p class="lead">There are yet to be any announcements</p>
           <!-- <ul>
             <li>Clickable nav links that smooth scroll to page sections</li>
             <li>Responsive behavior when clicking nav links perfect for a one page website</li>

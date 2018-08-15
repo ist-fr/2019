@@ -1,104 +1,91 @@
 <template>
-  <section id="timeline">
+  <section id="key-dates">
+    <div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2>Timeline</h2>
-          <p class="lead">The timeline for IST-FR 2018 will be released soon</p>
+        <div class="col-lg-12 mx-auto text-center">
+          <h2>Key Dates</h2>
+          <!-- <p class="leader">All cards must be the same height and width for space calculations on large screens.</p> -->
           
-          	<h1>Important Date</h1>
-	<!-- <p class="leader">All cards must be the same height and width for space calculations on large screens.</p> -->
-	<div class="demo-card-wrapper">
-		<div class="demo-card demo-card--step1">
-			<div class="head">
-				<div class="number-box">
-					<span>15 <span class="month">Aug</span></span>
-				</div>
-				<h2><span class="small">Subtitle</span> launching Website</h2>
-			</div>
-			<div class="body">
-				<p>Launching website containing the information about the symposium. </p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
-			</div>
-		</div>
-
-		<div class="demo-card demo-card--step2">
-			<div class="head">
-				<div class="number-box">
-					<span>25 <spand class="month">Aug</spand></span>
-				</div>
-				<h2><span class="small">Subtitle</span> Paper submition</h2>
-			</div>
-			<div class="body">
-				<p>Open resigration for submiting paper/project for presenting in the event. The submitting will take place in EasyChair Website. </p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
-			</div>
-		</div>
-
-		<div class="demo-card demo-card--step3">
-			<div class="head">
-				<div class="number-box">
-					<span>25 <spand class="month">Sep</spand></span>
-				</div>
-				<h2><span class="small">Subtitle</span> Review State</h2>
-			</div>
-			<div class="body">
-				<p>Closing for submiting the paper and starting the review processs.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
-			</div>
-		</div>
-
-		<div class="demo-card demo-card--step4">
-			<div class="head">
-				<div class="number-box">
-					<span>10 <spand class="month">Nov</spand></span>
-				</div>
-				<h2><span class="small">Subtitle</span>Resualt Released</h2>
-			</div>
-			<div class="body">
-				<p>Relasese the accepted paper.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
-			</div>
-		</div>
-
-		<div class="demo-card demo-card--step5">
-			<div class="head">
-				<div class="number-box">
-					<span>10 <spand class="month">Nov</spand></span>
-				</div>
-				<h2><span class="small">Subtitle</span> Registration</h2>
-			</div>
-			<div class="body">
-				<p>Open resigration for the symposium event.</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
-			</div>
-		</div>
-        <div class="demo-card demo-card--step6">
-			<div class="head">
-				<div class="number-box">
-					<span>20 <spand class="month">Dec</spand></span>
-				</div>
-				<h2><span class="small">Subtitle</span>Symposium Day</h2>
-			</div>
-			<div class="body">
-				<p>Event day that will be taking place</p>
-				<img src="http://placehold.it/1000x500" alt="Graphic">
-			</div>
-		</div>
-	</div>
-
-
         </div>
       </div>
     </div>
+    <div class="demo-card-wrapper">
+            <div class="demo-card demo-card--step1">
+              <div class="head">
+                <div class="number-box">
+                  <span>15<span class="month"> Aug</span></span>
+                </div>
+                <h2><span class="small">We're up</span>Website Launch</h2>
+              </div>
+              <div class="body">
+                <img src="http://placehold.it/1000x500" alt="Graphic">
+              </div>
+            </div>
+
+            <div class="demo-card demo-card--step2">
+              <div class="head">
+                <div class="number-box">
+                  <span>25 Aug</span>
+                </div>
+                <h2><span class="small">Call for</span>papers submission</h2>
+              </div>
+              <div class="body">
+                <img src="http://placehold.it/1000x500" alt="Graphic">
+              </div>
+            </div>
+
+            <div class="demo-card demo-card--step3">
+              <div class="head">
+                <div class="number-box">
+                  <span>25 Sep</span>
+                </div>
+                <h2><span class="small">Submitted</span>paper reviews</h2>
+              </div>
+              <div class="body">
+                <img src="http://placehold.it/1000x500" alt="Graphic">
+              </div>
+            </div>
+
+            <div class="demo-card demo-card--step4">
+              <div class="head">
+                <div class="number-box">
+                  <span>10 Nov</span>
+                </div>
+                <h2><span class="small">Publishing of</span>submission results</h2>
+              </div>
+              <div class="body">
+                <img src="http://placehold.it/1000x500" alt="Graphic">
+              </div>
+            </div>
+
+            <div class="demo-card demo-card--step5">
+              <div class="head">
+                <div class="number-box">
+                  <span>10 Nov</span>
+                </div>
+                <h2><span class="small">Open for</span> registration</h2>
+              </div>
+              <div class="body">
+                <img src="http://placehold.it/1000x500" alt="Graphic">
+              </div>
+            </div>
+            <div class="demo-card demo-card--step6">
+              <div class="head">
+                <div class="number-box">
+                  <span>20 Dec</span>
+                </div>
+                <h2><span class="small">Mark the calendar</span>Symposium Day</h2>
+              </div>
+              <div class="body">
+                <img src="http://placehold.it/1000x500" alt="Graphic">
+              </div>
+            </div>
+          </div>
+    </div>
   </section>
 </template>
-<style lang="scss">
-
-
-.month{
-    color: red;
-}
+<style lang="scss" scoped>
 /* Media Queries */
 
 @mixin mq-xs {
@@ -120,20 +107,25 @@
 }
 
 @mixin mq-lg {
-  @media (min-width: 1000px) {
+  @media (min-width: 1170px) {
     @content;
   }
 }
 
+.body {
+  visibility: hidden;
+  height: 0px;
+}
+
 $background: #f7f7f7;
-$box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+$box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
 $border: 1px solid rgba(191, 191, 191, 0.4);
-$items: 5;
+$items: 6;
 $rows: ceil($items/2);
 
 /* Card sizing */
 
-$card-height: 400px;
+$card-height: 85px;
 $card-width: 450px;
 $inner-margin: 15px;
 $number-size: 35px;
@@ -143,11 +135,12 @@ $marker-size: 9px;
 
 /* Colors */
 
-$steps: #46b8e9;
-$colors: #46b8e9,
-#3ee9d1,
-#ce43eb,
-#4d92eb;
+$steps: #4A2C79;
+// $colors: #46b8e9,
+// #3ee9d1,
+// #ce43eb,
+// #4d92eb;
+$colors: rgb(84, 38, 156);
 $timeline: #bdbdbd;
 
 /* Calculations */
@@ -190,38 +183,40 @@ $counter: $items - $rows + 2;
   $counter: $counter + 1;
 }
 
-/* Border Box */
-
-* {
-  box-sizing: border-box;
-}
-
 /* Fonts */
 
 body {
   font-family: Roboto;
 }
 
-#timeline {
-  padding: 100px 0;
-//   background: $background;
-  border-top: $border;
-  border-bottom: $border;
-  h1 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 200;
-    margin-bottom: 20px;
-  }
-  p.leader {
-    text-align: center;
-    max-width: 90%;
-    margin: auto;
-    margin-bottom: 45px;
-  }
+#key-dates {
+  // padding: 100px 0;
+  // background: $background;
+  // border-top: $border;
+  // border-bottom: $border;
+  // h1 {
+  //   text-align: center;
+  //   font-size: 3rem;
+  //   font-weight: 200;
+  //   margin-bottom: 20px;
+  // }
+  // p.leader {
+  //   text-align: center;
+  //   max-width: 90%;
+  //   margin: auto;
+  //   margin-bottom: 45px;
+  // }
+  padding-bottom: 30px;
+  background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
+  color: rgba(255, 255, 255, 0.75);
   .demo-card-wrapper {
+    h2 {
+      font-size: larger !important;
+      font-weight: 700 !important;
+    }
     position: relative;
     margin: auto;
+    // width: 100%;
     @include mq-lg {
       display: flex;
       flex-flow: column wrap;
@@ -245,7 +240,7 @@ body {
   .demo-card {
     position: relative;
     display: block;
-    margin: 10px auto 80px;
+    margin: 10px auto 50px;
     max-width: 94%;
     z-index: 2;
     @include mq-sm {
@@ -305,7 +300,7 @@ body {
         font-size: $number-size;
         line-height: $number-size;
         font-weight: 600;
-        background: rgba(0, 0, 0, 0.17);
+        background: rgba(0, 0, 0, 0.2);
       }
       h2 {
         text-transform: uppercase;
@@ -349,7 +344,7 @@ body {
     }
     @for $i from 1 through $items {
       &--step#{$i} {
-        $color: nth($colors, ((($i - 1) % 4) + 1));
+        $color: $colors;
         background-color: $color;
         .head::after {
           border-color: $color;

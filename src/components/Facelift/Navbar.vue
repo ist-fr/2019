@@ -14,10 +14,10 @@
             <a class="nav-link js-scroll-trigger" href="#page-top"><i class="fa fa-arrow-up"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#announcements">ANNOUNCEMENTS</a>
+            <a class="nav-link js-scroll-trigger" href="#key-dates">KEY DATES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#timeline">TIMELINE</a>
+            <a class="nav-link js-scroll-trigger" href="#announcements">ANNOUNCEMENTS</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#committee">COMMITTEE</a>
@@ -38,7 +38,7 @@
             <a class="nav-link js-scroll-trigger" href="#submission">SUBMISSION</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#gallery">GALLERY</a>
+            <a class="nav-link js-scroll-trigger" href="#venue">VENUE</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>

@@ -1,9 +1,9 @@
 <template>
-  <section id="gallery">
+  <section id="venue">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2>Gallery</h2>
+          <h2>Venue</h2>
           <p class="lead">Photos will be posted here</p>
                 <img src="http://a49.co.th/Images/A49/Project/VIDYASIRIMEDHI-INSTITUTE-OF-SCIENCE-AND-TECHNOLOGY-(VISTEC)-201803131200051.jpg?maxwidth=1350" width="100%">
       <p>
