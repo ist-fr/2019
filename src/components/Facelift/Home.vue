@@ -3,7 +3,7 @@
     <navbar></navbar>
     <header class="header-jumbotron">
       <div class="container-logo text-center">
-        <img class="img-logo" src="../../assets/logo_istfr_white.svg" alt="Logo">
+        <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo" height="300px" width="1000px">
       </div>
       <!-- <div class="container text-center">
         <h1>Welcome to Scrolling Nav</h1>
@@ -76,7 +76,8 @@
   }
 
   .header-jumbotron {
-    background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
+    /* background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important; */
+    /* background: linear-gradient(180deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important; */
   }
 
   .navbar, footer{

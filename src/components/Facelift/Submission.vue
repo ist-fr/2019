@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2>Submission</h2>
+          <h2><i class="fa fa-file fa-lg white-text mr-3"></i>Submission</h2>
           <p class="lead">We will be calling for papers very soon</p>
           
    <submit></submit>
