@@ -210,7 +210,7 @@ body {
   padding-bottom: 30px;
   // background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
   // background: linear-gradient(180deg, rgb(255, 85, 123) -0%,rgb(255, 255, 255) 100%) !important;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(0, 0, 0, 0.75);
   .demo-card-wrapper {
     h2 {
       font-size: larger !important;
