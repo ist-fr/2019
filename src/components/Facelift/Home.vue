@@ -1,0 +1,102 @@
+<template>
+  <div class="home">
+    <navbar></navbar>
+    <header class="header-jumbotron">
+      <div class="container-logo text-center">
+        <img class="img-logo" src="../../assets/logo_istfr_white.svg" alt="Logo">
+      </div>
+      <!-- <div class="container text-center">
+        <h1>Welcome to Scrolling Nav</h1>
+        <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
+      </div> -->
+    </header>
+    <announcements class="bg-light"></announcements>
+    <timeline class="bg-dark"></timeline>
+    <committee class="bg-light"></committee>
+    <program class="bg-dark"></program>
+    <speakers class="bg-light"></speakers>
+    <accomodation class="bg-dark"></accomodation>
+    <registration class="bg-light"></registration>
+    <submission class="bg-dark"></submission>
+    <gallery class="bg-light"></gallery>
+    <contact class="bg-dark"></contact>
+    <cs-footer></cs-footer>
+  </div>
+</template>
+
+<script>
+  import Announcements from '@/components/Facelift/Announcements'
+  import Timeline from '@/components/Facelift/Timeline'
+  import Committee from '@/components/Facelift/Committee'
+  import Program from '@/components/Facelift/Program'
+  import Speakers from '@/components/Facelift/Speakers'
+  import Accomodation from '@/components/Facelift/Accomodation'
+  import Registration from '@/components/Facelift/Registration'
+  import Submission from '@/components/Facelift/Submission'
+  import Gallery from '@/components/Facelift/Gallery'
+  import Contact from '@/components/Facelift/Contact'
+  import Navbar from '@/components/Facelift/Navbar'
+  import CsFooter from '@/components/Facelift/Footer'
+  export default {
+    name: 'Home',
+    methods: {},
+    components: {
+      Announcements,
+      Timeline,
+      Committee,
+      Program,
+      Speakers,
+      Accomodation,
+      Registration,
+      Submission,
+      Gallery,
+      Contact,
+      Navbar,
+      CsFooter
+    }
+  }
+</script>
+
+<style>
+  header {
+    padding: 90px 5% 100px;
+  }
+
+  @media (min-width: 992px) {
+    header {
+      padding: 90px 20% 100px;
+    }
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+
+  .header-jumbotron {
+    background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
+  }
+
+  .navbar, footer{
+    background: linear-gradient(90deg, rgb(169, 115, 255) -0%,rgb(255, 71, 111) 100%) !important;
+    font-weight: 800;
+    font-size: small;
+    color: rgba(255, 255, 255, 0.75) !important;
+  }
+
+  .nav-container {
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .container-logo {
+    width: 100%;
+  }
+
+  .bg-light {
+    background: linear-gradient(45deg, rgba(160, 92, 255, 0.3) -50%, rgba(160, 92, 255, 0.1) 90%) !important;
+  }
+
+  .bg-dark {
+    background: linear-gradient(45deg, rgba(255, 90, 128, 0.3) -50%, rgba(255, 90, 128, 0.1) 90%) !important;
+  }
+</style>
