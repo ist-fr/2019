@@ -20,6 +20,7 @@
     <submission class="bg-dark"></submission>
     <gallery class="bg-light"></gallery>
     <contact class="bg-dark"></contact>
+    <cs-footer></cs-footer>
   </div>
 </template>
 
@@ -35,6 +36,7 @@
   import Gallery from '@/components/Facelift/Gallery'
   import Contact from '@/components/Facelift/Contact'
   import Navbar from '@/components/Facelift/Navbar'
+  import CsFooter from '@/components/Facelift/Footer'
   export default {
     name: 'Home',
     methods: {},
@@ -49,13 +51,12 @@
       Submission,
       Gallery,
       Contact,
-      Navbar
-    },
-    data () {}
+      Navbar,
+      CsFooter
+    }
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
   header {
     padding: 90px 5% 100px;
@@ -71,10 +72,15 @@
     padding: 60px 0;
   }
 
-  .navbar {
+  .header-jumbotron {
     background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
+  }
+
+  .navbar, footer{
+    background: linear-gradient(90deg, rgb(169, 115, 255) -0%,rgb(255, 71, 111) 100%) !important;
     font-weight: 800;
     font-size: small;
+    color: rgba(255, 255, 255, 0.75) !important;
   }
 
   .nav-container {
@@ -84,10 +90,6 @@
 
   .container-logo {
     width: 100%;
-  }
-
-  .header-jumbotron {
-    background: linear-gradient(90deg, rgb(169, 115, 255) -0%,rgb(255, 71, 111) 100%) !important;
   }
 
   .bg-light {
