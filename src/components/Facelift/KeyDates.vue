@@ -167,6 +167,8 @@ $counter: $items - $rows + 2;
 }
 
 #key-dates {
+  padding-top: 100px;
+
   small {
     font-weight: 400 !important;
   }
