@@ -5,15 +5,12 @@
         <div class="col-lg-12 mx-auto">
           <h2>CONTACT</h2>
           <p class="lead">Feel free to reach us</p>
+            Registration / Submission Organizer <br>
+            Telephone: 085-482-8989 <br>
+            Facebook: <a href="https://www.facebook.com/Vidyasirimedhi/"> vistec </a> <br>
+            Website: <a href="http://ist-fr.vistec.ac.th/">ist-ft</a> <br>
+            Email: ist-fr@vistec.ac.th
 
-    <div class="col-md-12">
-      Registration / Submission Organizer <br>
-      Telephone: 085-482-8989 <br>
-      Facebook: <a href="https://www.facebook.com/Vidyasirimedhi/"> vistec </a> <br>
-      Website: <a href="http://ist-fr.vistec.ac.th/">ist-ft</a> <br>
-      Email: ist-fr@vistec.ac.th
-
-    </div>
 
           <div class="mt-4 flex-center">
             <a class="social" href="https://www.facebook.com/Vidyasirimedhi">
