@@ -629,7 +629,7 @@ export default {
     },
     submit () {
       this.postPost()
-      // this.upload(this.submitForm)
+      this.upload(this.submitForm)
     },
     upload (formData) {
       let url = `http://128.199.88.139:11115/upload`

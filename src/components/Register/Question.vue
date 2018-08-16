@@ -1,7 +1,7 @@
 <template>
   <div class="hello" >
     <div class="container">
-      <div class="row">
+      <div class="">
         <form class="form-horizontal" @submit.prevent="search">
           <div :class="{'form-group':true,'required':true,'has-error': errors.has('subject')}">
             <label class="control-label col-sm-2" for="subject">Subject</label>
