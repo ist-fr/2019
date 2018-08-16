@@ -4,9 +4,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto text-center">
-          <h2><i class="fa fa-calendar fa-lg white-text mr-3"></i>IMPORTANT DATES</h2>
+          <h2>KEY DATES</h2>
           <!-- <p class="leader">All cards must be the same height and width for space calculations on large screens.</p> -->
-          
         </div>
       </div>
     </div>
@@ -141,7 +140,7 @@ $steps: #4A2C79;
 // #3ee9d1,
 // #ce43eb,
 // #4d92eb;
-$colors: rgb(84, 38, 156);
+$colors: rgb(88, 46, 145), rgb(160, 34, 58), rgb(248, 186, 0);
 $timeline: #bdbdbd;
 
 /* Calculations */
@@ -210,7 +209,10 @@ body {
   padding-bottom: 30px;
   // background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
   // background: linear-gradient(180deg, rgb(255, 85, 123) -0%,rgb(255, 255, 255) 100%) !important;
-  color: rgba(0, 0, 0, 0.75);
+  // color: rgba(255, 255, 255, 0.75);
+  small {
+    font-weight: 400 !important;
+  }
   .demo-card-wrapper {
     h2 {
       font-size: larger !important;
@@ -292,7 +294,7 @@ body {
       position: relative;
       display: flex;
       align-items: center;
-      color: #fff;
+      color: rgba(255, 255, 255, 1);
       font-weight: 400;
       .number-box {
         display: inline;
@@ -345,7 +347,7 @@ body {
     }
     @for $i from 1 through $items {
       &--step#{$i} {
-        $color: $colors;
+        $color: nth($colors, ((($i - 1) % 3) + 1));
         background-color: $color;
         .head::after {
           border-color: $color;

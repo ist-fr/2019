@@ -23,11 +23,10 @@
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css?family=Prompt'); 
+  /* @import url('https://fonts.googleapis.com/css?family=Prompt');  */
   #app {
-    font-family: 'Prompt';
-  }
-  h2 {
-   font-weight: 1000;
+    /* font-family: 'Prompt'; */
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
   }
 </style>
