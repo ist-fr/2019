@@ -99,10 +99,6 @@
     width: 100%;
   }
 
-  .bg-light {
-    /* background: linear-gradient(45deg, rgba(160, 92, 255, 0.3) -50%, rgba(160, 92, 255, 0.1) 90%) !important; */
-  }
-
   .bg-dark {
     background-color: #fff !important;
   }

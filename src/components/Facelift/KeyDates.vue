@@ -1,86 +1,86 @@
 <template>
   <section id="key-dates">
     <div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 mx-auto text-center">
-          <h2>KEY DATES</h2>
-          <!-- <p class="leader">All cards must be the same height and width for space calculations on large screens.</p> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto text-center">
+            <h2>KEY DATES</h2>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="demo-card-wrapper">
-            <div class="demo-card demo-card--step1">
-              <div class="head">
-                <div class="number-box">
-                  <span>15<span class="month"> Aug</span></span>
-                </div>
-                <h2><span class="small">IST-FR 2018</span>Website Launch</h2>
-              </div>
-              <div class="body">
-                <img src="http://placehold.it/1000x500" alt="Graphic">
-              </div>
+      <!-- All cards must be the same height and width for space calculations on large screens. -->
+      <div class="demo-card-wrapper">
+        <div class="demo-card demo-card--step1">
+          <div class="head">
+            <div class="number-box">
+              <span>15<span class="month"> Aug</span></span>
             </div>
-
-            <div class="demo-card demo-card--step2">
-              <div class="head">
-                <div class="number-box">
-                  <span>25 Aug</span>
-                </div>
-                <h2><span class="small">Call for</span>papers submission</h2>
-              </div>
-              <div class="body">
-                <img src="http://placehold.it/1000x500" alt="Graphic">
-              </div>
-            </div>
-
-            <div class="demo-card demo-card--step3">
-              <div class="head">
-                <div class="number-box">
-                  <span>25 Sep</span>
-                </div>
-                <h2><span class="small">Submitted</span>paper reviews</h2>
-              </div>
-              <div class="body">
-                <img src="http://placehold.it/1000x500" alt="Graphic">
-              </div>
-            </div>
-
-            <div class="demo-card demo-card--step4">
-              <div class="head">
-                <div class="number-box">
-                  <span>10 Nov</span>
-                </div>
-                <h2><span class="small">Publishing of</span>submission results</h2>
-              </div>
-              <div class="body">
-                <img src="http://placehold.it/1000x500" alt="Graphic">
-              </div>
-            </div>
-
-            <div class="demo-card demo-card--step5">
-              <div class="head">
-                <div class="number-box">
-                  <span>10 Nov</span>
-                </div>
-                <h2><span class="small">Open for</span> registration</h2>
-              </div>
-              <div class="body">
-                <img src="http://placehold.it/1000x500" alt="Graphic">
-              </div>
-            </div>
-            <div class="demo-card demo-card--step6">
-              <div class="head">
-                <div class="number-box">
-                  <span>20 Dec</span>
-                </div>
-                <h2><span class="small">Gather for the</span>Symposium Day</h2>
-              </div>
-              <div class="body">
-                <img src="http://placehold.it/1000x500" alt="Graphic">
-              </div>
-            </div>
+            <h2><span class="small">IST-FR 2018</span>website launch</h2>
           </div>
+          <div class="body">
+            <img src="http://placehold.it/1000x500" alt="Graphic">
+          </div>
+        </div>
+
+        <div class="demo-card demo-card--step2">
+          <div class="head">
+            <div class="number-box">
+              <span>25 Aug</span>
+            </div>
+            <h2><span class="small">Call for</span>papers submission</h2>
+          </div>
+          <div class="body">
+            <img src="http://placehold.it/1000x500" alt="Graphic">
+          </div>
+        </div>
+
+        <div class="demo-card demo-card--step3">
+          <div class="head">
+            <div class="number-box">
+              <span>25 Sep</span>
+            </div>
+            <h2><span class="small">Submitted</span>paper reviews</h2>
+          </div>
+          <div class="body">
+            <img src="http://placehold.it/1000x500" alt="Graphic">
+          </div>
+        </div>
+
+        <div class="demo-card demo-card--step4">
+          <div class="head">
+            <div class="number-box">
+              <span>10 Nov</span>
+            </div>
+            <h2><span class="small">Publishing of</span>submission results</h2>
+          </div>
+          <div class="body">
+            <img src="http://placehold.it/1000x500" alt="Graphic">
+          </div>
+        </div>
+
+        <div class="demo-card demo-card--step5">
+          <div class="head">
+            <div class="number-box">
+              <span>10 Nov</span>
+            </div>
+            <h2><span class="small">Open for</span>registration</h2>
+          </div>
+          <div class="body">
+            <img src="http://placehold.it/1000x500" alt="Graphic">
+          </div>
+        </div>
+        <div class="demo-card demo-card--step6">
+          <div class="head">
+            <div class="number-box">
+              <span>20 Dec</span>
+            </div>
+            <h2><span class="small">Gather for the</span>Symposium Day</h2>
+          </div>
+          <div class="body">
+            <img src="http://placehold.it/1000x500" alt="Graphic">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
@@ -111,9 +111,8 @@
   }
 }
 
-
 $background: #f7f7f7;
-$box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+$box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
 $border: 1px solid rgba(191, 191, 191, 0.4);
 $items: 6;
 $rows: ceil($items/2);
