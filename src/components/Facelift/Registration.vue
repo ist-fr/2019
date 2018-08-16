@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2><i class="fa fa-plus-square fa-lg white-text mr-3"></i>Registration</h2>
+          <h2><i class="fa fa-plus-square fa-lg white-text mr-3"></i>REGISTRATION</h2>
           <p class="lead">We will be opening for registration very shortly</p>
 
           <div class="row justify-content-md-center">

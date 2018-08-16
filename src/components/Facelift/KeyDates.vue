@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto text-center">
-          <h2><i class="fa fa-calendar fa-lg white-text mr-3"></i>Key Dates</h2>
+          <h2><i class="fa fa-calendar fa-lg white-text mr-3"></i>IMPORTANT DATES</h2>
           <!-- <p class="leader">All cards must be the same height and width for space calculations on large screens.</p> -->
           
         </div>

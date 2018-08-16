@@ -81,7 +81,7 @@
   }
 
   .navbar, footer{
-    background: linear-gradient(90deg, rgb(169, 115, 255) -0%,rgb(255, 71, 111) 100%) !important;
+    background: linear-gradient(90deg, rgb(125, 8, 37) -0%,rgb(76, 52, 106) 100%) !important;
     font-weight: 800;
     font-size: small;
     color: rgba(255, 255, 255, 0.75) !important;
@@ -102,5 +102,8 @@
 
   .bg-dark {
     background: linear-gradient(45deg, rgba(255, 90, 128, 0.3) -50%, rgba(255, 90, 128, 0.1) 90%) !important;
+  }
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1);
   }
 </style>
