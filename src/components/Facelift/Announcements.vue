@@ -4,52 +4,79 @@
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2>ANNOUNCEMENTS</h2>
-          <p class="lead">There are yet to be any announcements</p>
-          <!-- <ul>
-            <li>Clickable nav links that smooth scroll to page sections</li>
-            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
-            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
-            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
-          </ul> -->
-           <div class="col-md-12 block" v-for="announcement in announcements" v-bind:key="announcement.title">
-              <h2 class="title">
-                  <i class="fa fa-star"></i>
-                  {{announcement.title}}
-              </h2>
-              <hr>
-              <div v-html="announcement.body">
-            </div>
-        </div>
+            <ul class="timeline" v-for="announcement in announcements" v-bind:key="announcement.title">
+              <li class="list-item-announcement">
+                <span class="announcement-title">{{announcement.title}}</span>
+                <span class="float-right announcement-datetime"><i class="fa fa-clock-o"></i> {{announcement.datetime}}</span>
+                <p class="announcement-content">{{announcement.content}}</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
   </section>
 </template>
 <script>
-import carousel from '@/components/Frist/Carousel'
-import timeline from '@/components/Frist/Timeline'
 export default {
   data () {
     return {
       announcements: [
         {
-          title: 'Announcement',
-          body: 'Allap'
-        },
-        {
-          title: 'Announcementa',
-          body: 'Allap'
+          title: 'No announcement',
+          content: 'There are yet to be any announcements',
+          datetime: 'Aug 15'
         }
       ]
     }
-  },
-  components: {
-    carousel,
-    timeline
   }
 }
 </script>
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-  
+<style scoped>
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+  }
+
+  ul.timeline:before {
+      content: ' ';
+      background: #d4d9df00;
+      display: inline-block;
+      position: absolute;
+      left: 29px;
+      width: 2px;
+      height: 100%;
+      z-index: 400;
+  }
+
+  ul.timeline > li {
+      margin: 20px 0;
+      padding-left: 20px;
+  }
+
+  ul.timeline > li:before {
+      content: ' ';
+      background: white;
+      display: inline-block;
+      position: absolute;
+      border-radius: 50%;
+      border: 10px solid #582e91;
+      margin-top: 6px;
+      left: 20px;
+      width: 20px;
+      height: 20px;
+      z-index: 400;
+  }
+
+  .announcement-datetime > i {
+    font-size: 80%;
+  }
+
+  .announcement-datetime {
+    margin-top: 7px;
+  }
+
+  .announcement-title {
+    font-size: 140%;
+    font-weight: 600;
+  }
 </style>
