@@ -85,8 +85,8 @@
   </section>
 </template>
 <style lang="scss" scoped>
-/* Media Queries */
 
+/* Media Queries */
 @mixin mq-xs {
   @media (min-width: 320px) {
     @content;
@@ -111,11 +111,6 @@
   }
 }
 
-.body {
-  background-attachment: fixed;
-  visibility: hidden;
-  height: 0px;
-}
 
 $background: #f7f7f7;
 $box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
@@ -124,7 +119,6 @@ $items: 6;
 $rows: ceil($items/2);
 
 /* Card sizing */
-
 $card-height: 85px;
 $card-width: 450px;
 $inner-margin: 15px;
@@ -134,17 +128,11 @@ $outer-margin: 90px;
 $marker-size: 9px;
 
 /* Colors */
-
 $steps: #4A2C79;
-// $colors: #46b8e9,
-// #3ee9d1,
-// #ce43eb,
-// #4d92eb;
 $colors: rgb(88, 46, 145), rgb(160, 34, 58), rgb(248, 186, 0);
 $timeline: #bdbdbd;
 
 /* Calculations */
-
 $container-height: $rows * ($card-height + $outer-margin) + $stagger;
 $container-width: $card-width*2 + $outer-margin*3;
 $head-height: $number-size + 50;
@@ -152,7 +140,6 @@ $body-height: $card-height - $head-height;
 $marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
 
 /* Placeholders */
-
 @include mq-lg {
   %arrow {
     position: absolute;
@@ -173,9 +160,6 @@ $marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
   }
 }
 
-
-/* Some Cool Stuff */
-
 $counter: $items - $rows + 2;
 @for $i from 1 through $rows {
   .demo-card:nth-child(#{$i*2-1})   { order: $i }
@@ -184,37 +168,19 @@ $counter: $items - $rows + 2;
 }
 
 #key-dates {
-  // padding: 100px 0;
-  // background: $background;
-  // border-top: $border;
-  // border-bottom: $border;
-  // h1 {
-  //   text-align: center;
-  //   font-size: 3rem;
-  //   font-weight: 200;
-  //   margin-bottom: 20px;
-  // }
-  // p.leader {
-  //   text-align: center;
-  //   max-width: 90%;
-  //   margin: auto;
-  //   margin-bottom: 45px;
-  // }
-  // padding-bottom: 30px;
-  // background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
-  // background: linear-gradient(180deg, rgb(255, 85, 123) -0%,rgb(255, 255, 255) 100%) !important;
-  // color: rgba(255, 255, 255, 0.75);
   small {
     font-weight: 400 !important;
   }
+
   .demo-card-wrapper {
+    position: relative;
+    margin: auto;
+
     h2 {
       font-size: larger !important;
       font-weight: 700 !important;
     }
-    position: relative;
-    margin: auto;
-    // width: 100%;
+
     @include mq-lg {
       display: flex;
       flex-flow: column wrap;
@@ -222,6 +188,7 @@ $counter: $items - $rows + 2;
       height: $container-height;
       margin: 0 auto;
     }
+
     &::after {
       z-index: 1;
       content: "";
@@ -235,61 +202,74 @@ $counter: $items - $rows + 2;
       }
     }
   }
+
   .demo-card {
     position: relative;
     display: block;
     margin: 10px auto 50px;
     max-width: 94%;
     z-index: 2;
+
     @include mq-sm {
       max-width: 60%;
       box-shadow: $box-shadow;
     }
+
     @include mq-md {
       max-width: 40%;
     }
+
     @include mq-lg {
       max-width: $card-width;
       height: $card-height;
       margin: $outer-margin;
       margin-top: $outer-margin/2;
       margin-bottom: $outer-margin/2;
+
       &:nth-child(odd) {
         margin-right: $outer-margin/2;
+
         .head::after {
           @extend %arrow;
           border-left-width: 15px;
           border-left-style: solid;
           left: 100%;
         }
+        
         .head::before {
           @extend %marker;
           left: $marker-dist + 1;
         }
       }
+
       &:nth-child(even) {
         margin-left: $outer-margin/2;
+
         .head::after {
           @extend %arrow;
           border-right-width: 15px;
           border-right-style: solid;
           right: 100%;
         }
+
         .head::before {
           @extend %marker;
           right: $marker-dist - 1;
         }
       }
+
       &:nth-child(2) {
         margin-top: $stagger;
       }
     }
+
     .head {
       position: relative;
       display: flex;
       align-items: center;
       color: rgba(255, 255, 255, 1);
       font-weight: 400;
+
       .number-box {
         display: inline;
         margin: $inner-margin;
@@ -299,6 +279,7 @@ $counter: $items - $rows + 2;
         font-weight: 600;
         background: rgba(0, 0, 0, 0.2);
       }
+
       h2 {
         text-transform: uppercase;
         font-size: 1.3rem;
@@ -307,14 +288,17 @@ $counter: $items - $rows + 2;
         margin: 0;
         padding-bottom: 6px;
         line-height: 1rem;
+
         @include mq-sm {
           font-size: 165%;
           line-height: 1.2rem;
         }
+
         span {
           display: block;
           font-size: 0.6rem;
           margin: 0;
+
           @include mq-sm {
             font-size: 0.8rem;
           }
@@ -323,26 +307,34 @@ $counter: $items - $rows + 2;
     }
     .body {
       background: #fff;
+      background-attachment: fixed;
       border: $border;
       border-top: 0;
+      height: 0px;
       padding: $inner-margin;
+      visibility: hidden;
+
       @include mq-lg {
         height: $body-height;
       }
+
       p {
         font-size: 14px;
         line-height: 18px;
         margin-bottom: $inner-margin;
       }
+
       img {
         display: block;
         width: 100%;
       }
     }
+
     @for $i from 1 through $items {
       &--step#{$i} {
         $color: nth($colors, ((($i - 1) % 3) + 1));
         background-color: $color;
+
         .head::after {
           border-color: $color;
         }
