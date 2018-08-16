@@ -8,43 +8,43 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <<scrollactive class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#page-top"><i class="fa fa-arrow-up"></i></a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#page-top"><i class="fa fa-arrow-up"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#key-dates">KEY DATES</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#key-dates">KEY DATES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#announcements">ANNOUNCEMENTS</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#announcements">ANNOUNCEMENTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#committee">COMMITTEE</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#committee">COMMITTEE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#program">PROGRAM</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#program">PROGRAM</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#speakers">SPEAKERS</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#speakers">SPEAKERS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#accomodation">ACCOMODATION</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#accomodation">ACCOMODATION</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#registration">REGISTRATION</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#registration">REGISTRATION</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#submission">SUBMISSION</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#submission">SUBMISSION</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#venue">VENUE</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#venue">VENUE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#faq">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">CONTACT</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#contact">CONTACT</a>
           </li>
         </ul>
               <!-- <b-list-group class="collapse navbar-collapse" id="navbarResponsive">
@@ -84,7 +84,7 @@
           </b-list-group-item>
         </ul>
       </b-list-group> -->
-      </div>
+      </scrollactive>
     </div>
   </nav>
 </template>

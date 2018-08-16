@@ -13,26 +13,28 @@
   
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse center" id="bs-example-navbar-collapse-1">
+        <scrollactive>
         <ul class="nav navbar-nav">
           <li class="">
-            <a href="#/">Home</a>
+            <a href="#/" class="scrollactive-item">Home</a>
           </li>
           <li>
-            <a href="#/people">People</a>
+            <a href="#/people" class="scrollactive-item">People</a>
           </li>
           <li>
-            <a href="#/research">Research</a>
+            <a href="#/research" class="scrollactive-item">Research</a>
           </li>
           <li>
-            <a href="#/activity">Activity</a>
+            <a href="#/activity" class="scrollactive-item">Activity</a>
           </li>
           <li>
-            <a href="#/blog">Blog</a>
+            <a href="#/blog" class="scrollactive-item">Blog</a>
           </li>
           <li>
-            <a href="#/frist">FRIST</a>
+            <a href="#/frist" class="scrollactive-item">FRIST</a>
           </li>
         </ul>
+        </scrollactive>
         <!-- <ul class="nav navbar-nav navbar-right" v-bind:class="{ 'loggingIn': loggingIn }"> 
           <li v-if="loggingIn">
             <p class="navbar-text">Welcome {{credential.username}}</p>

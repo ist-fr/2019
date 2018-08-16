@@ -11,6 +11,8 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import VeeValidate from 'vee-validate'
 import Vuetable from 'vuetable-2'
+import VueScrollactive from 'vue-scrollactive'
+
 // import jQuery from 'jquery'
 
 Vue.use(Vuetable)
@@ -18,6 +20,7 @@ Vue.use(VeeValidate)
 Vue.use(VueAxios, axios)
 // Vue.use(jQuery)
 Vue.use(BootstrapVue)
+Vue.use(VueScrollactive)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
