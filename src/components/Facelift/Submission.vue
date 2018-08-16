@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-          <a  href="#/form/submission">
+          <a  href="/form/submission">
            <button type="button" class="btn btn-success">Submission</button>
           </a>
         </div>
