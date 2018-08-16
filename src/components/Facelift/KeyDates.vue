@@ -183,12 +183,6 @@ $counter: $items - $rows + 2;
   $counter: $counter + 1;
 }
 
-/* Fonts */
-
-body {
-  font-family: Roboto;
-}
-
 #key-dates {
   // padding: 100px 0;
   // background: $background;
