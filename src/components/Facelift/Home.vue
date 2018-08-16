@@ -14,7 +14,7 @@
     <announcements class="bg-dark"></announcements>
     <committee class="bg-light"></committee>
     <program class="bg-dark"></program>
-    <speakers class="bg-light"></speakers>
+    <speakers></speakers>
     <accomodation class="bg-dark"></accomodation>
     <registration class="bg-light"></registration>
     <submission class="bg-dark"></submission>

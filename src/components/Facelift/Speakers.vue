@@ -1,6 +1,7 @@
 <template>
+<div class='black-background'>
   <section id="speakers">
-    <div class="container">
+    <div class="container contrainer-dark">
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2><i class="fa fa-users fa-lg white-text mr-3"></i>KEYNOTE SPEAKERS</h2>
@@ -23,6 +24,7 @@
       </div>
     </div>
   </section>
+</div>
 </template>
 <script>
 export default {
@@ -87,7 +89,16 @@ export default {
 }
 </script>
 <style>
-#speaker {
-  background-image: url('/static/background_speaker.jpg');
+#speakers {
+
+  background-image: url('../../assets/background_speaker.jpg');
+}
+#speakers {
+  background-color: #000000f0;
+}
+#speakers .container {
+  z-index: 2;
+  color: white;
+  opacity: 1;
 }
 </style>
