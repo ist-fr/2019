@@ -104,13 +104,13 @@
   }
 
   .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, .6);
     font-size: .725rem;
     font-weight: 800;
   }
 
-  .navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(255, 255, 255, 1);
+  .is-active, .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 1) !important;
   }
 
   .img-logo {
