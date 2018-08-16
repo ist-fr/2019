@@ -3,7 +3,7 @@
     <navbar></navbar>
     <header class="header-jumbotron">
       <div class="container-logo text-center">
-        <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo" height="300px" width="1000px">
+        <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo">
       </div>
       <!-- <div class="container text-center">
         <h1>Welcome to Scrolling Nav</h1>
