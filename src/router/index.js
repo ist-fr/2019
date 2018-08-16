@@ -16,6 +16,7 @@ import Router from 'vue-router'
 import SubmissionForm from '@/components/Register/Submit'
 import FAQForm from '@/components/Register/Question'
 import Home from '@/components/Facelift/Home'
+
 Vue.use(Router)
 
 export default new Router({
@@ -106,5 +107,6 @@ export default new Router({
       path: '/form/faq',
       component: FAQForm
     }
-  ]
+  ],
+  mode: 'history'
 })
