@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2><i class="fa fa-bullhorn fa-lg white-text  mr-3 "></i>ANNOUNCEMENTS</h2>
+          <h2>ANNOUNCEMENTS</h2>
           <p class="lead">There are yet to be any announcements</p>
           <!-- <ul>
             <li>Clickable nav links that smooth scroll to page sections</li>

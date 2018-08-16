@@ -3,12 +3,8 @@
     <navbar></navbar>
     <header class="header-jumbotron">
       <div class="container-logo text-center">
-        <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo" height="300px" width="1000px">
+        <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo">
       </div>
-      <!-- <div class="container text-center">
-        <h1>Welcome to Scrolling Nav</h1>
-        <p class="lead">A landing page template freshly redesigned for Bootstrap 4</p>
-      </div> -->
     </header>
     <key-dates class="bg-light"></key-dates>
     <announcements class="bg-dark"></announcements>
@@ -62,12 +58,12 @@
 
 <style>
   header {
-    padding: 90px 5% 0;
+    padding: 90px 5% 30px;
   }
 
   @media (min-width: 992px) {
     header {
-      padding: 90px 20% 0;
+      padding: 90px 20% 30px;
     }
   }
   
@@ -76,12 +72,13 @@
   }
 
   .header-jumbotron {
-    /* background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important; */
+    background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
     /* background: linear-gradient(180deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important; */
   }
 
   .navbar, footer{
-    background: linear-gradient(90deg, rgb(125, 8, 37) -0%,rgb(76, 52, 106) 100%) !important;
+    /* background: linear-gradient(90deg, rgb(125, 8, 37) -0%,rgb(76, 52, 106) 100%) !important; */
+    background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
     font-weight: 800;
     font-size: small;
     color: rgba(255, 255, 255, 0.75) !important;
@@ -103,7 +100,18 @@
   .bg-dark {
     background: linear-gradient(45deg, rgba(255, 90, 128, 0.3) -50%, rgba(255, 90, 128, 0.1) 90%) !important;
   }
+
   .navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, .75);
+    font-size: .85em;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 1);
   }
+
+  /* h2 .fa {
+    padding-top: -50px;
+    font-size: 90%;
+  } */
 </style>

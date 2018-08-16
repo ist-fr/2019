@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2><i class="fa fa-user-o fa-lg white-text mr-3"></i>COMMITTEE</h2>
+          <h2>COMMITTEE</h2>
           <p class="lead"></p>
 
           <div v-for="commitee in commitees" :key="commitee.name" class="card">

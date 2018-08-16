@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto text-center">
-          <h2><i class="fa fa-calendar fa-lg white-text mr-3"></i>IMPORTANT DATES</h2>
+          <h2>IMPORTANT DATES</h2>
           <!-- <p class="leader">All cards must be the same height and width for space calculations on large screens.</p> -->
           
         </div>
@@ -208,7 +208,7 @@ body {
   //   margin-bottom: 45px;
   // }
   padding-bottom: 30px;
-  // background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
+  background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important;
   // background: linear-gradient(180deg, rgb(255, 85, 123) -0%,rgb(255, 255, 255) 100%) !important;
   color: rgba(0, 0, 0, 0.75);
   .demo-card-wrapper {
