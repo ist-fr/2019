@@ -6,14 +6,12 @@
         <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo">
         Promoting academic excellence in Computer Science<br>through academic industry collaborative research
       </div>
-      <!-- PROMOTING ACADEMIC EXCELLENCE IN COMPUTER SCIENCE THROUGH ACADEMIC INDUSTRY COLLABORATIVE RESEARCH -->
     </div>
-    <br>
-    <key-dates></key-dates>
+    <key-dates class="bg-light"></key-dates>
     <announcements class="bg-dark"></announcements>
     <committee class="bg-light"></committee>
     <program class="bg-dark"></program>
-    <speakers></speakers>
+    <speakers class="bg-light"></speakers>
     <accomodation class="bg-dark"></accomodation>
     <registration class="bg-light"></registration>
     <submission class="bg-dark"></submission>
@@ -63,8 +61,9 @@
   .header-jumbotron {
     padding: 50px 5% 30px;
     display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
+    justify-content: center; 
+    align-items: center;
+    font-weight: 600;
   }
 
   @media (min-width: 992px) {
@@ -77,21 +76,11 @@
     padding: 60px 0;
   }
 
-  .header-jumbotron, #key-dates {
-    /* background: linear-gradient(-90deg, rgb(142, 77, 221) 0%, rgb(255, 62, 110) 100%) !important; */
-    /* background: linear-gradient(-90deg, rgb(255, 84, 126) 0%, rgb(155, 83, 243) 100%) !important; */
-    /* background: linear-gradient(90deg, rgb(172, 120, 255) -0%, rgb(255, 110, 141) 100%) !important; */
+  .header-jumbotron {
     height: 100vh;
   }
 
   .navbar, footer{
-    /* background: linear-gradient(90deg, rgb(125, 8, 37) -0%,rgb(76, 52, 106) 100%) !important; */
-    /* background: linear-gradient(-90deg, rgb(119, 64, 185) 0%, rgb(199, 48, 85) 100%) !important; */
-    /* background: linear-gradient(90deg, rgb(179, 132, 255) -0%,rgb(255, 85, 122) 100%) !important; */
-    /* background: linear-gradient(90deg, rgb(157, 96, 255) 0%,rgba(255, 71, 111, 1) 100%) !important; */
-    /* background: linear-gradient(90deg, rgb(164, 107, 255) -0%, rgb(255, 32, 80) 100%) !important; */
-    /* background: linear-gradient(90deg, rgb(164, 107, 255) -0%, rgb(255, 55, 98) 100%) !important; */
-    /* (88, 46, 145) (160, 34, 58) (255, 216, 0) (248, 186, 0) */
     background: linear-gradient(-90deg, rgb(88, 46, 145), rgb(160, 34, 58));
     color: rgba(255, 255, 255, 0.75) !important;
   }
