@@ -6,7 +6,6 @@
           <h2><i class="fa fa-file fa-lg white-text mr-3"></i>Submission</h2>
           <p class="lead">We will be calling for papers very soon</p>
           
-   <submit></submit>
     <div class="row">
       IST-FR symposium goal is to show the potential of Thailand researcher to the public.
       Thailand has a lot go high-quality research but needed an opportunity to show their potential.
@@ -72,7 +71,6 @@
   </section>
 </template>
 <script>
-import submit from '@/components/Register/Submit'
 export default {
   data () {
     return {
@@ -206,7 +204,6 @@ export default {
     }
   },
   components: {
-    submit
   }
 }
 </script>
