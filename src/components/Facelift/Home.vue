@@ -14,7 +14,7 @@
     <committee class="bg-light"></committee>
     <program class="bg-dark"></program>
     <speakers class="bg-light"></speakers>
-    <accomodation class="bg-dark"></accomodation>
+    <accommodation class="bg-dark"></accommodation>
     <registration class="bg-light"></registration>
     <submission class="bg-dark"></submission>
     <venue class="bg-light"></venue>
@@ -30,7 +30,7 @@
   import Committee from '@/components/Facelift/Committee'
   import Program from '@/components/Facelift/Program'
   import Speakers from '@/components/Facelift/Speakers'
-  import Accomodation from '@/components/Facelift/Accomodation'
+  import Accommodation from '@/components/Facelift/Accommodation'
   import Registration from '@/components/Facelift/Registration'
   import Submission from '@/components/Facelift/Submission'
   import Venue from '@/components/Facelift/Venue'
@@ -47,7 +47,7 @@
       Committee,
       Program,
       Speakers,
-      Accomodation,
+      Accommodation,
       Registration,
       Submission,
       Venue,
