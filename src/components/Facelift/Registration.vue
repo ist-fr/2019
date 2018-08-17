@@ -16,7 +16,7 @@
                   <td><label class="title">Participant Category</label></td>
                   <td>
                     <label class="title">Early Registration</label><br>
-                    (before 10 November, 2018)
+                    (Before 10 November, 2018)
                   </td>
                   <td>
                     <label class="title">Regular Registration</label><br>
@@ -60,26 +60,3 @@
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  data () {
-    return {
-      prices: [
-        {
-          'Participant Category': 'All delegates',
-          'Early Registration (July XX – December XX, 2018)': '4000 ฿',
-          'Late Registration< ((After December XX, 2018)': '5000 ฿'
-        },
-        {
-          'Participant Category': 'All delegates',
-          'Early Registration (July XX – December XX, 2018)': '4000 ฿',
-          'Late Registration< ((After December XX, 2018)': '5000 ฿'
-        }
-      ]
-    }
-  }
-}
-</script>
-<style>
-</style>
