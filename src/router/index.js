@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import SubmissionForm from '@/components/Register/Submit'
+import RegistrationForm from '@/components/Register/Register'
 import FAQForm from '@/components/Register/Question'
 import Home from '@/components/Facelift/Home'
 
@@ -55,6 +56,10 @@ export default new Router({
     {
       path: '/contact',
       component: Home
+    },
+    {
+      path: '/form/registration',
+      component: RegistrationForm
     },
     {
       path: '/form/submission',
