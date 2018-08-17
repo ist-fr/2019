@@ -25,7 +25,7 @@
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#speakers">SPEAKERS</a>
           </li>
           <li class="nav-item">
-            <a class="scrollactive-item nav-link js-scroll-trigger" href="#accomodation">ACCOMODATION</a>
+            <a class="scrollactive-item nav-link js-scroll-trigger" href="#accommodation">ACCOMMODATION</a>
           </li>
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#registration">REGISTRATION</a>

@@ -3,22 +3,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2>FAQs</h2>
-          <p class="lead">The details about accomodation will be released soon</p>
+          <h2>FAQ</h2>
+          <p class="lead"></p>
         </div>
       </div>
     </div>
   </section>
 </template>
-<script>
-export default {
-  data () {
-    return {
-    }
-  },
-  components: {
-  },
-  method: {
-  }
-}
-</script>
