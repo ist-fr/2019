@@ -82,7 +82,7 @@ export default {
 <style scoped>
   .img-gallery, .map {
     margin: 15px 0;
-    box-shadow: 0 0 35px -4px rgba(0,0,0,0.75);
+    box-shadow: 0 0 40px -6px rgba(0,0,0,0.75);
   }
 </style>
 

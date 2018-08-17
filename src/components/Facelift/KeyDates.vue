@@ -112,7 +112,7 @@
 }
 
 $background: #f7f7f7;
-$box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+$box-shadow: 0 0 40px -6px rgba(0,0,0,0.75);
 $border: 1px solid rgba(191, 191, 191, 0.4);
 $items: 6;
 $rows: ceil($items/2);
