@@ -12,9 +12,6 @@
         <a class="social" href="https://www.youtube.com/channel/UCyiO-CBG4J__S83jzq3k0pQ">
           <i class="fa fa-youtube fa-lg white-text fa-2x"></i>
         </a>
-        <!-- <a class="social" href="https://www.vistec.ac.th">
-          <i class="fa fa-globe fa-lg white-text fa-2x"></i>
-        </a> -->
       </div>
       <div class="footer-copyright text-center py-3">© Symposium on Frontier Research in Information Science and Technology | Vidyasirimedhi Institute of Science and Technology</div>
     </div>

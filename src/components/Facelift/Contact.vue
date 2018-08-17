@@ -24,9 +24,3 @@
     </div>
   </section>
 </template>
-<style>
-  /* .social {
-    color: #212529;
-  } */
-</style>
-
