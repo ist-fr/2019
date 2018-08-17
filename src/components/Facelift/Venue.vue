@@ -5,7 +5,7 @@
         <div class="col-lg-12 mx-auto">
           <h2>Venue</h2>
           <p style="text-align: justify;">
-            Vidyasirimedhi Institute of Science and Technology (VISTEC) is a graduate research intensive university located on Wangchan Vallery and
+            Vidyasirimedhi Institute of Science and Technology (VISTEC) is a graduate research-intensive university located on Wangchan Vallery and
             supported by Power of Innovation Foundation. VISTEC is in close collaboration with Thailand initiative megaprojects Eastern Economic 
             Corridor (EEC) in general and Eastern Economic Corridor of Innovation (EECi) in particular.
           </p>

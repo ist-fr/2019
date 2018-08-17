@@ -34,7 +34,7 @@ export default {
         {
           title: 'Prof. Dr.',
           name: 'Dusit Niyato',
-          bio: 'IEEE Fellow, 19755 citations, 67 h-index,  150+ publications, 5 books and 190+ conferences',
+          bio: 'IEEE Fellow, 19755 citations, 67 h-index, Wireless Communications, Mobile Computing, Cognitive Communications',
           topic: 'Cultivating a culture of academic excellence: What can we learn from Singapore Context?',
           university: 'Nanyang Technological University, Singapore',
           imageSrc: require('../../assets/speakers/dr_dusit_niyato.jpg'),
@@ -43,7 +43,7 @@ export default {
         {
           title: 'Dr.',
           name: 'Supasorn Suwajanakorn',
-          bio: 'Former Research Resident at Google Brain, Synthesizing Obama: Learning Lip Sync from Audio',
+          bio: 'Former Research Resident at Google Brain, Computer Vision, Synthesizing Obama: Learning Lip Sync from Audio',
           topic: 'TBA',
           university: 'VISTEC, Thailand',
           imageSrc: require('../../assets/speakers/dr_supasorn_suwajanakorn.jpg'),

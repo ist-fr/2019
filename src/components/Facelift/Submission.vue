@@ -39,12 +39,12 @@
           </ul>
           <h3>Online submission</h3>
           <ul>
-            <li>Open submission 25 aug</li>
-            <li>Close submission 25 sep 23:59 (GMT +7)</li>
-            <li>Result released 10</li>
+            <li>Open submission 25 August</li>
+            <li>Close submission 25 September 2018 23:59 (GMT +7)</li>
+            <li>Result released 10 July 2018</li>
           </ul>
         <h3>Poster presentration</h3>
-        <p>poster presentration @venu on 20 dec</p>
+        <p>poster presentration @venu on 19-20 December 2018</p>
         <h3>Prizes</h3>
           Prize total 17,500 BAHT
           <ul>

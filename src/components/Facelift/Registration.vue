@@ -44,15 +44,14 @@
           <div class="col-lg-12">
           <h3>Notes</h3>
           <ul class="registration">
-            <li>Payments can be made either by bank transfer.</li>
+            <li>Payments can be made by bank transfer.</li>
             <li>Any fees deducted on our end must paid in cash upon registration.</li>
             <li>All on-site payments to the conference must be made in cash.</li>
           </ul>
           <h3>Benefits of registration</h3>
           <ul class="registration">
-            <li>Conference materials</li>
-            <li>Access to all scientific sessions</li>
-            <li>Welcome reception on Wednesday evening</li>
+            <li>Symposium materials</li>
+            <li>Access to all sessions</li>
             <li>Coffee breaks and lunches</li>
           </ul>
         </div>
