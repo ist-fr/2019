@@ -36,7 +36,6 @@
   }
 
   .div-no-padding {
-    /* padding: 0 !important; */
     padding-bottom: 0 !important;
   }
   
