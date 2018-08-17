@@ -5,6 +5,24 @@
         <div class="col-lg-12 mx-auto">
           <h2>COMMITTEE</h2>
         </div>
+        <div class="col-lg-12 mx-auto">
+          <h3>General Chair</h3>
+        </div>
+        <div class="col-lg-6 col-sm-12 text-center card-committee" v-for="committee in chairCommittees" v-bind:key="committee.name">
+            <!-- <a class="img" :href="committee.link" target="_blank">
+              <div class="img-overlay"><i class="fa fa-external-link"></i></div>
+              <img class="img-committee" :src="committee.imageSrc">
+            </a> -->
+            <div>
+              <h3>{{committee.title}} {{committee.name}}</h3>
+              <!-- <h6>{{committee.position}}</h6> -->
+              <h6>{{committee.school}}</h6>
+              <h6>{{committee.university}}</h6>
+          </div>
+        </div>
+        <div class="col-lg-12 mx-auto">
+          <h3>Undergrad Thesis Program Commitees</h3>
+        </div>
         <div class="col-lg-6 col-sm-12 text-center card-committee" v-for="committee in committees" v-bind:key="committee.name">
             <a class="img" :href="committee.link" target="_blank">
               <div class="img-overlay"><i class="fa fa-external-link"></i></div>
@@ -26,6 +44,17 @@
 export default {
   data () {
     return {
+      chairCommittees: [
+        {
+          title: 'Dr.',
+          name: 'Sarana Nutanong',
+          imageSrc: require('../../assets/committee/dr_sarana_nutanong.png'),
+          position: 'General Chair',
+          school: 'School of Information Science & Technology',
+          university: 'Vidyasirimedhi Institute of Science & Technology',
+          link: 'http://www.vistec.ac.th/academic/faculty_detail.php?school=IST&id=55'
+        }
+      ],
       committees: [
         {
           title: 'Assoc. Prof. Dr.',
