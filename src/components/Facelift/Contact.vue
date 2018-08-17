@@ -1,58 +1,32 @@
 <template>
-  <section id="contact">
+  <section class="lead" id="contact">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2>CONTACT</h2>
-          <p class="lead">Feel free to reach us</p>
-            Registration / Submission Organizer <br>
-            Telephone: 085-482-8989 <br>
-            Facebook: <a href="https://www.facebook.com/Vidyasirimedhi/"> vistec </a> <br>
-            Website: <a href="http://ist-fr.vistec.ac.th/">ist-ft</a> <br>
-            Email: ist-fr@vistec.ac.th
-
-
-          <div class="mt-4 flex-center">
-            <a class="social" href="https://www.facebook.com/Vidyasirimedhi">
-              <i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+        </div>
+        <div class="col-lg-12 mt-4">
+          <h4>Registration &amp; Research Paper Submission Manager</h4>
+          <h5>
+            <a href="tel:+66854828989">
+              <i class="fa fa-phone"></i>
+              +66 (0) 8 5482 8989
             </a>
-            <!-- <a class="tw-ic">
-              <i class="fa fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a> -->
-            <!-- <a class="gplus-ic">
-              <i class="fa fa-google-plus fa-lg white-text mr-md-5 mr-3 fa-2x"> </i> -->
-            <!-- </a> -->
-            <!-- <a class="li-ic">
-              <i class="fa fa-linkedin fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a> -->
-            <!-- <a class="ins-ic">
-              <i class="fa fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-            </a> -->
-            <!-- <a class="pin-ic">
-              <i class="fa fa-pinterest fa-lg white-text fa-2x"> </i>
-            </a> -->
-            
-            <a class="social" href="https://www.youtube.com/channel/UCyiO-CBG4J__S83jzq3k0pQ">
-              <i class="fa fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
+          </h5>
+          <h5>
+            <a href="mailto:ist-fr@vistec.ac.th">
+              <i class="fa fa-at"></i>
+              ist-fr@vistec.ac.th
             </a>
-            <a class="social" href="https://www.vistec.ac.th">
-              <i class="fa fa-globe fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-            </a>
-            <a class="social" href="tel:+6633014444">
-              <i class="fa fa-phone fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-            </a>
-            <a class="social" href="mailto:contact@vistec.ac.th">
-              <i class="fa fa-at fa-lg white-text mr-md-5 mr-3 fa-2x"></i>
-            </a>
-          </div>
+          </h5>
         </div>
       </div>
     </div>
   </section>
 </template>
 <style>
-  .social {
+  /* .social {
     color: #212529;
-  }
+  } */
 </style>
 
