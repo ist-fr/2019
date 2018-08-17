@@ -46,12 +46,12 @@ export default {
   .img {
     border-radius: 100%;
     display: inline-block;
-    flex: 0 0 150px;
-    height: 150px;
+    flex: 0 0 200px;
+    height: 200px;
     justify-content: center;
     overflow: hidden;
     position: relative;
-    width: 150px;
+    width: 200px;
   }
 
   .img img {
