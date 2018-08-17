@@ -10,36 +10,38 @@
         </div>
         <div class="col-lg-12 justify-content-md-center">
           <h3>Fees</h3>
-            <table class="table">
-              <tbody>
-                <tr class="head">
-                  <td><label class="title">Participant Category</label></td>
-                  <td>
-                    <label class="title">Early Registration</label><br>
-                    (Before 10 November, 2018)
-                  </td>
-                  <td>
-                    <label class="title">Regular Registration</label><br>
-                    (Before 30 December, 2018)
-                  </td>
-                </tr>
-                <tr>
-                  <td>All delegates</td>
-                  <td>5000 ฿</td>
-                  <td>4000 ฿</td>
-                </tr>
-                <tr>
-                  <td>Full time students</td>
-                  <td>1500 ฿</td>
-                  <td>1000 ฿</td>
-                </tr>
-                <tr>
-                  <td>Accompanying persons*</td>
-                  <td>2000 ฿</td>
-                  <td>3000 ฿</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr class="head">
+                    <td><label class="title">Participant Category</label></td>
+                    <td>
+                      <label class="title">Early Registration</label><br>
+                      (Before 10 November, 2018)
+                    </td>
+                    <td>
+                      <label class="title">Regular Registration</label><br>
+                      (Before 30 December, 2018)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>All delegates</td>
+                    <td>5000 ฿</td>
+                    <td>4000 ฿</td>
+                  </tr>
+                  <tr>
+                    <td>Full time students</td>
+                    <td>1500 ฿</td>
+                    <td>1000 ฿</td>
+                  </tr>
+                  <tr>
+                    <td>Accompanying persons*</td>
+                    <td>2000 ฿</td>
+                    <td>3000 ฿</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="col-lg-12">
           <h3>Notes</h3>
