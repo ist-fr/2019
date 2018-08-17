@@ -79,7 +79,7 @@ export default {
     margin-bottom: 15px;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 575.98px) {
     .sp-pad, .wrapper-map {
       padding: 10px 0 !important;
     }
