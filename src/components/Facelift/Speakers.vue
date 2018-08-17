@@ -15,7 +15,7 @@
               <small>{{speaker.title}}</small>
               <h3>{{speaker.name}}</h3>
               <h6>{{speaker.bio}}</h6>
-              <h6>{{speaker.school}}</h6>
+              <small>FROM</small>
               <h6>{{speaker.university}}</h6>
               <small>ON THE TOPIC OF</small>
               <h6>{{speaker.topic}}</h6>
