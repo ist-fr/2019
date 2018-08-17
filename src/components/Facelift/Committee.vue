@@ -8,32 +8,20 @@
         <div class="col-lg-12 mx-auto">
           <h3>General Chair</h3>
         </div>
-        <div class="col-lg-6 col-sm-12 text-center card-committee" v-for="committee in chairCommittees" v-bind:key="committee.name">
+        <div class="col-lg-12 mx-auto">
+          <h3>Undergrad Thesis Program Commitees</h3>
+        </div>
+        <div class="col-lg-6 col-sm-12 text-center card-committee" v-for="committee in committees" v-bind:key="committee.name">
             <!-- <a class="img" :href="committee.link" target="_blank">
               <div class="img-overlay"><i class="fa fa-external-link"></i></div>
               <img class="img-committee" :src="committee.imageSrc">
             </a> -->
             <div>
-              <h3>{{committee.title}} {{committee.name}}</h3>
-              <!-- <h6>{{committee.position}}</h6> -->
-              <h6>{{committee.school}}</h6>
-              <h6>{{committee.university}}</h6>
-          </div>
-        </div>
-        <div class="col-lg-12 mx-auto">
-          <h3>Undergrad Thesis Program Commitees</h3>
-        </div>
-        <div class="col-lg-6 col-sm-12 text-center card-committee" v-for="committee in committees" v-bind:key="committee.name">
-            <a class="img" :href="committee.link" target="_blank">
-              <div class="img-overlay"><i class="fa fa-external-link"></i></div>
-              <img class="img-committee" :src="committee.imageSrc">
-            </a>
-            <div>
               <small>{{committee.title}}</small>
               <h3>{{committee.name}}</h3>
               <h6>{{committee.position}}</h6>
-              <h6>{{committee.school}}</h6>
-              <h6>{{committee.university}}</h6>
+              <!-- <h6>{{committee.school}}</h6>
+              <h6>{{committee.university}}</h6>  -->
           </div>
         </div>
       </div>
@@ -44,7 +32,7 @@
 export default {
   data () {
     return {
-      chairCommittees: [
+      committees: [
         {
           title: 'Dr.',
           name: 'Sarana Nutanong',
@@ -53,14 +41,30 @@ export default {
           school: 'School of Information Science & Technology',
           university: 'Vidyasirimedhi Institute of Science & Technology',
           link: 'http://www.vistec.ac.th/academic/faculty_detail.php?school=IST&id=55'
-        }
-      ],
-      committees: [
+        },
         {
-          title: 'Assoc. Prof. Dr.',
-          name: 'Sarana Nutanong',
+          title: 'Prof. Dr',
+          name: 'Chokchai  Leangsuksun',
           imageSrc: require('../../assets/committee/dr_sarana_nutanong.png'),
-          position: 'Faculty Member',
+          position: 'Undergrad Thesis Program',
+          school: 'School of Information Science & Technology',
+          university: 'Vidyasirimedhi Institute of Science & Technology',
+          link: 'http://www.vistec.ac.th/academic/faculty_detail.php?school=IST&id=55'
+        },
+        {
+          title: 'Prof. Dr',
+          name: 'Poramate Manoonpong',
+          imageSrc: require('../../assets/committee/dr_sarana_nutanong.png'),
+          position: 'Undergrad Thesis Program',
+          school: 'School of Information Science & Technology',
+          university: 'Vidyasirimedhi Institute of Science & Technology',
+          link: 'http://www.vistec.ac.th/academic/faculty_detail.php?school=IST&id=55'
+        },
+        {
+          title: 'Dr',
+          name: 'Theerawit Wilaiprasitporn',
+          imageSrc: require('../../assets/committee/dr_sarana_nutanong.png'),
+          position: 'Undergrad Thesis Program',
           school: 'School of Information Science & Technology',
           university: 'Vidyasirimedhi Institute of Science & Technology',
           link: 'http://www.vistec.ac.th/academic/faculty_detail.php?school=IST&id=55'

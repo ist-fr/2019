@@ -16,11 +16,11 @@
                   <td><label class="title">Participant Category</label></td>
                   <td>
                     <label class="title">Early Registration</label><br>
-                    (July XX – December XX, 2018)
+                    (before 10 November, 2018)
                   </td>
                   <td>
-                    <label class="title">Late Registration</label><br>
-                    (After December XX, 2018)
+                    <label class="title">Regular Registration</label><br>
+                    (Before 30 December, 2018)
                   </td>
                 </tr>
                 <tr>
@@ -44,8 +44,7 @@
           <div class="col-lg-12">
           <h3>Notes</h3>
           <ul class="registration">
-            <li>Payments can be made either by bank transfer or by credit card.</li>
-            <li>All the transaction charges associated with payment (by bank transfer or by credit card) are responsibility of the participant.</li>
+            <li>Payments can be made either by bank transfer.</li>
             <li>Any fees deducted on our end must paid in cash upon registration.</li>
             <li>All on-site payments to the conference must be made in cash.</li>
           </ul>

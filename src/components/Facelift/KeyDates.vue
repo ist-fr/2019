@@ -10,12 +10,14 @@
       </div>
       <!-- All cards must be the same height and width for space calculations on large screens. -->
       <div class="demo-card-wrapper">
+
+
         <div class="demo-card demo-card--step1">
           <div class="head">
             <div class="number-box">
-              <span>15<span class="month"> Aug</span></span>
+              <span>25 Sep</span>
             </div>
-            <h2><span class="small">IST-FR 2018</span>website launch</h2>
+            <h2><span class="small">Undergrad thesis</span>submission deadline</h2>
           </div>
           <div class="body">
             <img src="http://placehold.it/1000x500" alt="Graphic">
@@ -25,9 +27,9 @@
         <div class="demo-card demo-card--step2">
           <div class="head">
             <div class="number-box">
-              <span>25 Aug</span>
+              <span>10 Nov</span>
             </div>
-            <h2><span class="small">Call for</span>papers submission</h2>
+            <h2><span class="small">Thesis</span>authors notification</h2>
           </div>
           <div class="body">
             <img src="http://placehold.it/1000x500" alt="Graphic">
@@ -37,9 +39,9 @@
         <div class="demo-card demo-card--step3">
           <div class="head">
             <div class="number-box">
-              <span>25 Sep</span>
+              <span>10 Nov</span>
             </div>
-            <h2><span class="small">Submitted</span>paper reviews</h2>
+            <h2><span class="small">Deadline for</span>early registration</h2>
           </div>
           <div class="body">
             <img src="http://placehold.it/1000x500" alt="Graphic">
@@ -49,30 +51,18 @@
         <div class="demo-card demo-card--step4">
           <div class="head">
             <div class="number-box">
-              <span>10 Nov</span>
+              <span>30 Nov</span>
             </div>
-            <h2><span class="small">Publishing of</span>submission results</h2>
+            <h2><span class="small">Deadline for</span>normal registration</h2>
           </div>
           <div class="body">
             <img src="http://placehold.it/1000x500" alt="Graphic">
           </div>
         </div>
-
         <div class="demo-card demo-card--step5">
           <div class="head">
             <div class="number-box">
-              <span>10 Nov</span>
-            </div>
-            <h2><span class="small">Open for</span>registration</h2>
-          </div>
-          <div class="body">
-            <img src="http://placehold.it/1000x500" alt="Graphic">
-          </div>
-        </div>
-        <div class="demo-card demo-card--step6">
-          <div class="head">
-            <div class="number-box">
-              <span>20 Dec</span>
+              <span>19-20 Dec</span>
             </div>
             <h2><span class="small">Gather for the</span>Symposium Day</h2>
           </div>
