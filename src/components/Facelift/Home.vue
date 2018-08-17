@@ -130,4 +130,13 @@
   .div-scroll-down {
     background-color: orange;
   }
+
+  
+  a, a:visited {
+    color: rgb(88, 46, 145);
+  }
+
+  a:focus, a:active, a:hover     {
+    color: rgb(160, 34, 58);
+  }
 </style>

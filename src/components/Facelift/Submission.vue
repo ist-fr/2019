@@ -5,10 +5,8 @@
         <div class="col-md-6">
           <h2>SUBMISSION</h2>
         </div>
-          <div class="col-md-6 text-right submit-external-text">
-            <div>
-              <h2><a href="/form/submission">Submit your paper <i class="fa fa-external-link"></i></a></h2>
-            </div>
+        <div class="col-md-6 text-right">
+          <h2><a href="/form/submission">Submit your research <i class="fa fa-external-link"></i></a></h2>
         </div>
         <div class="col-lg-12 mx-auto lead">
           <p style="text-align: justify;">
@@ -72,7 +70,7 @@
         </div>
         <div class="col-sm-12 col-lg-6 text-right submit-external">
           <div>
-            <h2><a href="/form/submission">Submit your paper <i class="fa fa-external-link"></i></a></h2>
+            <h2><a href="/form/submission">Submit your research <i class="fa fa-external-link"></i></a></h2>
           </div>
         </div>
       </div>
@@ -229,9 +227,5 @@ export default {
     position:absolute;
     bottom:0;
     right:0;
-  }
-
-  a {
-    color: rgb(88, 46, 145);
   }
 </style>
