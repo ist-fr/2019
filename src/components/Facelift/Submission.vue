@@ -1,72 +1,79 @@
 <template>
-  <section id="submission">
+  <section id="submission" class="lead">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 mx-auto">
-          <h2>THESIS SUBMISSION</h2>
-          <p class="lead">We will be calling for papers very soon</p>
-          
-    <div class="row">
-      IST-FR symposium goal is to show the potential of Thailand researcher to the public.
-      Thailand has a lot go high-quality research but needed an opportunity to show their potential.
-      We IST-FR want to be a show floor o the research to meet both academic and industrial.
-      Calling for papers, We invite all bachelor degree student for submitting a project.
-      Out theme of the even is <b> Academic Excellence in Data Science through academic and industry collaboration research </b>
-
-    </div>
-    <h3> Criteria </h3>
-    <ul>
-      <li>
-        Undergraduate research in science or Engineering feilds
-      </li>
-      <li>
-        Research has been done during 2017/2018 academic years
-      </li>
-      <li>
-        Research must have scientific process and basic knowledge in computer science, computer Engineering or information science
-      </li>
-      <li>
-        Research format that accepted include Full/Short paper, journal, report, thesis
-      </li>
-      <li>
-        attachment submittion can include, but not limited to, paper, poster file, presentration file, manualscript, source code
-      </li>
-    </ul>
-    <div class="row">
-      <h2>Online submission</h2>
-      - Open submission 25 aug
-      - Close submission 25 sep 23:59 (GMT +7)
-      - Result released 10
-    </div>
-      <div class="row">
-      <h2>Poster presentration</h2>
-      - poster presentration @venu on 20 dec
-    </div>
-    Prize total 17,500 BAHT
-    <div class="row">
-      <h2>Prizes</h2>
-      First Place: 10,000
-      Second Place: 5,000
-      Third Place:  2,500
-    </div>
-    <div class="row">
-      <h2>Submission area</h2>
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" v-for="(researchField, researchFieldKey) in researchFields" v-bind:key="researchFieldKey">
-            <div class="icon-left">
-              <!-- <i class="fa fa-thumbs-o-up fa-3x"></i>   -->
+        <div class="col-md-6">
+          <h2>SUBMISSION</h2>
+        </div>
+          <div class="col-md-6 text-right submit-external-text">
+            <div>
+              <h2><a href="/form/submission">Submit your paper <i class="fa fa-external-link"></i></a></h2>
             </div>
-            <div class="text">
-              <h4>{{researchFieldKey}}</h4>
+        </div>
+        <div class="col-lg-12 mx-auto lead">
+          <p style="text-align: justify;">
+            The goal of the IST-FR symposium is to show the potential of Thailand researcher to the public.
+            Thailand has a lot of high-quality research but needed an opportunity to show their potential.
+            We IST-FR want to be a show floor of the research to meet both academic and industrial.
+            Calling for papers, We invite all bachelor degree student for submitting a project.
+            Out theme of the even is Academic Excellence in Data Science through academic and industry collaboration research
+          </p>
+          <p>
+            To be eligible for submission, your research must meets all the criteria set out below
+          </p>
+          <h3> Criteria </h3>
+          <ul>
+            <li>
+              Undergraduate research in science or Engineering feilds
+            </li>
+            <li>
+              Research has been done during 2017/2018 academic years
+            </li>
+            <li>
+              Research must have scientific process and basic knowledge in computer science, computer Engineering or information science
+            </li>
+            <li>
+              Research format that accepted include Full/Short paper, journal, report, thesis
+            </li>
+            <li>
+              attachment submittion can include, but not limited to, paper, poster file, presentration file, manualscript, source code
+            </li>
+          </ul>
+          <h3>Online submission</h3>
+          <ul>
+            <li>Open submission 25 aug</li>
+            <li>Close submission 25 sep 23:59 (GMT +7)</li>
+            <li>Result released 10</li>
+          </ul>
+        <h3>Poster presentration</h3>
+        <p>poster presentration @venu on 20 dec</p>
+        <h3>Prizes</h3>
+          Prize total 17,500 BAHT
+          <ul>
+            <li>First Place: 10,000</li>
+            <li>Second Place: 5,000</li>
+            <li>Third Place: 2,500</li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <h2>Submission area</h2>
+        </div>
+        <div class="col-sm-12 col-lg-6" v-for="(researchField, researchFieldKey) in researchFields" v-bind:key="researchFieldKey">
+          <div class="icon-left">
+          </div>
+          <div class="text">
+            <h4>{{researchFieldKey}}</h4>
+            <ul>
               <li v-for="research in researchField" v-bind:key="research">
                 {{research}}
               </li>
-
-            </div>
+            </ul>
+          </div>
         </div>
-    </div>
-          <a  href="/form/submission">
-           <button type="button" class="btn btn-success">Submission</button>
-          </a>
+        <div class="col-sm-12 col-lg-6 text-right submit-external">
+          <div>
+            <h2><a href="/form/submission">Submit your paper <i class="fa fa-external-link"></i></a></h2>
+          </div>
         </div>
       </div>
     </div>
@@ -195,7 +202,7 @@ export default {
           'Finite state automaton'
         ]
       },
-      informatiom: [
+      information: [
         'Open '
       ]
     }
@@ -209,3 +216,22 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .submit-external div {
+    position:relative;
+    width:100%;
+    height:100%;
+    float: right;
+  }
+
+  .submit-external div a {
+    position:absolute;
+    bottom:0;
+    right:0;
+  }
+
+  a {
+    color: rgb(88, 46, 145);
+  }
+</style>
