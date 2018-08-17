@@ -142,7 +142,7 @@ export default {
           'Bioinformatics',
           'Biomedical and Health Informatics',
           'Chemoinformatic',
-          'Pharmaceutical Informatics',
+          'Pharmacoinformatics',
           'Mathematical Informatics'
         ],
         'Internet of Things (IOTS)': [
