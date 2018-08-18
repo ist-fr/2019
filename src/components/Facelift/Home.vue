@@ -4,7 +4,14 @@
     <div class="header-jumbotron text-center">
       <div class="container-logo text-center">
         <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo">
-        Promoting academic excellence in Computer Science<br>through academic industry collaborative research
+        <img class="img-separator" src="../../assets/separator.svg">
+        <div class="row">
+          <div class="col-md-12">
+            Promoting academic excellence in
+            Computer Science through academic
+            industry collaborative research
+          </div>
+        </div>
       </div>
       <div class="div-scroll-down"></div>
       <img class="img-hero-bg" src="../../assets/line_header.svg">
@@ -67,7 +74,7 @@
     align-items: center;
     font-weight: 600;
     height: 100vh;
-    font-size: 1.45rem;
+    font-size: 1.25rem;
     background: linear-gradient(to bottom, #fff 0%, #f8f9fa 100%)
   }
 
@@ -98,7 +105,7 @@
 
   .container-logo {
     width: 100%;
-    padding-bottom: 200px;
+    padding-bottom: 10%;
   }
 
   .bg-dark {
@@ -116,13 +123,20 @@
   }
 
   .img-logo {
-    margin-bottom: 50px;
+    margin-bottom: .75vh;
+    max-height: 30vh;
+  }
+
+  .img-separator {
+    margin: 2vh 0;
+    max-height: 5vh;
+    max-width: 10vh;
   }
 
   .img-hero-bg {
     position: absolute;
     width: 100%;
-    bottom: -90px;
+    bottom: -5vh;
     opacity: .75;
     image-rendering: optimizeQuality;
   }
@@ -130,7 +144,6 @@
   .div-scroll-down {
     background-color: orange;
   }
-
   
   a, a:visited {
     color: rgb(88, 46, 145);

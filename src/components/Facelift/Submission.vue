@@ -6,32 +6,32 @@
           <h2>SUBMISSION</h2>
         </div>
         <div class="col-md-6 text-right">
-          <h2><a href="/form/submission">Submit your research <i class="fa fa-external-link"></i></a></h2>
+          <h2><a href="/form/submission">Submit your thesis <i class="fa fa-external-link"></i></a></h2>
         </div>
         <div class="col-lg-12 mx-auto lead">
           <p style="text-align: justify;">
-            The goal of the IST-FR symposium is to show the potential of Thailand researcher to the public.
-            Thailand has a lot of high-quality research but needed an opportunity to show their potential.
-            We IST-FR want to be a show floor of the research to meet both academic and industrial.
+            The goal of the IST-FR symposium is to show the potential of Thailand thesiser to the public.
+            Thailand has a lot of high-quality thesis but needed an opportunity to show their potential.
+            We IST-FR want to be a show floor of the thesis to meet both academic and industrial.
             Calling for papers, We invite all bachelor degree student for submitting a project.
-            Out theme of the even is Academic Excellence in Data Science through academic and industry collaboration research
+            Out theme of the even is Academic Excellence in Data Science through academic and industry collaboration thesis
           </p>
           <p>
-            To be eligible for submission, your research must meets all the criteria set out below
+            To be eligible for submission, your thesis must meets all the criteria set out below
           </p>
           <h3> Criteria </h3>
           <ul>
             <li>
-              Undergraduate research in science or Engineering feilds
+              Undergraduate thesis in science or Engineering feilds
             </li>
             <li>
-              Research has been done during 2017/2018 academic years
+              Thesis has been done during 2017/2018 academic years
             </li>
             <li>
-              Research must have scientific process and basic knowledge in computer science, computer Engineering or information science
+              Thesis must have scientific process and basic knowledge in computer science, computer Engineering or information science
             </li>
             <li>
-              Research format that accepted include Full/Short paper, journal, report, thesis
+              Thesis format that accepted include Full/Short paper, journal, report, thesis
             </li>
             <li>
               attachment submittion can include, but not limited to, paper, poster file, presentration file, manualscript, source code
@@ -56,22 +56,20 @@
         <div class="col-lg-12">
           <h2>Submission area</h2>
         </div>
-        <div class="col-sm-12 col-lg-6" v-for="(researchField, researchFieldKey) in researchFields" v-bind:key="researchFieldKey">
+        <div class="col-sm-12 col-lg-6" v-for="(thesisField, thesisFieldKey) in thesisFields" v-bind:key="thesisFieldKey">
           <div class="icon-left">
           </div>
           <div class="text">
-            <h4>{{researchFieldKey}}</h4>
+            <h4>{{thesisFieldKey}}</h4>
             <ul>
-              <li v-for="research in researchField" v-bind:key="research">
-                {{research}}
+              <li v-for="thesis in thesisField" v-bind:key="thesis">
+                {{thesis}}
               </li>
             </ul>
           </div>
         </div>
-        <div class="col-sm-12 col-lg-6 text-right submit-external">
-          <div>
-            <h2><a href="/form/submission">Submit your research <i class="fa fa-external-link"></i></a></h2>
-          </div>
+        <div class="col-md-12 text-right">
+          <h2><a href="/form/submission">Submit your thesis <i class="fa fa-external-link"></i></a></h2>
         </div>
       </div>
     </div>
@@ -81,7 +79,7 @@
 export default {
   data () {
     return {
-      researchFields: {
+      thesisFields: {
         'Artificial Intelligence & Machine Learning (AI&ML)': [
           'Artificial General Intelligence',
           'Statistical AI',
@@ -210,22 +208,5 @@ export default {
       console.log(person)
     }
   },
-  components: {
-  }
 }
 </script>
-
-<style scoped>
-  .submit-external div {
-    position:relative;
-    width:100%;
-    height:100%;
-    float: right;
-  }
-
-  .submit-external div a {
-    position:absolute;
-    bottom:0;
-    right:0;
-  }
-</style>
