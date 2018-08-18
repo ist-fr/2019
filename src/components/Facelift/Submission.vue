@@ -207,6 +207,6 @@ export default {
     selectPerson (person) {
       console.log(person)
     }
-  },
+  }
 }
 </script>
