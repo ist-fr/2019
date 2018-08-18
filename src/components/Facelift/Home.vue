@@ -4,6 +4,7 @@
     <div class="header-jumbotron text-center">
       <div class="container-logo text-center">
         <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo">
+        <img class="img-separator" src="../../assets/separator.svg">
         <div class="row">
           <div class="col-md-12">
             Promoting academic excellence in
@@ -107,11 +108,6 @@
     padding-bottom: 10%;
   }
 
-  /* .container-logo > .row > div {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  } */
-
   .bg-dark {
     background-color: #fff !important;
   }
@@ -127,8 +123,14 @@
   }
 
   .img-logo {
-    margin-bottom: 4vh;
+    margin-bottom: .75vh;
     max-height: 30vh;
+  }
+
+  .img-separator {
+    margin: 2vh 0;
+    max-height: 5vh;
+    max-width: 10vh;
   }
 
   .img-hero-bg {
