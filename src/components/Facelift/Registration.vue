@@ -6,7 +6,7 @@
           <h2>REGISTRATION</h2>
         </div>
         <div class="col-lg-6 text-right">
-          <h2><a href="/form/registration">Register now <i class="fa fa-external-link"></i></a></h2>
+          <h2><router-link to="/form/registration">Register now <i class="fa fa-external-link"></i></router-link></h2>
         </div>
         <div class="col-lg-12 justify-content-md-center">
           <h3>Fees</h3>
