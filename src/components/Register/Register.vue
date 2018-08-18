@@ -157,7 +157,7 @@
             <label class="control-label col-sm-2" for="postalCode">Postal Code</label>
             <div class="col-sm-10 columns is-multiline">
               <p class="control has-icon has-icon-right">
-              <input v-model="postalCode" name="postalCode" v-validate="'required|number'" class="input form-control" type="text" placeholder="postalCode" required>
+              <input v-model="postalCode" name="postalCode" v-validate="'required|numeric'" class="input form-control" type="text" placeholder="postalCode" required>
               <i v-show="errors.has('postalCode')" class="fa fa-warning"></i>
               <span v-show="errors.has('postalCode')" class="help text-error">{{ errors.first('postalCode') }}</span>
               </p>
@@ -184,16 +184,18 @@
 import myDatepicker from 'vue-datepicker/vue-datepicker-es6.vue'
 import axios from 'axios'
 
-const BASE_URL = 'http://128.199.88.139:3000/api/'
+const BASE_URL = 'http://128.199.88.139:11111/api/'
 
 export default {
   name: 'hello',
   data () {
     return {
       participantCategory: '',
-      participantCategories: {
-
-      },
+      participantCategories: [
+        { text: 'All delegates', value: 'regular' },
+        { text: 'Full time students', value: 'student' },
+        { text: 'Accompanying persons', value: 'accompany' }
+      ],
       title: '',
       titles: [
         { text: 'Prof', value: 'Prof' },
@@ -210,7 +212,6 @@ export default {
       phone: '',
       fax: '',
       affiliation: '',
-      affiliationType: '',
       department: '',
       maillingAddress1: '',
       maillingAddress2: '',
@@ -239,22 +240,27 @@ export default {
       this.$validator.validateAll().then(result => {
         if (result) {
           console.log('in')
-          axios.post(BASE_URL + `alerts/`, {
-            company: this.company,
-            customer: this.customer,
-            soNumber: this.soNumber,
-            endUser: this.endUser,
-            product: this.product,
-            startDate: this.startDate.time,
-            endDate: this.endDate.time,
-            note: this.note,
-            maCondition: this.maCondition,
-            numService: this.numService,
-            status: this.status
+          axios.post(BASE_URL + `participants/`, {
+            participantType: this.participantCategory,
+            title: this.title,
+            firstName: this.firstName,
+            middleName: this.middleName,
+            lastName: this.lastName,
+            nameOnBadge: this.nameOnBadge,
+            email: this.email,
+            phone: this.phone,
+            fax: this.fax,
+            affiliation: this.affiliation,
+            department: this.department,
+            maillingAddress1: this.maillingAddress1,
+            maillingAddress2: this.maillingAddress2,
+            city: this.city,
+            province: this.province,
+            postalCode: this.postalCode,
+            country: this.country
           })
             .then(response => {
               console.log('send')
-              window.location.href = '#/view'
             })
             .catch(e => {
               console.log(e)
@@ -265,15 +271,6 @@ export default {
     }
   },
   created () {
-    axios.get(BASE_URL + 'products')
-      .then(response => {
-        console.log('get')
-        console.log(response)
-        this.products = response.data
-      })
-      .catch(e => {
-        console.log(e)
-      })
   }
 }
 </script>
