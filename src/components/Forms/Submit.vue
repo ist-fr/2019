@@ -343,7 +343,7 @@
               <label class="control-label" for="keywords">Attachments</label>
               <div class="control has-icon has-icon-right">
               <div class="dropbox">
-                <input type="file" multiple @change="filesChange($event.target.name, $event.target.files)" class="input-file">
+                <input id="file-input" type="file" multiple @change="filesChange($event.target.name, $event.target.files)" class="input-file">
                   <p v-if="!haveFile">
                     Drag your file(s) here to begin<br> or click to browse
                   </p>
@@ -646,5 +646,9 @@ li {
     font-size: 1em;
     text-align: center;
     padding-top: 5.5rem;
+  }
+  
+  #file-input {
+    height: 100%;
   }
 </style>
