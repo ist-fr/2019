@@ -69,5 +69,9 @@
   .is-active, .navbar-dark .navbar-nav .nav-link:focus {
     color: rgba(255, 255, 255, 1) !important;
   }
+
+  .navbar-toggler {
+    border: transparent;
+  }
 </style>
 
