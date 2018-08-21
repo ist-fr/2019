@@ -313,6 +313,7 @@ $counter: $items - $rows + 2;
       height: 0px;
       padding: $inner-margin;
       visibility: hidden;
+      overflow: hidden;
 
       @include mq-lg {
         height: $body-height;

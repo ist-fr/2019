@@ -1,6 +1,6 @@
 <template>
   <section id="speakers">
-    <div class="container contrainer-dark">
+    <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2>SPEAKERS</h2>
