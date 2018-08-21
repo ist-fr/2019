@@ -19,6 +19,12 @@
 </template>
 
 <style scoped>
+  footer {
+    background: linear-gradient(-90deg, rgb(88, 46, 145), rgb(160, 34, 58));
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-size: small;
+  }
+
   .social {
     color: #fff;
   }

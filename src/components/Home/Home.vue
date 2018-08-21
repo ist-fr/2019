@@ -92,21 +92,6 @@
     padding: 60px 0;
   }
 
-  .navbar, footer{
-    background: linear-gradient(-90deg, rgb(88, 46, 145), rgb(160, 34, 58));
-    color: rgba(255, 255, 255, 0.75) !important;
-  }
-
-  footer {
-    font-size: small;
-  }
-
-  .nav-container {
-    min-width: 100% !important;
-    max-width: 100% !important;
-    padding: 0;
-  }
-
   .container-logo {
     width: 100%;
     padding-bottom: 10%;
@@ -114,16 +99,6 @@
 
   .bg-dark {
     background-color: #fff !important;
-  }
-
-  .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, .6);
-    font-size: .725rem;
-    font-weight: 800;
-  }
-
-  .is-active, .navbar-dark .navbar-nav .nav-link:focus {
-    color: rgba(255, 255, 255, 1) !important;
   }
 
   .img-logo {
@@ -142,17 +117,5 @@
     width: 100%;
     bottom: -7.5vh;
     opacity: .75;
-  }
-
-  .div-scroll-down {
-    background-color: orange;
-  }
-  
-  a, a:visited {
-    color: rgb(88, 46, 145);
-  }
-
-  a:focus, a:active, a:hover     {
-    color: rgb(160, 34, 58);
   }
 </style>
