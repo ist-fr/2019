@@ -58,15 +58,15 @@ export default new Router({
       component: Home
     },
     {
-      path: '/form/registration',
+      path: '/forms/registration',
       component: RegistrationForm
     },
     {
-      path: '/form/submission',
+      path: '/forms/submission',
       component: SubmissionForm
     },
     {
-      path: '/form/faq',
+      path: '/forms/faq',
       component: FAQForm
     }
   ],
