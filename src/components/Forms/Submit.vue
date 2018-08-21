@@ -34,14 +34,12 @@
                 <span v-show="errors.has('firstName1')" class="help text-error">{{ errors.first('firstName1') }}</span>
               </p>
             </div>
-            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('middleName1')}">
-              <label class="control-label" for="middleName1">Middle Name</label>
-              <p class="control has-icon has-icon-right">
-                <input v-model="middleName1" v-validate="'required'" name="middleName1" class="input form-control" type="text" placeholder="Smith">
+            <div :class="{'form-group': true, 'has-error': errors.has('middleName1')}">
+                <label class="control-label" for="middleName1">Middle Name</label>
+                <input v-model="middleName1" name="middleName1" class="input form-control" type="text" placeholder="Smith" required>
                 <i v-show="errors.has('middleName1')" class="fa fa-warning"></i>
-                <span v-show="errors.has('middleName1')" class="help text-error">{{ errors.first('middleName1') }}</span>
-              </p>
-            </div>
+                <span v-show="errors.has('middleName1')" class="help text-error">{{ errors.first('middle name') }}</span>
+              </div>
             <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('lastName1')}">
               <label class="control-label" for="lastName1">Last Name</label>
               <p class="control has-icon has-icon-right">
@@ -66,9 +64,9 @@
                 <span v-show="errors.has('phone1')" class="help text-error">{{ errors.first('phone1') }}</span>
               </p>
             </div>   
-            <h3  v-b-toggle="'secondMember'" >Second member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
-            <b-collapse :id="'secondMember'" class="panel-collapse collapse in">
-                <div :class="{'form-group': true, 'required':false, 'has-error': errors.has('title2')}">
+            <h3  data-toggle="collapse" data-target="#secondMember">Second member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
+            <div id="secondMember" class="panel-collapse collapse in" >
+              <div :class="{'form-group': true, 'required':false, 'has-error': errors.has('title2')}">
                 <label class="control-label" for="title2">Title</label>
                 <select v-model="title2" class="form-control" name="title2" options="titles">
                   <option disabled value="">Select title</option>
@@ -109,9 +107,9 @@
                 <i v-show="errors.has('phone2')" class="fa fa-warning"></i>
                 <span v-show="errors.has('phone2')" class="help text-error">{{ errors.first('phone') }}</span>
               </div>
-            </b-collapse>
-            <h3 v-b-toggle="'thirdMember'">Third member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
-            <b-collapse :id="'thirdMember'" class="panel-collapse collapse in">
+            </div>
+            <h3 data-toggle="collapse" data-target="#thirdMember">Third member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
+            <div :id="'thirdMember'" class="panel-collapse collapse in">
               <div :class="{'form-group': true, 'required':false, 'has-error': errors.has('title3')}">
                 <label class="control-label" for="title3">Title</label>
                 <select v-model="title3" class="form-control" name="title3" options="titles">
@@ -153,9 +151,9 @@
                 <i v-show="errors.has('phone3')" class="fa fa-warning"></i>
                 <span v-show="errors.has('phone3')" class="help text-error">{{ errors.first('phone') }}</span>
               </div>
-            </b-collapse>
-            <h3 v-b-toggle="'fourthMember'">Fourth member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
-            <b-collapse :id="'fourthMember'" class="panel-collapse collapse in">
+            </div>
+            <h3 data-toggle="collapse" data-target="#fourthMember">Fourth member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
+            <div :id="'fourthMember'" class="panel-collapse collapse in">
               <div :class="{'form-group': true, 'required':false, 'has-error': errors.has('title4')}">
                 <label class="control-label" for="title4">Title</label>
                 <select v-model="title4" class="form-control" name="title4" options="titles">
@@ -197,9 +195,9 @@
                 <i v-show="errors.has('phone4')" class="fa fa-warning"></i>
                 <span v-show="errors.has('phone4')" class="help text-error">{{ errors.first('phone') }}</span>
               </div>
-            </b-collapse>
-            <h3 v-b-toggle="'fifththMember'">Fifth member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
-            <b-collapse :id="'fifththMember'" class="panel-collapse collapse in">
+            </div>
+            <h3 data-toggle="collapse" data-target="#fifththMember">Fifth member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
+            <div :id="'fifththMember'" class="panel-collapse collapse in">
               <div :class="{'form-group': true, 'required':false, 'has-error': errors.has('title5')}">
                 <label class="control-label" for="title5">Title</label>
                 <select v-model="title5" class="form-control" name="title5" options="titles">
@@ -242,7 +240,7 @@
                 <span v-show="errors.has('phone5')" class="help text-error">{{ errors.first('phone') }}</span>
               </div>
               <br>
-            </b-collapse>
+            </div>
             <h3>General Infomation</h3>
             <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('teamName')}">
               <label class="control-label" for="teamName">Team Name</label>
