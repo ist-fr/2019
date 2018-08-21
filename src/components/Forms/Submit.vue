@@ -364,7 +364,7 @@
           </form>
         </div>
       </div>
-     <button type="button" class="btn btn-lg btn-primary btn-block mb-3" data-toggle="modal" data-target=".bs-example-modal-sm" v-on:click="postPost()">Submit</button>
+     <button type="button" class="btn btn-lg btn-primary btn-block mb-3" data-toggle="modal" data-target=".bs-example-modal-sm" v-on:click="submit()">Submit</button>
     </div>
     <cs-footer></cs-footer>
   </div>
@@ -547,7 +547,7 @@ export default {
       this.upload(this.submitForm)
     },
     upload (formData) {
-      let url = `http://128.199.88.139:11115/upload`
+      let url = `https://api.ivaa.space/upload`
       this.uploading = true
       axios.post(url, formData, {
         timeout: 50000000
