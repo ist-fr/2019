@@ -1,5 +1,4 @@
 <template>
-<div class='black-background'>
   <section id="speakers">
     <div class="container contrainer-dark">
       <div class="row">
@@ -24,7 +23,6 @@
       </div>
     </div>
   </section>
-</div>
 </template>
 <script>
 export default {
