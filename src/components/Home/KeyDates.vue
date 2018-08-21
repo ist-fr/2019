@@ -10,8 +10,6 @@
       </div>
       <!-- All cards must be the same height and width for space calculations on large screens. -->
       <div class="demo-card-wrapper">
-
-
         <div class="demo-card demo-card--step1">
           <div class="head">
             <div class="number-box">
@@ -20,7 +18,7 @@
             <h2><span class="small">Undergrad thesis</span>submission deadline</h2>
           </div>
           <div class="body">
-            <img src="http://placehold.it/1000x500" alt="Graphic">
+            <div class="holder"></div>
           </div>
         </div>
 
@@ -32,7 +30,7 @@
             <h2><span class="small">Thesis</span>authors notification</h2>
           </div>
           <div class="body">
-            <img src="http://placehold.it/1000x500" alt="Graphic">
+            <div class="holder"></div>
           </div>
         </div>
 
@@ -44,7 +42,7 @@
             <h2><span class="small">Deadline for</span>early registration</h2>
           </div>
           <div class="body">
-            <img src="http://placehold.it/1000x500" alt="Graphic">
+            <div class="holder"></div>
           </div>
         </div>
 
@@ -56,7 +54,7 @@
             <h2><span class="small">Deadline for</span>normal registration</h2>
           </div>
           <div class="body">
-            <img src="http://placehold.it/1000x500" alt="Graphic">
+            <div class="holder"></div>
           </div>
         </div>
         <div class="demo-card demo-card--step5">
@@ -67,7 +65,7 @@
             <h2><span class="small">Gather for the</span>Symposium Day</h2>
           </div>
           <div class="body">
-            <img src="http://placehold.it/1000x500" alt="Graphic">
+            <div class="holder"></div>
           </div>
         </div>
       </div>
@@ -159,6 +157,11 @@ $counter: $items - $rows + 2;
 #key-dates {
   padding-top: 100px;
   padding-bottom: 30px;
+
+  .holder {
+    height: 500px;
+    width: 1000px;
+  }
 
   small {
     font-weight: 400 !important;
