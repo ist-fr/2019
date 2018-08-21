@@ -36,19 +36,19 @@
 </template>
 
 <script>
-  import KeyDates from '@/components/Facelift/KeyDates'
-  import Announcements from '@/components/Facelift/Announcements'
-  import Committee from '@/components/Facelift/Committee'
-  import Program from '@/components/Facelift/Program'
-  import Speakers from '@/components/Facelift/Speakers'
-  import Accommodation from '@/components/Facelift/Accommodation'
-  import Registration from '@/components/Facelift/Registration'
-  import Submission from '@/components/Facelift/Submission'
-  import Venue from '@/components/Facelift/Venue'
-  import Contact from '@/components/Facelift/Contact'
-  import Navbar from '@/components/Facelift/Navbar'
-  import CsFooter from '@/components/Facelift/Footer'
-  import Faq from '@/Components/Facelift/FAQ'
+  import KeyDates from '@/components/Home/KeyDates'
+  import Announcements from '@/components/Home/Announcements'
+  import Committee from '@/components/Home/Committee'
+  import Program from '@/components/Home/Program'
+  import Speakers from '@/components/Home/Speakers'
+  import Accommodation from '@/components/Home/Accommodation'
+  import Registration from '@/components/Home/Registration'
+  import Submission from '@/components/Home/Submission'
+  import Venue from '@/components/Home/Venue'
+  import Contact from '@/components/Home/Contact'
+  import Navbar from '@/components/Home/Navbar'
+  import CsFooter from '@/components/Home/Footer'
+  import Faq from '@/Components/Home/FAQ'
   export default {
     name: 'Home',
     methods: {},

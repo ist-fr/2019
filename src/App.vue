@@ -6,7 +6,7 @@
 </template>
 
 <script>
-  import Navbar from '@/components/Facelift/Navbar'
+  import Navbar from '@/components/Home/Navbar'
   export default {
     name: 'app',
     components: {

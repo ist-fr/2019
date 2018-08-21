@@ -1,5 +1,27 @@
 <template>
   <div class="hello" >
+    <navbar></navbar>
+      <div class="header-jumbotron text-center">
+        <div class="container-logo text-center">
+          <div>
+            <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo">
+          </div>
+          <div>
+            <img class="img-separator" src="../../assets/separator.svg">
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              Promoting academic excellence in
+              Computer Science through academic
+              industry collaborative research
+            </div>
+          </div>
+        </div>
+        <div class="div-scroll-down"></div>
+        <img class="img-hero-bg" src="../../assets/line_header.svg">
+      </div>
+      <cs-footer></cs-footer>
+    
     <div class="container">
       <div class="row">
         <form class="form-horizontal" @submit.prevent="search">
@@ -183,10 +205,17 @@
 <script>
 import myDatepicker from 'vue-datepicker/vue-datepicker-es6.vue'
 import axios from 'axios'
+import Navbar from '@/components/Home/Navbar'
+import CsFooter from '@/components/Home/Footer'
 
 const BASE_URL = 'http://128.199.88.139:11111/api/'
 
 export default {
+  components: {
+    Navbar,
+    CsFooter,
+    'date-picker': myDatepicker
+  },
   name: 'hello',
   data () {
     return {
@@ -224,17 +253,11 @@ export default {
       }
     }
   },
-  computed: {
-  },
   props: {
     loggingIn: {
       default: false
     }
   },
-  components: {
-    'date-picker': myDatepicker
-  },
-  // Pushes posts to the server when called.
   methods: {
     postPost () {
       this.$validator.validateAll().then(result => {
@@ -269,8 +292,6 @@ export default {
         }
       })
     }
-  },
-  created () {
   }
 }
 </script>

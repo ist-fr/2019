@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import SubmissionForm from '@/components/Register/Submit'
-import RegistrationForm from '@/components/Register/Register'
-import FAQForm from '@/components/Register/Question'
-import Home from '@/components/Facelift/Home'
+import SubmissionForm from '@/components/Forms/Submit'
+import RegistrationForm from '@/components/Forms/Register'
+import FAQForm from '@/components/Forms/Question'
+import Home from '@/components/Home/Home'
 
 Vue.use(Router)
 
