@@ -31,16 +31,16 @@ export default {
           title: 'Dr.',
           name: 'Sarana Nutanong',
           imageSrc: require('../../assets/committee/dr_sarana_nutanong.png'),
-          position: 'General Chair',
+          position: 'General Chairman',
           school: 'School of Information Science & Technology',
           university: 'Vidyasirimedhi Institute of Science & Technology',
           link: 'http://www.vistec.ac.th/academic/faculty_detail.php?school=IST&id=55'
         },
         {
-          title: 'Prof. Dr',
+          title: 'Prof. Dr.',
           name: 'Chokchai  Leangsuksun',
           imageSrc: require('../../assets/committee/dr_sarana_nutanong.png'),
-          position: 'Undergrad Thesis Program',
+          position: 'Undergraduate Thesis Program',
           school: 'School of Information Science & Technology',
           university: 'Vidyasirimedhi Institute of Science & Technology',
           link: 'http://www.vistec.ac.th/academic/faculty_detail.php?school=IST&id=55'
@@ -49,16 +49,16 @@ export default {
           title: 'Prof. Dr',
           name: 'Poramate Manoonpong',
           imageSrc: require('../../assets/committee/dr_sarana_nutanong.png'),
-          position: 'Undergrad Thesis Program',
+          position: 'Undergraduate Thesis Program',
           school: 'School of Information Science & Technology',
           university: 'Vidyasirimedhi Institute of Science & Technology',
           link: 'http://www.vistec.ac.th/academic/faculty_detail.php?school=IST&id=55'
         },
         {
-          title: 'Dr',
+          title: 'Dr.',
           name: 'Theerawit Wilaiprasitporn',
           imageSrc: require('../../assets/committee/dr_sarana_nutanong.png'),
-          position: 'Undergrad Thesis Program',
+          position: 'Undergraduate Thesis Program',
           school: 'School of Information Science & Technology',
           university: 'Vidyasirimedhi Institute of Science & Technology',
           link: 'http://www.vistec.ac.th/academic/faculty_detail.php?school=IST&id=55'

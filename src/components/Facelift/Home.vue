@@ -3,8 +3,12 @@
     <navbar></navbar>
     <div class="header-jumbotron text-center">
       <div class="container-logo text-center">
-        <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo">
-        <img class="img-separator" src="../../assets/separator.svg">
+        <div>
+          <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo">
+        </div>
+        <div>
+          <img class="img-separator" src="../../assets/separator.svg">
+        </div>
         <div class="row">
           <div class="col-md-12">
             Promoting academic excellence in
@@ -136,9 +140,8 @@
   .img-hero-bg {
     position: absolute;
     width: 100%;
-    bottom: -5vh;
+    bottom: -7.5vh;
     opacity: .75;
-    image-rendering: optimizeQuality;
   }
 
   .div-scroll-down {

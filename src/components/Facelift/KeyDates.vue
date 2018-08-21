@@ -104,7 +104,7 @@
 $background: #f7f7f7;
 $box-shadow: 0 0 40px -6px rgba(0,0,0,0.75);
 $border: 1px solid rgba(191, 191, 191, 0.4);
-$items: 6;
+$items: 5;
 $rows: ceil($items/2);
 
 /* Card sizing */
@@ -122,7 +122,7 @@ $colors: rgb(88, 46, 145), rgb(160, 34, 58), rgb(248, 186, 0);
 $timeline: #bdbdbd;
 
 /* Calculations */
-$container-height: $rows * ($card-height + $outer-margin) + $stagger;
+$container-height: $rows * ($card-height + $outer-margin);
 $container-width: $card-width*2 + $outer-margin*3;
 $head-height: $number-size + 50;
 $body-height: $card-height - $head-height;
@@ -158,6 +158,7 @@ $counter: $items - $rows + 2;
 
 #key-dates {
   padding-top: 100px;
+  padding-bottom: 30px;
 
   small {
     font-weight: 400 !important;
@@ -192,6 +193,10 @@ $counter: $items - $rows + 2;
         border-left: 1px solid $timeline;
       }
     }
+  }
+
+  .demo-card:last-child {
+    margin-bottom: 10px !important;
   }
 
   .demo-card {
@@ -253,6 +258,7 @@ $counter: $items - $rows + 2;
         margin-top: $stagger;
       }
     }
+
 
     .head {
       position: relative;
