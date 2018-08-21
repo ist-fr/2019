@@ -66,7 +66,7 @@
     font-weight: 800;
   }
 
-  .is-active, .navbar-dark .navbar-nav .nav-link:focus {
+  .is-active, .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 1) !important;
   }
 
