@@ -2,7 +2,7 @@
   <div>
     <navbar></navbar>
     <header>
-      <div class="container pt-5 pb-1 mb-3">
+      <div class="container pt-5 pb-3 mb-3">
         <div class="row">
           <div class="col-sm-12">
             Register
@@ -258,6 +258,7 @@ header {
   background: linear-gradient(-90deg, rgb(88, 46, 145), rgb(160, 34, 58));
   color: rgba(255,255,255,1);
   font-size: 4rem;
+  line-height: 4rem;
 }
 
 .btn-primary {
