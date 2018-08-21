@@ -20,17 +20,17 @@
       <div class="div-scroll-down"></div>
       <img class="img-hero-bg" src="../../assets/line_header.svg">
     </div>
-    <key-dates class="bg-light"></key-dates>
-    <announcements class="bg-dark"></announcements>
-    <committee class="bg-light"></committee>
-    <program class="bg-dark"></program>
-    <speakers class="bg-light"></speakers>
-    <accommodation class="bg-dark"></accommodation>
-    <registration class="bg-light"></registration>
-    <submission class="bg-dark"></submission>
-    <venue class="bg-light"></venue>
-    <faq class="bg-dark"></faq>
-    <contact class="bg-light"></contact>
+    <key-dates class="bg-stripe"></key-dates>
+    <announcements class="bg-stripe"></announcements>
+    <committee class="bg-stripe"></committee>
+    <program class="bg-stripe"></program>
+    <speakers class="bg-stripe"></speakers>
+    <accommodation class="bg-stripe"></accommodation>
+    <registration class="bg-stripe"></registration>
+    <submission class="bg-stripe"></submission>
+    <venue class="bg-stripe"></venue>
+    <faq class="bg-stripe"></faq>
+    <contact class="bg-stripe"></contact>
     <cs-footer></cs-footer>
   </div>
 </template>
@@ -79,7 +79,7 @@
     font-weight: 600;
     height: 100vh;
     font-size: 1.25rem;
-    background: linear-gradient(to bottom, #fff 0%, #f8f9fa 100%)
+    background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%)
   }
 
   @media (min-width: 992px) {
@@ -109,5 +109,9 @@
     width: 100%;
     bottom: -7.5vh;
     opacity: .75;
+  }
+
+  .bg-stripe:nth-of-type(odd) {
+    background-color: #f0f0f0 !important; 
   }
 </style>
