@@ -81,7 +81,7 @@ import axios from 'axios'
 import Navbar from '@/components/Forms/Navbar'
 import CsFooter from '@/components/Home/Footer'
 
-const BASE_URL = 'http://128.199.88.139:11111/api/'
+const BASE_URL = 'https://api.ivaa.space/api/'
 
 export default {
   components: {

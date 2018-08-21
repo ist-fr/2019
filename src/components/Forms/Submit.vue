@@ -380,7 +380,7 @@ import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 import Navbar from '@/components/Forms/Navbar'
 import CsFooter from '@/components/Home/Footer'
 
-const BASE_URL = 'http://128.199.88.139:11111/api/'
+const BASE_URL = 'https://api.ivaa.space/api/'
 
 export default {
   components: {
@@ -452,7 +452,7 @@ export default {
       },
       submitForm: null,
       dropzoneOptions: {
-        url: 'http://128.199.88.139:11115/upload',
+        url: 'https://api.ivaa.space/upload',
         thumbnailWidth: 150,
         maxFilesize: 500,
         headers: {
