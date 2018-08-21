@@ -241,6 +241,7 @@ export default {
           })
             .then(response => {
               console.log('send')
+              alert('Submit successful, Thank You')
             })
             .catch(e => {
               console.log(e)

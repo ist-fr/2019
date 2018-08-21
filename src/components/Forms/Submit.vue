@@ -555,6 +555,7 @@ export default {
       // get data
       .then(response => {
         console.log(response.data)
+        alert('Submit successful, Thank You')
       })
     },
     filesChange (fieldName, fileList) {
