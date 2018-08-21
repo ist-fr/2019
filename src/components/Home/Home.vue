@@ -87,18 +87,10 @@
       padding: 50px 20% 30px;
     }
   }
-  
-  section {
-    padding: 60px 0;
-  }
 
   .container-logo {
     width: 100%;
     padding-bottom: 10%;
-  }
-
-  .bg-dark {
-    background-color: #fff !important;
   }
 
   .img-logo {

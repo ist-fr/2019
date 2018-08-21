@@ -46,7 +46,7 @@ export default {
           link: 'http://www.vistec.ac.th/academic/faculty_detail.php?school=IST&id=55'
         },
         {
-          title: 'Prof. Dr',
+          title: 'Prof. Dr.',
           name: 'Poramate Manoonpong',
           imageSrc: require('../../assets/committee/dr_sarana_nutanong.png'),
           position: 'Undergraduate Thesis Program',
