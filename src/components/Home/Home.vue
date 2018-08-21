@@ -23,13 +23,13 @@
     <key-dates class="bg-stripe"></key-dates>
     <announcements class="bg-stripe"></announcements>
     <committee class="bg-stripe"></committee>
-    <program class="bg-stripe"></program>
+    <!-- <program class="bg-stripe"></program> -->
     <speakers class="bg-stripe"></speakers>
-    <accommodation class="bg-stripe"></accommodation>
+    <!-- <accommodation class="bg-stripe"></accommodation> -->
     <registration class="bg-stripe"></registration>
     <submission class="bg-stripe"></submission>
     <venue class="bg-stripe"></venue>
-    <faq class="bg-stripe"></faq>
+    <!-- <faq class="bg-stripe"></faq> -->
     <contact class="bg-stripe"></contact>
     <cs-footer></cs-footer>
   </div>

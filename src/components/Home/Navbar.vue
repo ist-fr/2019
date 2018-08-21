@@ -18,15 +18,15 @@
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#committee">COMMITTEE</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#program">PROGRAM</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#speakers">SPEAKERS</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#accommodation">ACCOMMODATION</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#registration">REGISTRATION</a>
           </li>
@@ -36,9 +36,9 @@
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#venue">VENUE</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#faq">FAQ</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#contact">CONTACT</a>
           </li>
