@@ -18,15 +18,15 @@
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#committee" data-toggle="collapse" data-target=".navbar-collapse.show">COMMITTEE</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#program" data-toggle="collapse" data-target=".navbar-collapse.show">PROGRAM</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#speakers" data-toggle="collapse" data-target=".navbar-collapse.show">SPEAKERS</a>
-          </li>
+          <!-- </li>
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#accommodation" data-toggle="collapse" data-target=".navbar-collapse.show">ACCOMMODATION</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#registration" data-toggle="collapse" data-target=".navbar-collapse.show">REGISTRATION</a>
           </li>
@@ -36,9 +36,9 @@
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#venue" data-toggle="collapse" data-target=".navbar-collapse.show">VENUE</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#faq" data-toggle="collapse" data-target=".navbar-collapse.show">FAQ</a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">CONTACT</a>
           </li>
@@ -66,8 +66,12 @@
     font-weight: 800;
   }
 
-  .is-active, .navbar-dark .navbar-nav .nav-link:focus {
+  .is-active, .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 1) !important;
+  }
+
+  .navbar-toggler {
+    border: transparent;
   }
 </style>
 
