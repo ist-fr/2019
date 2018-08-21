@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <navbar></navbar>
     <header>
       <div class="container pt-5 pb-1 mb-3">
@@ -173,7 +173,7 @@ export default {
     CsFooter,
     'date-picker': myDatepicker
   },
-  name: 'hello',
+  name: 'Register',
   data () {
     return {
       participantCategory: '',

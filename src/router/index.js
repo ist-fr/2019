@@ -66,7 +66,7 @@ export default new Router({
       component: SubmissionForm
     },
     {
-      path: '/forms/faq',
+      path: '/forms/query',
       component: FAQForm
     }
   ],

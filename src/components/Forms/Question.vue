@@ -1,11 +1,21 @@
 <template>
-  <div class="hello" >
+  <div>
+    <navbar></navbar>
+    <header>
+      <div class="container pt-5 pb-1 mb-3">
+        <div class="row">
+          <div class="col-sm-12">
+            Submit Query
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="container">
-      <div class="">
-        <form class="form-horizontal" @submit.prevent="search">
-          <div :class="{'form-group':true,'required':true,'has-error': errors.has('subject')}">
-            <label class="control-label col-sm-2" for="subject">Subject</label>
-            <div class="col-sm-10">
+      <div class="row">
+        <div class="col-sm-12">          
+          <form class="form-horizontal" @submit.prevent="search">
+            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('subject')}">
+              <label class="control-label " for="subject">Subject</label>
               <select v-model="subject" class="form-control" name="subject" options="subject">
                 <option disabled value="">Select subject</option>
                 <option v-for="option in subjects" v-bind:value="option.value" v-bind:key="option.value">
@@ -15,74 +25,71 @@
               <i v-show="errors.has('subject')" class="fa fa-warning"></i>
               <span v-show="errors.has('subject')" class="help text-error">{{ errors.first('subject') }}</span>
             </div>
-          </div>
 
-          <div :class="{'form-group':true, 'required':true, 'has-error': errors.has('name')}">
-            <label class="control-label col-sm-2" for="name">Name</label>
-            <div class="col-sm-10 columns is-multiline">
+            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('name')}">
+              <label class="control-label " for="name">Name</label>
               <p class="control has-icon has-icon-right">
-                <input v-model="name" v-validate="'required'" name="name" class="input form-control" type="text" placeholder="name">
+                <input v-model="name" v-validate="'required'" name="name" class="input form-control" type="text" placeholder="John Doe">
                 <i v-show="errors.has('name')" class="fa fa-warning"></i>
                 <span v-show="errors.has('name')" class="help text-error">{{ errors.first('name') }}</span>
               </p>
             </div>
-          </div>
-          <div :class="{'form-group':true, 'required':true, 'has-error': errors.has('organization')}">
-            <label class="control-label col-sm-2" for="organization">Organization</label>
-            <div class="col-sm-10 columns is-multiline">
+            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('organization')}">
+              <label class="control-label " for="organization">Organization</label>
               <p class="control has-icon has-icon-right">
-                <input v-model="organization" v-validate="'required'" name="organization" class="input form-control" type="text" placeholder="organization">
+                <input v-model="organization" v-validate="'required'" name="organization" class="input form-control" type="text" placeholder="John S. Doe Institute of Technology">
                 <i v-show="errors.has('organization')" class="fa fa-warning"></i>
                 <span v-show="errors.has('organization')" class="help text-error">{{ errors.first('organization') }}</span>
               </p>
             </div>
-          </div>
-          <div :class="{'form-group':true, 'required':true, 'has-error': errors.has('country')}">
-            <label class="control-label col-sm-2" for="country">Country</label>
-            <div class="col-sm-10 columns is-multiline">
+            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('country')}">
+              <label class="control-label " for="country">Country</label>
               <p class="control has-icon has-icon-right">
-                <input v-model="country" v-validate="'required'" name="country" class="input form-control" type="text" placeholder="country">
+                <input v-model="country" v-validate="'required'" name="country" class="input form-control" type="text" placeholder="Thailand">
                 <i v-show="errors.has('country')" class="fa fa-warning"></i>
                 <span v-show="errors.has('country')" class="help text-error">{{ errors.first('country') }}</span>
               </p>
             </div>
-          </div>
-          <div :class="{'form-group':true, 'required':true, 'has-error': errors.has('email')}">
-            <label class="control-label col-sm-2" for="email">Email</label>
-            <div class="col-sm-10 columns is-multiline">
+            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('email')}">
+              <label class="control-label " for="email">Email</label>
               <p class="control has-icon has-icon-right">
-                <input v-model="email" v-validate="'required'" name="email" class="input form-control" type="text" placeholder="email">
+                <input v-model="email" v-validate="'required'" name="email" class="input form-control" type="text" placeholder="john.d@institute.edu">
                 <i v-show="errors.has('email')" class="fa fa-warning"></i>
                 <span v-show="errors.has('email')" class="help text-error">{{ errors.first('email') }}</span>
               </p>
             </div>
-          </div>
-          <div :class="{'form-group':true, 'required':true, 'has-error': errors.has('question')}">
-            <label class="control-label col-sm-2" for="question">Question and Comment</label>
-            <div class="col-sm-10 columns is-multiline">
+            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('question')}">
+              <label class="control-label " for="question">Question and Comment</label>
               <p class="control has-icon has-icon-right">
-                <textarea v-model="question" v-validate="'required'" name="question" class="input form-control" type="text" placeholder="question" rows=10></textarea>
+                <textarea v-model="question" v-validate="'required'" name="question" class="input form-control" type="text" placeholder="How do I submit my thesis?" rows=10></textarea>
                 <i v-show="errors.has('question')" class="fa fa-warning"></i>
                 <span v-show="errors.has('question')" class="help text-error">{{ errors.first('question') }}</span>
               </p>
             </div>
-          </div>
-
-        </form>
+          </form>
+        </div>
       </div>
-     <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" v-on:click="postPost()">Submit</button>
+     <button type="button" class="btn btn-lg btn-primary btn-block mb-3" data-toggle="modal" data-target=".bs-example-modal-sm" v-on:click="postPost()">Submit query</button>
     </div>
+    <cs-footer></cs-footer>
   </div>
 </template>
 
 <script>
 import myDatepicker from 'vue-datepicker/vue-datepicker-es6.vue'
 import axios from 'axios'
+import Navbar from '@/components/Forms/Navbar'
+import CsFooter from '@/components/Home/Footer'
 
 const BASE_URL = 'http://128.199.88.139:11111/api/'
 
 export default {
-  name: 'hello',
+  components: {
+    Navbar,
+    CsFooter,
+    'date-picker': myDatepicker
+  },
+  name: 'Query',
   data () {
     return {
       name: '',
@@ -105,10 +112,6 @@ export default {
       default: false
     }
   },
-  components: {
-    'date-picker': myDatepicker
-  },
-  // Pushes posts to the server when called.
   methods: {
     postPost () {
       this.$validator.validateAll().then(result => {
@@ -138,33 +141,15 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1,
-h2 {
-  font-weight: normal;
+header {
+  background: linear-gradient(-90deg, rgb(88, 46, 145), rgb(160, 34, 58));
+  color: rgba(255,255,255,1);
+  font-size: 4rem;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
-
-.text-error {
-  color: red;
-}
-
-.form-group.required .control-label:after { 
-   content:" *";
-   color:red;
+.btn-primary {
+  background: linear-gradient(-90deg, rgb(88, 46, 145), rgb(160, 34, 58));  
+  font-weight: 600;
 }
 </style>
