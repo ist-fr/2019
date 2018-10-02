@@ -40,7 +40,7 @@
           <h3>Online submission</h3>
           <ul>
             <li>Open submission 25 August</li>
-            <li>Close submission 25 September 2018 23:59 (GMT +7)</li>
+            <li>Close submission 25 October 2018 23:59 (GMT +7)</li>
             <li>Result released 10 July 2018</li>
           </ul>
         <h3>Poster presentration</h3>

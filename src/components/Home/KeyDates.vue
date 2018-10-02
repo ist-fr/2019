@@ -13,7 +13,7 @@
         <div class="demo-card demo-card--step1">
           <div class="head">
             <div class="number-box">
-              <span>25 Sep</span>
+              <span>25 Oct</span>
             </div>
             <h2><span class="small">Undergrad thesis</span>submission deadline</h2>
           </div>
@@ -60,7 +60,7 @@
         <div class="demo-card demo-card--step5">
           <div class="head">
             <div class="number-box">
-              <span>19-20 Dec</span>
+              <span>20 Dec</span>
             </div>
             <h2><span class="small">Gather for the</span>Symposium Day</h2>
           </div>
@@ -234,7 +234,7 @@ $counter: $items - $rows + 2;
           border-left-style: solid;
           left: 100%;
         }
-        
+
         .head::before {
           @extend %marker;
           left: $marker-dist + 1;

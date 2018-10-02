@@ -12,8 +12,58 @@
     </header>
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">          
+        <div class="col-sm-12">
           <form class="form-horizontal" @submit.prevent="search">
+            <h3>Thesis Information</h3>
+            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('paperTitle')}">
+              <label class="control-label" for="paperTitle">Paper Title</label>
+              <p class="control has-icon has-icon-right">
+                <textarea  rows="5" v-model="paperTitle" name="paperTitle" v-validate="'required'" class="input form-control" type="text" placeholder="Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference" required></textarea>
+                <i v-show="errors.has('paperTitle')" class="fa fa-warning"></i>
+                <span v-show="errors.has('paperTitle')" class="help text-error">{{ errors.first('paperTitle') }}</span>
+              </p>
+            </div>
+            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('abstract')}">
+              <label class="control-label" for="abstract">Abstract</label>
+              <p class="control has-icon has-icon-right">
+                <textarea  rows="8" v-model="abstract" name="abstract" v-validate="'required'" class="input form-control" type="text" placeholder="Probabilistic Reasoning in Intelligent Systems is a complete and accessible account of the ..." required></textarea>
+                <i v-show="errors.has('abstract')" class="fa fa-warning"></i>
+                <span v-show="errors.has('abstract')" class="help text-error">{{ errors.first('abstract') }}</span>
+              </p>
+            </div>
+            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('keywords')}">
+              <label class="control-label" for="keywords">Keywords</label>
+              <p class="control has-icon has-icon-right">
+                <input-tag :tags.sync="keywords" :limit="10" validate="text" v-model="keywords" name="keywords"  v-validate="'required'" required></input-tag>
+                <i v-show="errors.has('keywords')" class="fa fa-warning"></i>
+                <span v-show="errors.has('keywords')" class="help text-error">{{ errors.first('keywords')}}</span>
+              </p>
+              <span class="small">
+                * tab to add new keyword (max 10)
+              </span>
+            </div>
+            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('attachment')}">
+              <label class="control-label" for="keywords">Attachments</label>
+              <div class="control has-icon has-icon-right">
+              <div class="dropbox">
+                <input id="file-input" type="file" multiple @change="filesChange($event.target.name, $event.target.files)" class="input-file">
+                  <p v-if="!haveFile">
+                    Drag your file(s) here to begin<br> or click to browse
+                  </p>
+                  <div v-if="haveFile" >
+                    <ul classs="list-group list-group-body">
+                      <li class="list-group-item" v-for="file in this.currentFiles" v-bind:key="file.name">
+                        <div class="col-xs-6 text-left" style=" "> <a><span class="glyphicon glyphicon-file" aria-hidden="true"></span>{{file.name}} </a> </div>
+                        <div class="col-xs-3" style="">{{file.size/1000}} KB</div>
+                        <div class="col-xs-3" style="">{{formatDate(file.lastModified)}}</div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <i v-show="errors.has('attachment')" class="fa fa-warning"></i>
+                <span v-show="errors.has('attachment')" class="help text-error">{{ errors.first('attachment')}}</span>
+              </div>
+            </div>
             <h3>Team Leader</h3>
             <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('title1')}">
               <label class="control-label" for="title1">Title</label>
@@ -63,7 +113,13 @@
                 <i v-show="errors.has('phone1')" class="fa fa-warning"></i>
                 <span v-show="errors.has('phone1')" class="help text-error">{{ errors.first('phone1') }}</span>
               </p>
-            </div>   
+            </div>
+            <div :class="{'form-group': true, 'has-error': errors.has('food1')}">
+                <label class="control-label" for="food1">Food Allergies/Condition</label>
+                <input v-model="food1" name="food1" class="input form-control" type="text" placeholder="allergic to shrimp" required>
+                <i v-show="errors.has('food1')" class="fa fa-warning"></i>
+                <span v-show="errors.has('food1')" class="help text-error">{{ errors.first('food') }}</span>
+            </div>
             <h3  data-toggle="collapse" data-target="#secondMember">Second member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
             <div id="secondMember" class="panel-collapse collapse in" >
               <div :class="{'form-group': true, 'required':false, 'has-error': errors.has('title2')}">
@@ -106,6 +162,12 @@
                 <input v-model="phone2" name="phone2" class="input form-control" type="text" placeholder="+662XXXXXXX" required>
                 <i v-show="errors.has('phone2')" class="fa fa-warning"></i>
                 <span v-show="errors.has('phone2')" class="help text-error">{{ errors.first('phone') }}</span>
+              </div>
+              <div :class="{'form-group': true, 'has-error': errors.has('food2')}">
+                <label class="control-label" for="food2">Food Allergies/Condition</label>
+                <input v-model="food2" name="food2" class="input form-control" type="text" placeholder="allergic to shrimp" required>
+                <i v-show="errors.has('food2')" class="fa fa-warning"></i>
+                <span v-show="errors.has('food2')" class="help text-error">{{ errors.first('food') }}</span>
               </div>
             </div>
             <h3 data-toggle="collapse" data-target="#thirdMember">Third member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
@@ -152,7 +214,13 @@
                 <span v-show="errors.has('phone3')" class="help text-error">{{ errors.first('phone') }}</span>
               </div>
             </div>
-            <h3 data-toggle="collapse" data-target="#fourthMember">Fourth member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
+            <div :class="{'form-group': true, 'has-error': errors.has('food3')}">
+                <label class="control-label" for="food3">Food Allergies/Condition</label>
+                <input v-model="food3" name="food3" class="input form-control" type="text" placeholder="allergic to shrimp" required>
+                <i v-show="errors.has('food3')" class="fa fa-warning"></i>
+                <span v-show="errors.has('food3')" class="help text-error">{{ errors.first('food') }}</span>
+            </div>
+            <!-- <h3 data-toggle="collapse" data-target="#fourthMember">Fourth member<i class="fa fa-angle-down fa-lg white-text  mr-3 "></i></h3>
             <div :id="'fourthMember'" class="panel-collapse collapse in">
               <div :class="{'form-group': true, 'required':false, 'has-error': errors.has('title4')}">
                 <label class="control-label" for="title4">Title</label>
@@ -240,7 +308,7 @@
                 <span v-show="errors.has('phone5')" class="help text-error">{{ errors.first('phone') }}</span>
               </div>
               <br>
-            </div>
+            </div> -->
             <h3>General Infomation</h3>
             <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('teamName')}">
               <label class="control-label" for="teamName">Team Name</label>
@@ -312,55 +380,6 @@
                 <span v-show="errors.has('country')" class="help text-error">{{ errors.first('country') }}</span>
               </p>
             </div>
-            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('paperTitle')}">
-              <label class="control-label" for="paperTitle">Paper Title</label>
-              <p class="control has-icon has-icon-right">
-                <textarea  rows="5" v-model="paperTitle" name="paperTitle" v-validate="'required'" class="input form-control" type="text" placeholder="Probabilistic Reasoning in Intelligent Systems: Networks of Plausible Inference" required></textarea>
-                <i v-show="errors.has('paperTitle')" class="fa fa-warning"></i>
-                <span v-show="errors.has('paperTitle')" class="help text-error">{{ errors.first('paperTitle') }}</span>
-              </p>
-            </div>
-            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('abstract')}">
-              <label class="control-label" for="abstract">Abstract</label>
-              <p class="control has-icon has-icon-right">
-                <textarea  rows="8" v-model="abstract" name="abstract" v-validate="'required'" class="input form-control" type="text" placeholder="Probabilistic Reasoning in Intelligent Systems is a complete and accessible account of the ..." required></textarea>
-                <i v-show="errors.has('abstract')" class="fa fa-warning"></i>
-                <span v-show="errors.has('abstract')" class="help text-error">{{ errors.first('abstract') }}</span>
-              </p>
-            </div>
-            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('keywords')}">
-              <label class="control-label" for="keywords">Keywords</label>
-              <p class="control has-icon has-icon-right">
-                <input-tag :tags.sync="keywords" :limit="10" validate="text" v-model="keywords" name="keywords"  v-validate="'required'" required></input-tag>
-                <i v-show="errors.has('keywords')" class="fa fa-warning"></i>
-                <span v-show="errors.has('keywords')" class="help text-error">{{ errors.first('keywords')}}</span>
-              </p>
-              <span class="small">
-                * tab to add new keyword (max 10)
-              </span>
-            </div>
-              <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('attachment')}">
-              <label class="control-label" for="keywords">Attachments</label>
-              <div class="control has-icon has-icon-right">
-              <div class="dropbox">
-                <input id="file-input" type="file" multiple @change="filesChange($event.target.name, $event.target.files)" class="input-file">
-                  <p v-if="!haveFile">
-                    Drag your file(s) here to begin<br> or click to browse
-                  </p>
-                  <div v-if="haveFile" >
-                    <ul classs="list-group list-group-body">
-                      <li class="list-group-item" v-for="file in this.currentFiles" v-bind:key="file.name">
-                        <div class="col-xs-6 text-left" style=" "> <a><span class="glyphicon glyphicon-file" aria-hidden="true"></span>{{file.name}} </a> </div>
-                        <div class="col-xs-3" style="">{{file.size/1000}} KB</div>
-                        <div class="col-xs-3" style="">{{formatDate(file.lastModified)}}</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <i v-show="errors.has('attachment')" class="fa fa-warning"></i>
-                <span v-show="errors.has('attachment')" class="help text-error">{{ errors.first('attachment')}}</span>
-              </div>
-            </div>
           </form>
         </div>
       </div>
@@ -409,18 +428,21 @@ export default {
       lastName1: '',
       email1: '',
       phone1: '',
+      food1: '',
       title2: '',
       firstName2: '',
       middleName2: '',
       lastName2: '',
       email2: '',
       phone2: '',
+      food2: '',
       title3: '',
       firstName3: '',
       middleName3: '',
       lastName3: '',
       email3: '',
       phone3: '',
+      food3: '',
       title4: '',
       firstName4: '',
       middleName4: '',
@@ -603,7 +625,7 @@ header {
 }
 
 .btn-primary {
-  background: linear-gradient(-90deg, rgb(88, 46, 145), rgb(160, 34, 58));  
+  background: linear-gradient(-90deg, rgb(88, 46, 145), rgb(160, 34, 58));
   font-weight: 600;
 }
 
@@ -625,7 +647,7 @@ li {
     outline: 2px dashed grey; /* the dash box */
     outline-offset: -10px;
     color: dimgray;
-    background: linear-gradient(-90deg, rgba(88, 46, 145, 0.3), rgba(160, 34, 58, 0.3));  
+    background: linear-gradient(-90deg, rgba(88, 46, 145, 0.3), rgba(160, 34, 58, 0.3));
     padding: 10px 10px;
     position: relative;
     cursor: pointer;
@@ -640,7 +662,7 @@ li {
   }
 
   .dropbox:hover, .dropbox:focus {
-    background: linear-gradient(-90deg, rgba(88, 46, 145, 0.2), rgba(160, 34, 58, 0.2));  
+    background: linear-gradient(-90deg, rgba(88, 46, 145, 0.2), rgba(160, 34, 58, 0.2));
   }
 
   .dropbox p {
@@ -648,7 +670,7 @@ li {
     text-align: center;
     padding-top: 5.5rem;
   }
-  
+
   #file-input {
     height: 100%;
   }
