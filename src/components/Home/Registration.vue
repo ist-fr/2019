@@ -9,52 +9,21 @@
           <h2><router-link to="/forms/registration">Register now <i class="fa fa-external-link"></i></router-link></h2>
         </div>
         <div class="col-lg-12 justify-content-md-center">
-          <h3>Fees</h3>
-            <div class="table-responsive">
-              <table class="table">
-                <tbody>
-                  <tr class="head">
-                    <td><label class="title">Participant Category</label></td>
-                    <td>
-                      <label class="title">Early Registration</label><br>
-                      (Before 10 November, 2018)
-                    </td>
-                    <td>
-                      <label class="title">Regular Registration</label><br>
-                      (Before 30 December, 2018)
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>All delegates</td>
-                    <td>5000 ฿</td>
-                    <td>4000 ฿</td>
-                  </tr>
-                  <tr>
-                    <td>Full time students</td>
-                    <td>1500 ฿</td>
-                    <td>1000 ฿</td>
-                  </tr>
-                  <tr>
-                    <td>Accompanying persons*</td>
-                    <td>2000 ฿</td>
-                    <td>3000 ฿</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+          Free registration for all participant. There will be <b>60</b> seats available. Registration form in on this website, you can access by click on "Register now".
           </div>
           <div class="col-lg-12">
           <h3>Notes</h3>
           <ul class="registration">
-            <li>Payments can be made by bank transfer.</li>
-            <li>Any fees deducted on our end must paid in cash upon registration.</li>
-            <li>All on-site payments to the conference must be made in cash.</li>
+            <li>Priority of registration base on first come first serve</li>
+            <li>People who register after the first 60 seats will be enroll in waiting list</li>
+            <li>Waiting list will get notify when the are seat available</li>
           </ul>
           <h3>Benefits of registration</h3>
           <ul class="registration">
             <li>Symposium materials</li>
             <li>Access to all sessions</li>
             <li>Coffee breaks and lunches</li>
+            <li>Transportation</li>
           </ul>
         </div>
       </div>
