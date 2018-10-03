@@ -44,10 +44,10 @@
                 <span v-show="errors.has('firstName')" class="help text-error">{{ errors.first('firstName') }}</span>
               </p>
             </div>
-            <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('middleName')}">
+            <div :class="{'form-group': true, 'required': false, 'has-error': errors.has('middleName')}">
               <label class="control-label" for="middleName">Middle Name</label>
               <p class="control has-icon has-icon-right">
-                <input v-model="middleName" v-validate="'required'" name="middleName" class="input form-control form-control-lg" type="text" placeholder="Smith">
+                <input v-model="middleName" v-validate="''" name="middleName" class="input form-control form-control-lg" type="text" placeholder="Smith">
                 <i v-show="errors.has('middleName')" class="fa fa-warning"></i>
                 <span v-show="errors.has('middleName')" class="help text-error">{{ errors.first('middleName') }}</span>
               </p>
@@ -251,6 +251,7 @@ export default {
           })
             .then(response => {
               console.log('send')
+              console.log(response)
               this.$router.push('/forms/registration/thankyou')
             })
             .catch(e => {
