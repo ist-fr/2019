@@ -6,7 +6,8 @@
           <h2>SUBMISSION</h2>
         </div>
         <div class="col-md-6 text-right">
-          <h2><router-link to="/forms/submission">Submit your thesis <i class="fa fa-external-link"></i></router-link></h2>
+          <!-- <h2><router-link to="/forms/submission">Submit your thesis <i class="fa fa-external-link"></i></router-link></h2> -->
+          <h2><a href="https://goo.gl/forms/mAs74LNSmNHkspw52">Submit your thesis <i class="fa fa-external-link"></i></a></h2>
         </div>
         <div class="col-lg-12 mx-auto lead">
           <p style="text-align: justify;">
@@ -44,7 +45,7 @@
             <li>Result released 10 July 2018</li>
           </ul>
         <h3>Poster presentration</h3>
-        <p>poster presentration @venu on 19-20 December 2018</p>
+        <p>poster presentration @venu on 20 December 2018</p>
         <h3>Prizes</h3>
           Prize total 17,500 BAHT
           <ul>
@@ -52,6 +53,11 @@
             <li>Second Place: 5,000</li>
             <li>Third Place: 2,500</li>
           </ul>
+        <h3>Accommodation</h3>
+        <ul>
+          <li>Transportation support up to 5,000฿ per team</li>
+          <li>Room reservation for 1 night stay(up to 2 students per room per team)</li>
+        </ul>
         </div>
         <div class="col-lg-12">
           <h2>Submission area</h2>
@@ -69,7 +75,8 @@
           </div>
         </div>
         <div class="col-md-12 text-right">
-          <h2><router-link to="/forms/submission">Submit your thesis <i class="fa fa-external-link"></i></router-link></h2>
+          <!-- <h2><router-link to="/forms/submission">Submit your thesis <i class="fa fa-external-link"></i></router-link></h2> -->
+          <h2><a href="https://goo.gl/forms/mAs74LNSmNHkspw52">Submit your thesis <i class="fa fa-external-link"></i></a></h2>
         </div>
       </div>
     </div>

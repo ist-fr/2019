@@ -25,7 +25,7 @@
         <div class="demo-card demo-card--step2">
           <div class="head">
             <div class="number-box">
-              <span>10 Nov</span>
+              <span>20 Nov</span>
             </div>
             <h2><span class="small">Thesis</span>authors notification</h2>
           </div>
@@ -37,9 +37,9 @@
         <div class="demo-card demo-card--step3">
           <div class="head">
             <div class="number-box">
-              <span>10 Nov</span>
+              <span>30 Nov</span>
             </div>
-            <h2><span class="small">Deadline for</span>early registration</h2>
+            <h2><span class="small">Deadline for</span>registration</h2>
           </div>
           <div class="body">
             <div class="holder"></div>
@@ -49,20 +49,9 @@
         <div class="demo-card demo-card--step4">
           <div class="head">
             <div class="number-box">
-              <span>30 Nov</span>
-            </div>
-            <h2><span class="small">Deadline for</span>normal registration</h2>
-          </div>
-          <div class="body">
-            <div class="holder"></div>
-          </div>
-        </div>
-        <div class="demo-card demo-card--step5">
-          <div class="head">
-            <div class="number-box">
               <span>20 Dec</span>
             </div>
-            <h2><span class="small">Gather for the</span>Symposium Day</h2>
+              <h2><span class="small">Gather for the</span>Symposium Day</h2>
           </div>
           <div class="body">
             <div class="holder"></div>

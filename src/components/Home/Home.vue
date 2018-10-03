@@ -25,7 +25,7 @@
     <committee class="bg-stripe"></committee>
     <program class="bg-stripe"></program>
     <speakers class="bg-stripe"></speakers>
-    <accommodation class="bg-stripe"></accommodation>
+    <!-- <accommodation class="bg-stripe"></accommodation> -->
     <registration class="bg-stripe"></registration>
     <submission class="bg-stripe"></submission>
     <venue class="bg-stripe"></venue>
@@ -74,7 +74,7 @@
   .header-jumbotron {
     padding: 50px 5% 30px;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     font-weight: 600;
     height: 100vh;
@@ -112,6 +112,6 @@
   }
 
   .bg-stripe:nth-of-type(odd) {
-    background-color: #f0f0f0 !important; 
+    background-color: #f0f0f0 !important;
   }
 </style>

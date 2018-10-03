@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2>PROGRAM</h2>
-          <p class="lead">The program details for IST-FR 2018 will be released soon</p>
+          <!-- <p class="lead">The program details for IST-FR 2018 will be released soon</p> -->
           <table class="table">
             <tr>
                 <th>Time</th>
@@ -28,19 +28,19 @@
               </tr>
               <tr>
                 <td>10:25-10:55</td>
-                <td>Speaker</td>
+                <td>Academic Talks</td>
               </tr>
               <tr>
                 <td>10:55-11:25</td>
-                <td>Speaker</td>
+                <td>Academic Talks</td>
               </tr>
               <tr>
                 <td>11:25-11:55</td>
-                <td>Speaker</td>
+                <td>Academic Talks</td>
               </tr>
               <tr>
                 <td>11:55-12:25</td>
-                <td>Speaker</td>
+                <td>Academic Talks</td>
               </tr>
               <tr>
                 <td>12:25-13:30</td>

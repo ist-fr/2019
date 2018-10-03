@@ -12,7 +12,7 @@
     </header>
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">          
+        <div class="col-sm-12">
           <form class="form-horizontal" @submit.prevent="search">
             <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('participantCategory')}">
               <label class="control-label" for="participantCategory">Participant Category</label>
@@ -109,7 +109,7 @@
               <p class="control has-icon has-icon-right">
               <input v-model="maillingAddress1" name="maillingAddress1" v-validate="'required'" class="input form-control form-control-lg" type="text" placeholder="House Number, Street" required>
               <i v-show="errors.has('maillingAddress1')" class="fa fa-warning"></i>
-              <span v-show="errors.has('maillingAddress1')" class="help text-error">{{ errors.first('Mailling Address 1') }}</span>
+              <span v-show="errors.has('maillingAddress1')" class="help text-error">The mailling address field is required.</span>
               </p>
             </div>
             <div :class="{'form-group': true, 'has-error': errors.has('maillingAddress2')}">
@@ -135,7 +135,7 @@
               </p>
             </div>
             <div :class="{'form-group': true, 'required': true, 'has-error': errors.has('postalCode')}">
-              <label class="control-label" for="postalCode">Postal Code</label>        
+              <label class="control-label" for="postalCode">Postal Code</label>
               <p class="control has-icon has-icon-right">
               <input v-model="postalCode" name="postalCode" v-validate="'required|numeric'" class="input form-control form-control-lg" type="text" placeholder="21210" required>
               <i v-show="errors.has('postalCode')" class="fa fa-warning"></i>
@@ -150,9 +150,16 @@
               <span v-show="errors.has('country')" class="help text-error">{{ errors.first('country') }}</span>
               </p>
             </div>
+            <div :class="{'form-group': true, 'has-error': errors.has('food')}">
+              <label class="control-label" for="food">Food Allergies/Condition</label>
+              <input v-model="food" name="food" class="input form-control" type="text" placeholder="allergic to shrimp" required>
+              <i v-show="errors.has('food')" class="fa fa-warning"></i>
+              <span v-show="errors.has('food')" class="help text-error">{{ errors.first('food') }}</span>
+            </div>
           </form>
         </div>
       </div>
+      <span v-show="fieldNotValid" class="help text-error">Please check your information</span>
      <button type="button" class="btn btn-lg btn-primary btn-block mb-3" data-toggle="modal" data-target=".bs-example-modal-sm" v-on:click="postPost()">Register</button>
     </div>
     <cs-footer></cs-footer>
@@ -205,9 +212,11 @@ export default {
       province: '',
       postalCode: '',
       country: '',
+      food: '',
       option: {
         format: 'DD-MM-YYYY'
-      }
+      },
+      fieldNotValid: ''
     }
   },
   props: {
@@ -237,16 +246,19 @@ export default {
             city: this.city,
             province: this.province,
             postalCode: this.postalCode,
-            country: this.country
+            country: this.country,
+            food: this.food
           })
             .then(response => {
               console.log('send')
-              alert('Submit successful, Thank You')
+              this.$router.push('/forms/registration/thankyou')
             })
             .catch(e => {
               console.log(e)
             })
           return
+        } else {
+          this.fieldNotValid = true
         }
       })
     }
@@ -263,7 +275,7 @@ header {
 }
 
 .btn-primary {
-  background: linear-gradient(-90deg, rgb(88, 46, 145), rgb(160, 34, 58));  
+  background: linear-gradient(-90deg, rgb(88, 46, 145), rgb(160, 34, 58));
   font-weight: 600;
 }
 </style>

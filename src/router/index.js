@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import SubmissionForm from '@/components/Forms/Submit'
 import RegistrationForm from '@/components/Forms/Register'
+import Thankyou from '@/components/Forms/Thankyou'
 import FAQForm from '@/components/Forms/Question'
 import Home from '@/components/Home/Home'
 
@@ -60,6 +61,10 @@ export default new Router({
     {
       path: '/forms/registration',
       component: RegistrationForm
+    },
+    {
+      path: '/forms/registration/thankyou',
+      component: Thankyou
     },
     {
       path: '/forms/submission',
