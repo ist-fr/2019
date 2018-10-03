@@ -68,21 +68,21 @@ export default {
         {
           title: 'Dr.',
           name: 'Wittawat Jitkrittum',
-          bio: 'On-parametric Statistical Tests, Approximate Bayesian iIference, Kernel-based feature representation of data',
+          bio: 'Kernel methods, Nonparametric statistical tests, Bayesian inference, Generative models',
           topic: 'TBA',
           university: 'Max Planck Institutes for Intelligent Systems, Germany',
           imageSrc: require('../../assets/speakers/dr_wittawat_jitkrittum.jpg'),
           link: 'http://wittawat.com/'
-        },
-        {
-          title: 'Dr.',
-          name: 'Krikamol Muandet',
-          bio: 'Statistical learning theory, kernel methods, Bayesian nonparametric, large-scale learning, and counterfactual prediction',
-          topic: 'TBA',
-          university: 'Max Planck Institutes for Intelligent Systems, Germany',
-          imageSrc: require('../../assets/speakers/dr_krikamol_muandet.jpg'),
-          link: 'http://krikamol.org/'
         }
+        // {
+        //   title: 'Dr.',
+        //   name: 'Krikamol Muandet',
+        //   bio: 'Statistical learning theory, kernel methods, Bayesian nonparametric, large-scale learning, and counterfactual prediction',
+        //   topic: 'TBA',
+        //   university: 'Max Planck Institutes for Intelligent Systems, Germany',
+        //   imageSrc: require('../../assets/speakers/dr_krikamol_muandet.jpg'),
+        //   link: 'http://krikamol.org/'
+        // }
       ]
     }
   }
