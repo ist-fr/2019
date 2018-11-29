@@ -21,7 +21,8 @@
           </h5>
         </div>
         <div class="col-lg-12 mt-4">
-          <h2>Or <router-link to="/forms/query">drop us a query <i class="fa fa-external-link"></i></router-link></h2>
+          <!-- <h2>Or <router-link to="/forms/query">drop us a query <i class="fa fa-external-link"></i></router-link></h2> -->
+           <h2><a href="https://goo.gl/forms/GBtmyZPjCzDRJytA2">Drop us a query <i class="fa fa-external-link"></i></a></h2>
         </div>
       </div>
     </div>

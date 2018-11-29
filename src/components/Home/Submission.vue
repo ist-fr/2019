@@ -41,8 +41,8 @@
           <h3>Online submission</h3>
           <ul>
             <!-- <li>Open submission 25 August</li> -->
-            <li>Close submission 4 November 2018 23:59 (GMT +7)</li>
-            <li>Result released 20 November 2018</li>
+            <li>Close submission 18 November 2018 23:59 (GMT +7)</li>
+            <li>Result released 25 November 2018</li>
           </ul>
         <h3>Poster presentration</h3>
         <p>poster presentration @venu on 20 December 2018</p>

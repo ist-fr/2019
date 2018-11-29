@@ -11,6 +11,10 @@
                 <th>Event</th>
               </tr>
               <tr>
+                <td>6:00-06:30</td>
+                <td>Bus Register @ PTT Headquarter</td>
+              </tr>
+              <tr>
                 <td>6:30-09:00</td>
                 <td>Bus Departure From BKK To VISTEC</td>
               </tr>
@@ -75,11 +79,11 @@
                 <td>Poster Session and Poster Award Ceremony</td>
               </tr>
               <tr>
-                <td>17:30-18:00</td>
+                <td>17:30-18:15</td>
                 <td>Dinner</td>
               </tr>
               <tr>
-                <td>18:00<</td>
+                <td>18:15<</td>
                 <td>Bus From VISTEC To BKK</td>
               </tr>
           </table>

@@ -13,7 +13,7 @@
         <div class="demo-card demo-card--step1">
           <div class="head">
             <div class="number-box">
-              <span>4 Nov</span>
+              <span>18 Nov</span>
             </div>
             <h2><span class="small">Undergrad thesis</span>submission deadline</h2>
           </div>
@@ -25,7 +25,7 @@
         <div class="demo-card demo-card--step2">
           <div class="head">
             <div class="number-box">
-              <span>20 Nov</span>
+              <span>25 Nov</span>
             </div>
             <h2><span class="small">Thesis</span>authors notification</h2>
           </div>

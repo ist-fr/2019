@@ -60,7 +60,11 @@ export default new Router({
     },
     {
       path: '/forms/registration',
-      component: RegistrationForm
+      component: RegistrationForm,
+      beforeEnter (to, from, next) {
+        // Put the full page url including the protocol http(s) below
+        window.location = 'https://goo.gl/forms/tGXprIOo4ekyLJKo2'
+      }
     },
     {
       path: '/forms/registration/thankyou',
@@ -68,11 +72,19 @@ export default new Router({
     },
     {
       path: '/forms/submission',
-      component: SubmissionForm
+      component: SubmissionForm,
+      beforeEnter (to, from, next) {
+        // Put the full page url including the protocol http(s) below
+        window.location = 'https://goo.gl/forms/qbYWPTBKITYRCMKp1'
+      }
     },
     {
       path: '/forms/query',
-      component: FAQForm
+      component: FAQForm,
+      beforeEnter (to, from, next) {
+        // Put the full page url including the protocol http(s) below
+        window.location = 'https://goo.gl/forms/BZCI0sYmBSKCIyI33'
+      }
     }
   ],
   scrollBehavior (to, from, savedPosition) {

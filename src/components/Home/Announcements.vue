@@ -22,9 +22,9 @@ export default {
     return {
       announcements: [
         {
-          title: 'No announcement',
-          content: 'There are yet to be any announcements',
-          datetime: 'Aug 15'
+          title: 'Extend the Submission dateline',
+          content: 'The submission dateline has been extended to 18 Nov 18',
+          datetime: 'Nov 11'
         }
       ]
     }

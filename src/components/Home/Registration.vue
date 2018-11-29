@@ -6,7 +6,8 @@
           <h2>REGISTRATION</h2>
         </div>
         <div class="col-lg-6 text-right">
-          <h2><router-link to="/forms/registration">Register now <i class="fa fa-external-link"></i></router-link></h2>
+          <!-- <h2><router-link to="/forms/registration">Register now <i class="fa fa-external-link"></i></router-link></h2> -->
+        <h2><a href="https://goo.gl/forms/r2Tlkbrq8mTWzDiy2">Register now <i class="fa fa-external-link"></i></a></h2>
         </div>
         <div class="col-lg-12 justify-content-md-center">
           Free registration for all participant. There will be <b>60</b> seats available. Registration form in on this website, you can access by click on "Register now".
