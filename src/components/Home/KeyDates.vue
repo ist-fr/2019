@@ -37,7 +37,7 @@
         <div class="demo-card demo-card--step3">
           <div class="head">
             <div class="number-box">
-              <span>30 Nov</span>
+              <span>13 Dec</span>
             </div>
             <h2><span class="small">Deadline for</span>registration</h2>
           </div>
