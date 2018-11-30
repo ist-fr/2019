@@ -6,85 +6,89 @@
           <h2>PROGRAM</h2>
           <table class="table">
             <tr>
-                <th>Time</th>
-                <th>Event</th>
-              </tr>
-              <tr>
-                <td>06:00 - 06:30</td>
-                <td>Bus transport registration at PTT plc headquarters in Bangkok</td>
-              </tr>
-              <tr>
-                <td>06:30 - 09:00</td>
-                <td>Bus journey from Bangkok to VISTEC</td>
-              </tr>
-              <tr>
-                <td>09:00 - 09:30</td>
-                <td>Symposium registration</td>
-              </tr>
-              <tr>
-                <td>09:30 - 10:10</td>
-                <td>Speaker keynote session</td>
-              </tr>
-              <tr>
-                <td>10:10 - 10:25</td>
-                <td>Morning break</td>
-              </tr>
-              <tr>
-                <td>10:25 - 10:55</td>
-                <td>Academic talks</td>
-              </tr>
-              <tr>
-                <td>10:55 - 11:25</td>
-                <td>Academic talks</td>
-              </tr>
-              <tr>
-                <td>11:25 - 11:55</td>
-                <td>Academic talks</td>
-              </tr>
-              <tr>
-                <td>11:55 - 12:25</td>
-                <td>Academic talks</td>
-              </tr>
-              <tr>
-                <td>12:25 - 13:30</td>
-                <td>Lunch</td>
-              </tr>
-              <tr>
-                <td>13:30 - 14:00</td>
-                <td>Industry talks</td>
-              </tr>
-              <tr>
-                <td>14:00 - 14:30</td>
-                <td>Industry talks</td>
-              </tr>
-              <tr>
-                <td>14:30 - 15:00</td>
-                <td>Industry talks</td>
-              </tr>
-              <tr>
-                <td>15:00 - 15:15</td>
-                <td>Afternoon break</td>
-              </tr>
-              <tr>
-                <td>15:15 - 16:15</td>
-                <td>Poster presentation</td>
-              </tr>
-              <tr>
-                <td>16:15 - 17:15</td>
-                <td>Campus tour</td>
-              </tr>
-              <tr>
-                <td>17:15 - 17:30</td>
-                <td>Poster session and prize giving</td>
-              </tr>
-              <tr>
-                <td>17:30 - 18:15</td>
-                <td>Dinner</td>
-              </tr>
-              <tr>
-                <td>18:15 onwards</td>
-                <td>Bus journey from VISTEC back to Bangkok</td>
-              </tr>
+              <th>Time</th>
+              <th>Event</th>
+            </tr>
+            <tr>
+              <td>06&colon;00 - 06&colon;30</td>
+              <td>Bus transport registration at Bangkok pick-up locations</td>
+            </tr>
+            <tr>
+              <td>06&colon;30 - 09&colon;00</td>
+              <td>Bus journey from Bangkok to VISTEC</td>
+            </tr>
+            <tr>
+              <td>09&colon;00 - 09&colon;20</td>
+              <td>Symposium registration</td>
+            </tr>
+            <tr>
+              <td>09&colon;20 - 09&colon;30</td>
+              <td>Opening ceremony</td>
+            </tr>
+            <tr>
+              <td>09&colon;30 - 10&colon;10</td>
+              <td>Keynote session&colon; &quot;What we need to know about research impacts?&quot; by Dr. Dusit Niyato</td>
+            </tr>
+            <tr>
+              <td>10&colon;10 - 10&colon;40</td>
+              <td>Keynote session&colon; &quot;My research experience and work in Germany and Denmark&quot; by Xiaofeng Xiong</td>
+            </tr>
+            <tr>
+              <td>10&colon;40 - 11&colon;10</td>
+              <td>Reacher experience and vision session&colon; &quot;Advances in the Theory of Graph (Network) Algorithms, and a Little Beyond&quot; by Dr. Danupon Nanongkai</td>
+            </tr>
+            <tr>
+              <td>11&colon;10 - 11&colon;40</td>
+              <td>Reacher experience and vision session by Dr. Supasorn Suwajanakorn</td>
+            </tr>
+            <tr>
+              <td>11&colon;40 - 12&colon;40</td>
+              <td>Lunch break</td>
+            </tr>
+            <tr>
+              <td>12&colon;40 - 13&colon;20</td>
+              <td>Academic talk session by Dr. Thanawin Rakthanmanon</td>
+            </tr>
+            <tr>
+              <td>13&colon;20 - 13&colon;50</td>
+              <td>Academic talk session&colon; &quot;Recent advances in kernel methods for model criticism&quot; by Dr. Wittawat Jitkrittum</td>
+            </tr>
+            <tr>
+              <td>13&colon;50 - 14&colon;20</td>
+              <td>Technology translation session by Prachya Boonkwan</td>
+            </tr>
+            <tr>
+              <td>14&colon;20 - 14&colon;50</td>
+              <td>Technology translation session&colon; &quot;Accurate de novo peptide sequencing with deep learning and positional post-processing&quot; by Sira Sriswasdi</td>
+            </tr>
+            <tr>
+              <td>14&colon;50 - 15&colon;05</td>
+              <td>Afternoon break</td>
+            </tr>
+            <tr>
+              <td>15&colon;05 - 15&colon;45</td>
+              <td>Panel discussion</td>
+            </tr>
+            <tr>
+              <td>15&colon;45 - 16&colon;15</td>
+              <td>Poster session</td>
+            </tr>
+            <tr>
+              <td>16&colon;15 - 17&colon;15</td>
+              <td>Campus tour</td>
+            </tr>
+            <tr>
+              <td>17&colon;15 - 17&colon;30</td>
+              <td>Prize giving ceremony</td>
+            </tr>
+            <tr>
+              <td>17&colon;30 - 18&colon;15</td>
+              <td>Dinner</td>
+            </tr>
+            <tr>
+              <td>18&colon;15 - 20&colon;30</td>
+              <td>Bus journey from VISTEC back to Bangkok</td>
+            </tr>
           </table>
         </div>
       </div>
