@@ -22,8 +22,13 @@ export default {
     return {
       announcements: [
         {
-          title: 'Extend the Submission dateline',
-          content: 'The submission dateline has been extended to 18 Nov 18',
+          title: 'Registration deadline extension',
+          content: 'The registration deadline has been extended to 13 December',
+          datetime: 'Nov 30'
+        },
+        {
+          title: 'Project submission deadline extension',
+          content: 'The project submission deadline has been extended to 18 November',
           datetime: 'Nov 11'
         }
       ]
