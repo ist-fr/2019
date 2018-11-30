@@ -4,18 +4,17 @@
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2>PROGRAM</h2>
-          <!-- <p class="lead">The program details for IST-FR 2018 will be released soon</p> -->
           <table class="table">
             <tr>
                 <th>Time</th>
                 <th>Event</th>
               </tr>
               <tr>
-                <td>6:00-06:30</td>
+                <td>06:00-06:30</td>
                 <td>Bus Register @ PTT Headquarter</td>
               </tr>
               <tr>
-                <td>6:30-09:00</td>
+                <td>06:30-09:00</td>
                 <td>Bus Departure From BKK To VISTEC</td>
               </tr>
               <tr>
@@ -83,7 +82,7 @@
                 <td>Dinner</td>
               </tr>
               <tr>
-                <td>18:15<</td>
+                <td>18:15 onwards</td>
                 <td>Bus From VISTEC To BKK</td>
               </tr>
           </table>
