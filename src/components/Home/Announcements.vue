@@ -22,6 +22,11 @@ export default {
     return {
       announcements: [
         {
+          title: 'Announce talk topic',
+          content: 'The speaker topic has been announce and poster are added (click on the topic)',
+          datetime: 'Dec 03'
+        },
+        {
           title: 'Registration deadline extension',
           content: 'The registration deadline has been extended to 13 December',
           datetime: 'Nov 30'

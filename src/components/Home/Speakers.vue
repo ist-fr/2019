@@ -17,7 +17,9 @@
               <small>FROM</small>
               <h6>{{speaker.university}}</h6>
               <small>ON THE TOPIC OF</small>
-              <h6>{{speaker.topic}}</h6>
+              <a :href="speaker.poster" target="_blank">
+                <h6>{{speaker.topic}} <i class="fa fa-external-link" v-if="speaker.poster"></i></h6>
+              </a>
             </div>
           </div>
       </div>
@@ -33,10 +35,11 @@ export default {
           title: 'Prof. Dr.',
           name: 'Dusit Niyato',
           bio: 'IEEE Fellow, 19755 citations, 67 h-index, Wireless Communications, Mobile Computing, Cognitive Communications',
-          topic: 'Cultivating a culture of academic excellence: What can we learn from Singapore Context?',
+          topic: 'What we need to know about research impacts?',
           university: 'Nanyang Technological University, Singapore',
           imageSrc: require('../../assets/speakers/dr_dusit_niyato.jpg'),
-          link: 'http://www.ntu.edu.sg/home/dniyato/'
+          link: 'http://www.ntu.edu.sg/home/dniyato/',
+          poster: require('../../assets/poster/abs_istfr_dusit.jpg')
         },
         {
           title: 'Dr.',
@@ -60,19 +63,50 @@ export default {
           title: 'Assoc. Prof. Dr.',
           name: 'Danupon Nanongkai',
           bio: 'Theoretical Computer Science, Graph Algorithms',
-          topic: 'TBA',
+          topic: 'Advances in the Theory of Graph (Network) Algorithms, and a Little Beyond',
           university: 'KTH Royal Institute of Technology, Sweden',
           imageSrc: require('../../assets/speakers/dr_danupon_nanongkai.jpg'),
-          link: 'https://sites.google.com/site/dannanongkai/'
+          link: 'https://sites.google.com/site/dannanongkai/',
+          poster: require('../../assets/poster/abs_istfr_danupon.jpg')
         },
         {
           title: 'Dr.',
           name: 'Wittawat Jitkrittum',
           bio: 'Kernel methods, Nonparametric statistical tests, Bayesian inference, Generative models',
-          topic: 'TBA',
+          topic: 'Recent advances in kernel methods for model criticism',
           university: 'Max Planck Institutes for Intelligent Systems, Germany',
           imageSrc: require('../../assets/speakers/dr_wittawat_jitkrittum.jpg'),
-          link: 'http://wittawat.com/'
+          link: 'http://wittawat.com/',
+          poster: require('../../assets/poster/abs_istfr_wittawat.jpg')
+        },
+        {
+          title: 'Dr.',
+          name: 'Prachya Boonkwan',
+          bio: 'Computational Linguistics, Natural Language Processing, Machine Learning',
+          topic: 'TBA',
+          university: 'Nectec, Thailand',
+          imageSrc: require('../../assets/speakers/dr_prachya_boonkwan.jpg'),
+          link: 'https://www.nectec.or.th/hccru/staff/view/68'
+        },
+        {
+          title: 'Dr.',
+          name: 'Xiaofeng Xiong',
+          bio: 'Neuromusculoskeletal Modeling of Legged Locomotion, Neuromechanical Control, Sensorimotor Learning, Biomechanics',
+          topic: 'My research experience and work in Germany and Denmark',
+          university: 'Technical Aspects of Multimodal Systems (TAMS), University of Hamburg, Germany',
+          imageSrc: require('../../assets/speakers/dr_xiaofeng_xiong.jpg'),
+          link: 'https://sites.google.com/site/xfxiongsite/home',
+          poster: require('../../assets/poster/abs_istfr_xiong.jpg')
+        },
+        {
+          title: 'Dr.',
+          name: 'Sira Sriswasdi',
+          bio: 'Computational Molecular Biology, Lecturer, Research Affairs, Faculty of Medicine',
+          topic: 'Accurate de novo peptide sequencing with deep learning and positional post-processing',
+          university: 'Chulalongkorn University, Thailand',
+          imageSrc: require('../../assets/speakers/dr_sira_sriswasdi.jpg'),
+          link: 'https://cmbcu.github.io/profile_ss.html',
+          poster: require('../../assets/poster/abs_istfr_sira.jpg')
         }
         // {
         //   title: 'Dr.',
