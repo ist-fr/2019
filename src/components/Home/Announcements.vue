@@ -22,6 +22,11 @@ export default {
     return {
       announcements: [
         {
+          title: 'Update speaker topic',
+          content: 'The speaker topic has been updated',
+          datetime: 'Dec 04'
+        },
+        {
           title: 'Announce talk topic',
           content: 'The speaker topic has been announce and poster are added (click on the topic)',
           datetime: 'Dec 03'
