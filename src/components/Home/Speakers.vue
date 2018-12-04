@@ -35,7 +35,7 @@ export default {
           title: 'Prof. Dr.',
           name: 'Dusit Niyato',
           bio: 'IEEE Fellow, 19755 citations, 67 h-index, Wireless Communications, Mobile Computing, Cognitive Communications',
-          topic: 'What we need to know about research impacts?',
+          topic: 'What do we need to know about research impacts?',
           university: 'Nanyang Technological University, Singapore',
           imageSrc: require('../../assets/speakers/dr_dusit_niyato.jpg'),
           link: 'http://www.ntu.edu.sg/home/dniyato/',
