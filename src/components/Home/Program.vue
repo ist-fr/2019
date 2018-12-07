@@ -34,7 +34,7 @@
               </tr>
               <tr>
                 <td scope="row">10&colon;10 - 10&colon;40</td>
-                <td>Keynote session&colon; &quot;My research experience and work in Germany and Denmark&quot; by Xiaofeng Xiong</td>
+                <td>Reacher experience and vision session&colon; &quot;My research experience and work in Germany and Denmark&quot; by Dr. Xiaofeng Xiong</td>
               </tr>
               <tr>
                 <td scope="row">10&colon;40 - 11&colon;10</td>
@@ -45,31 +45,34 @@
                 <td>Reacher experience and vision session by Dr. Supasorn Suwajanakorn</td>
               </tr>
               <tr>
-                <td scope="row">11&colon;40 - 12&colon;40</td>
-                <td>Lunch break</td>
-              </tr>
-              <tr>
-                <td scope="row">12&colon;40 - 13&colon;20</td>
+                <td scope="row">11&colon;40 - 12&colon;10</td>
                 <td>Academic talk session&colon; &quot;Advanced Research in Time Series Mining&quot; by Dr. Thanawin Rakthanmanon</td>
               </tr>
               <tr>
-                <td scope="row">13&colon;20 - 13&colon;50</td>
+                <td scope="row">12&colon;10 - 13&colon;00</td>
+                <td>Lunch break</td>
+              </tr>
+              <tr>
+                <td scope="row">13&colon;00 - 13&colon;30</td>
                 <td>Academic talk session&colon; &quot;Recent advances in kernel methods for model criticism&quot; by Dr. Wittawat Jitkrittum</td>
               </tr>
               <tr>
-                <td scope="row">13&colon;50 - 14&colon;20</td>
+                <td scope="row">13&colon;30 - 14&colon;00</td>
                 <td>Technology translation session by Dr. Prachya Boonkwan</td>
-              </tr>
               <tr>
-                <td scope="row">14&colon;20 - 14&colon;50</td>
+                <td scope="row">14&colon;00 - 14&colon;30</td>
                 <td>Technology translation session&colon; &quot;Accurate de novo peptide sequencing with deep learning and positional post-processing&quot; by Dr. Sira Sriswasdi</td>
               </tr>
               <tr>
-                <td scope="row">14&colon;50 - 15&colon;05</td>
+                <td scope="row">14&colon;30 - 15&colon;00</td>
+                <td>Technology translation session&colon; &quot;High fidelity 3D Scanning: From research to startup in Thailand&quot; by Dr. Borom Tunwattanapong</td>
+              </tr>
+              <tr>
+                <td scope="row">15&colon;00 - 15&colon;15</td>
                 <td>Afternoon break</td>
               </tr>
               <tr>
-                <td scope="row">15&colon;05 - 15&colon;45</td>
+                <td scope="row">15&colon;15 - 15&colon;45</td>
                 <td>Panel discussion</td>
               </tr>
               <tr>

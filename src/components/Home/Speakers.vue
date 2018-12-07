@@ -107,6 +107,14 @@ export default {
           imageSrc: require('../../assets/speakers/dr_sira_sriswasdi.jpg'),
           link: 'https://cmbcu.github.io/profile_ss.html',
           poster: require('../../assets/poster/abs_istfr_sira.jpg')
+        },
+        {
+          title: 'Dr.',
+          name: 'Borom Tunwattanapong',
+          bio: '3D Scanning Technologies, Computer Visions and Computer Graphics',
+          topic: 'High fidelity 3D Scanning: From research to startup in Thailand',
+          university: 'Thailand',
+          imageSrc: require('../../assets/speakers/dr_borom_tunwattanapong.jpg')
         }
         // {
         //   title: 'Dr.',
