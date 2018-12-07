@@ -54,7 +54,7 @@ export default {
           title: 'Asst. Prof. Dr.',
           name: 'Thanawin Rakthanmanon',
           bio: 'Data Mining, Machine Learning, Decision Support System',
-          topic: 'TBA',
+          topic: 'Advanced Research in Time Series Mining',
           university: 'Kasetsart University, Thailand',
           imageSrc: require('../../assets/speakers/dr_thanawin_rakthanmanon.jpg'),
           link: 'https://www.cpe.ku.ac.th/?page_id=1932'

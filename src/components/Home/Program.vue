@@ -50,7 +50,7 @@
               </tr>
               <tr>
                 <td scope="row">12&colon;40 - 13&colon;20</td>
-                <td>Academic talk session by Dr. Thanawin Rakthanmanon</td>
+                <td>Academic talk session&colon; &quot;Advanced Research in Time Series Mining&quot; by Dr. Thanawin Rakthanmanon</td>
               </tr>
               <tr>
                 <td scope="row">13&colon;20 - 13&colon;50</td>
@@ -58,11 +58,11 @@
               </tr>
               <tr>
                 <td scope="row">13&colon;50 - 14&colon;20</td>
-                <td>Technology translation session by Prachya Boonkwan</td>
+                <td>Technology translation session by Dr. Prachya Boonkwan</td>
               </tr>
               <tr>
                 <td scope="row">14&colon;20 - 14&colon;50</td>
-                <td>Technology translation session&colon; &quot;Accurate de novo peptide sequencing with deep learning and positional post-processing&quot; by Sira Sriswasdi</td>
+                <td>Technology translation session&colon; &quot;Accurate de novo peptide sequencing with deep learning and positional post-processing&quot; by Dr. Sira Sriswasdi</td>
               </tr>
               <tr>
                 <td scope="row">14&colon;50 - 15&colon;05</td>
