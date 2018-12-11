@@ -30,7 +30,7 @@
               </tr>
               <tr>
                 <td scope="row">09&colon;30 - 10&colon;10</td>
-                <td>Keynote session&colon; &quot;What do we need to know about research impacts?&quot; by Dr. Dusit Niyato</td>
+                <td>Keynote session&colon; &quot;Frontier Research in Computer Science and Engineering: Singapore Story in a Nutshell&quot; by Dr. Dusit Niyato</td>
               </tr>
               <tr>
                 <td scope="row">10&colon;10 - 10&colon;40</td>
