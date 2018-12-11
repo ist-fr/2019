@@ -22,6 +22,11 @@ export default {
     return {
       announcements: [
         {
+          title: 'Update speaker poster',
+          content: 'The poster of the speaker hss been updated',
+          datetime: 'Dec 11'
+        },
+        {
           title: 'Program updated',
           content: 'The program has been updated and annoucing more speaker',
           datetime: 'Dec 07'

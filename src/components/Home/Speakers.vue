@@ -57,7 +57,8 @@ export default {
           topic: 'Advanced Research in Time Series Mining',
           university: 'Kasetsart University, Thailand',
           imageSrc: require('../../assets/speakers/dr_thanawin_rakthanmanon.jpg'),
-          link: 'https://www.cpe.ku.ac.th/?page_id=1932'
+          link: 'https://www.cpe.ku.ac.th/?page_id=1932',
+          poster: require('../../assets/poster/abs_istfr_thanawin.jpg')
         },
         {
           title: 'Assoc. Prof. Dr.',
