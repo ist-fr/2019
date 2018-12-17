@@ -72,15 +72,15 @@
                 <td>Afternoon break</td>
               </tr>
               <tr>
-                <td scope="row">15&colon;15 - 15&colon;45</td>
+                <td scope="row">15&colon;15 - 16&colon;15</td>
                 <td>Panel discussion</td>
               </tr>
               <tr>
-                <td scope="row">15&colon;45 - 16&colon;15</td>
+                <td scope="row">16&colon;15 - 16&colon;45</td>
                 <td>Poster session</td>
               </tr>
               <tr>
-                <td scope="row">16&colon;15 - 17&colon;15</td>
+                <td scope="row">16&colon;45 - 17&colon;15</td>
                 <td>Campus tour</td>
               </tr>
               <tr>
