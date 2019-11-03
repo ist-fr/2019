@@ -24,9 +24,6 @@
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#speakers" data-toggle="collapse" data-target=".navbar-collapse.show">SPEAKERS</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="scrollactive-item nav-link js-scroll-trigger" href="#accommodation" data-toggle="collapse" data-target=".navbar-collapse.show">ACCOMMODATION</a>
-          </li> -->
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#registration" data-toggle="collapse" data-target=".navbar-collapse.show">REGISTRATION</a>
           </li>
@@ -36,9 +33,6 @@
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#venue" data-toggle="collapse" data-target=".navbar-collapse.show">VENUE</a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="scrollactive-item nav-link js-scroll-trigger" href="#faq" data-toggle="collapse" data-target=".navbar-collapse.show">FAQ</a>
-          </li> -->
           <li class="nav-item">
             <a class="scrollactive-item nav-link js-scroll-trigger" href="#contact" data-toggle="collapse" data-target=".navbar-collapse.show">CONTACT</a>
           </li>
