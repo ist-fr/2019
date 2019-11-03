@@ -1,3 +1,5 @@
 module.exports = {
-    publicPath: '/2019/'
+    publicPath: process.env.NODE_ENV === 'production'
+    ? '/2018/'
+    : '/'
 }

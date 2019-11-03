@@ -4,10 +4,10 @@
     <div class="header-jumbotron text-center">
       <div class="container-logo text-center">
         <div>
-          <img class="img-logo" src="../../assets/logo_istfr.svg" alt="Logo">
+          <img class="img-logo" src="../assets/logo_istfr.svg" alt="Logo">
         </div>
         <div>
-          <img class="img-separator" src="../../assets/separator.svg">
+          <img class="img-separator" src="../assets/separator.svg">
         </div>
         <div class="row">
           <div class="col-md-12">
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div class="div-scroll-down"></div>
-      <img class="img-hero-bg" src="../../assets/line_header.svg">
+      <img class="img-hero-bg" src="../assets/line_header.svg">
     </div>
     <key-dates class="bg-stripe"></key-dates>
     <announcements class="bg-stripe"></announcements>
@@ -54,14 +54,12 @@
       Committee,
       Program,
       Speakers,
-      Accommodation,
       Registration,
       Submission,
       Venue,
       Contact,
       Navbar,
       CsFooter
-      // Faq
     }
   }
 </script>

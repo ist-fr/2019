@@ -59,6 +59,7 @@
               <tr>
                 <td scope="row">13&colon;30 - 14&colon;00</td>
                 <td>Technology translation session by Dr. Prachya Boonkwan</td>
+              </tr>
               <tr>
                 <td scope="row">14&colon;00 - 14&colon;30</td>
                 <td>Technology translation session&colon; &quot;Accurate de novo peptide sequencing with deep learning and positional post-processing&quot; by Dr. Sira Sriswasdi</td>

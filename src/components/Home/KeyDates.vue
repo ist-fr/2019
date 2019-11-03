@@ -15,7 +15,9 @@
             <div class="number-box">
               <span>18 Nov</span>
             </div>
-            <h2><span class="small">Undergrad thesis</span>submission deadline</h2>
+            <h2>
+              <span class="small">Undergrad thesis</span>submission deadline
+            </h2>
           </div>
           <div class="body">
             <div class="holder"></div>
@@ -27,7 +29,9 @@
             <div class="number-box">
               <span>25 Nov</span>
             </div>
-            <h2><span class="small">Thesis</span>authors notification</h2>
+            <h2>
+              <span class="small">Thesis</span>authors notification
+            </h2>
           </div>
           <div class="body">
             <div class="holder"></div>
@@ -39,7 +43,9 @@
             <div class="number-box">
               <span>13 Dec</span>
             </div>
-            <h2><span class="small">Deadline for</span>registration</h2>
+            <h2>
+              <span class="small">Deadline for</span>registration
+            </h2>
           </div>
           <div class="body">
             <div class="holder"></div>
@@ -51,7 +57,9 @@
             <div class="number-box">
               <span>20 Dec</span>
             </div>
-              <h2><span class="small">Gather for the</span>Symposium Day</h2>
+            <h2>
+              <span class="small">Gather for the</span>Symposium Day
+            </h2>
           </div>
           <div class="body">
             <div class="holder"></div>
@@ -62,7 +70,6 @@
   </section>
 </template>
 <style lang="scss" scoped>
-
 /* Media Queries */
 @mixin mq-xs {
   @media (min-width: 320px) {
@@ -89,7 +96,7 @@
 }
 
 $background: #f7f7f7;
-$box-shadow: 0 0 40px -6px rgba(0,0,0,0.75);
+$box-shadow: 0 0 40px -6px rgba(0, 0, 0, 0.75);
 $border: 1px solid rgba(191, 191, 191, 0.4);
 $items: 5;
 $rows: ceil($items/2);
@@ -104,13 +111,13 @@ $outer-margin: 90px;
 $marker-size: 9px;
 
 /* Colors */
-$steps: #4A2C79;
+$steps: #4a2c79;
 $colors: rgb(88, 46, 145), rgb(160, 34, 58), rgb(248, 186, 0);
 $timeline: #bdbdbd;
 
 /* Calculations */
 $container-height: $rows * ($card-height + $outer-margin);
-$container-width: $card-width*2 + $outer-margin*3;
+$container-width: $card-width * 2 + $outer-margin * 3;
 $head-height: $number-size + 50;
 $body-height: $card-height - $head-height;
 $marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
@@ -138,8 +145,12 @@ $marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
 
 $counter: $items - $rows + 2;
 @for $i from 1 through $rows {
-  .demo-card:nth-child(#{$i*2-1})   { order: $i }
-  .demo-card:nth-child(#{$i*2})     { order: $counter }
+  .demo-card:nth-child(#{$i*2-1}) {
+    order: $i;
+  }
+  .demo-card:nth-child(#{$i*2}) {
+    order: $counter;
+  }
   $counter: $counter + 1;
 }
 
@@ -251,7 +262,6 @@ $counter: $items - $rows + 2;
       }
     }
 
-
     .head {
       position: relative;
       display: flex;
@@ -333,4 +343,3 @@ $counter: $items - $rows + 2;
   }
 }
 </style>
-
