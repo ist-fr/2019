@@ -1,32 +1,53 @@
+
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view />
+    <router-view></router-view>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script>
+  import Navbar from '@/components/Home/Navbar'
+  export default {
+    name: 'app',
+    components: {
+      Navbar
     }
   }
-}
+</script>
+
+<style>
+  #app {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    border-radius: 0 !important;
+  }
+
+  .form-control {
+    border-radius: 0;
+  }
+
+  a, a:visited {
+    color: rgb(88, 46, 145);
+  }
+
+  a:focus, a:active, a:hover     {
+    color: rgb(160, 34, 58);
+  }
+
+  .bg-dark {
+    background-color: #fff !important;
+  }
+    
+  section {
+    padding: 60px 0;
+  }
+
+  .text-error {
+    color: red;
+  }
+
+  .form-group.required .control-label:after { 
+    content: " *";
+    color: red;
+  }
 </style>
