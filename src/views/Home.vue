@@ -49,7 +49,7 @@
                   class="text-light font-weight-bold font-italic"
                   href="https://forms.gle/ckPcdw6CiqXTWv4Z6"
                 >
-                  submit your paper
+                  register
                   <i class="fa fa-external-link"></i>
                 </a>
               </p>
