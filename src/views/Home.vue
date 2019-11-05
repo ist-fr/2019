@@ -4,13 +4,13 @@
     <div class="header-jumbotron text-center">
       <div class="container-logo text-center">
         <div>
-          <img class="img-logo" src="../assets/logo_istfr.svg" alt="Logo" />
+          <img class="img-logo d-none" src="../assets/logo_istfr.svg" alt="Logo" />
         </div>
         <div>
           <img class="img-separator" src="../assets/separator.svg" />
         </div>
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 d-none">
             Promoting academic excellence in
             Computer Science through academic
             industry collaborative research
