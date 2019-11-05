@@ -58,11 +58,6 @@
         </div>
       </div>
     </div>
-    <!-- <script type="text/javascript">
-      $(document).ready(function() {
-        $("#newsModal").modal("show");
-      })
-    </script>-->
     <key-dates class="bg-stripe"></key-dates>
     <announcements class="bg-stripe"></announcements>
     <committee class="bg-stripe"></committee>
