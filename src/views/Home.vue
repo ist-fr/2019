@@ -2,9 +2,8 @@
   <div id="page-top" class="home">
     <navbar></navbar>
     <jumbotron></jumbotron>
-    <key-dates class="bg-stripe"></key-dates>
+    <timeline class="bg-stripe"></timeline>
     <announcements class="bg-stripe"></announcements>
-    <committee class="bg-stripe"></committee>
     <program class="bg-stripe"></program>
     <speakers class="bg-stripe"></speakers>
     <registration class="bg-stripe"></registration>
@@ -17,9 +16,8 @@
 
 <script>
 import Jumbotron from "@/components/Home/Jumbotron";
-import KeyDates from "@/components/Home/KeyDates";
+import Timeline from "@/components/Home/Timeline";
 import Announcements from "@/components/Home/Announcements";
-import Committee from "@/components/Home/Committee";
 import Program from "@/components/Home/Program";
 import Speakers from "@/components/Home/Speakers";
 import Registration from "@/components/Home/Registration";
@@ -33,9 +31,8 @@ export default {
   methods: {},
   components: {
     Jumbotron,
-    KeyDates,
+    Timeline,
     Announcements,
-    Committee,
     Program,
     Speakers,
     Registration,

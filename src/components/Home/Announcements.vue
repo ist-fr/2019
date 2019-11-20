@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2>ANNOUNCEMENTS</h2>
+          <h2>Announcements</h2>
           <ul
             class="timeline"
             v-for="announcement in announcements"

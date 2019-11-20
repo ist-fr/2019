@@ -30,7 +30,7 @@
               href="#key-dates"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              >KEY DATES</a
+              >Timeline</a
             >
           </li>
           <li class="nav-item">
@@ -39,7 +39,7 @@
               href="#announcements"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              >ANNOUNCEMENTS</a
+              >Announcements</a
             >
           </li>
           <li class="nav-item">
