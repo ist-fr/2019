@@ -23,7 +23,6 @@
       <div class="div-scroll-down"></div>
       <img class="img-hero-bg" src="../assets/line_header.svg" />
     </div>
-    <overlay-modal></overlay-modal>
     <key-dates class="bg-stripe"></key-dates>
     <announcements class="bg-stripe"></announcements>
     <committee class="bg-stripe"></committee>
@@ -38,7 +37,6 @@
 </template>
 
 <script>
-import OverlayModal from "@/components/Home/OverlayModal";
 import KeyDates from "@/components/Home/KeyDates";
 import Announcements from "@/components/Home/Announcements";
 import Committee from "@/components/Home/Committee";
@@ -54,7 +52,6 @@ export default {
   name: "Home",
   methods: {},
   components: {
-    OverlayModal,
     KeyDates,
     Announcements,
     Committee,

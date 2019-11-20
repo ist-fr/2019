@@ -16,7 +16,7 @@ export default {
   font-weight: 700;
   border-radius: 0 !important;
   max-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .form-control {
