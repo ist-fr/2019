@@ -9,12 +9,22 @@
             alt="Logo"
           />
         </div>
+        <!-- <div class="row mt-5">
+          <div class="col-md-12">
+          </div>
+        </div> -->
         <div>
-          <img class="img-separator" src="../../assets/separator.svg" />
+          <img class="img-separator mt-4" src="../../assets/separator.svg" />
         </div>
         <div class="row">
           <div class="col-md-12">
-            Gateway to Informatics Research at EECi
+            <p>
+              <i
+                >Symposium on Frontier Research in Information Science and
+                Technology</i
+              >
+            </p>
+            <i>Gateway to Informatics Research at EECi</i>
           </div>
         </div>
       </div>
@@ -25,17 +35,16 @@
 
 <style scoped>
 .header-jumbotron {
-  padding: 80px 10% 30px;
+  padding: 80px 8% 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 800;
+  font-weight: 700;
   height: 100vh;
-  font-size: 1.75rem;
-  background: rgb(2, 0, 36);
+  font-size: 1.25rem;
   background: radial-gradient(
     circle,
-    rgba(2, 0, 36, 0.6951155462184874) 0%,
+    rgba(0, 0, 0, 0.637) 0%,
     rgba(0, 0, 0, 0.2497373949579832) 100%
   );
 }
@@ -47,7 +56,7 @@
 
 @media (min-width: 992px) {
   .header-jumbotron {
-    padding: 50px 20% 30px;
+    padding: 120px 20% 30px;
   }
 }
 
