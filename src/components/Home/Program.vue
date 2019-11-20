@@ -3,8 +3,12 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2>PROGRAM</h2>
-          <table class="table table-responsive program-table">
+          <h2>Program</h2>
+          <div class="alert alert-info rounded-0" role="alert">
+            <i class="fa fa-info-circle"></i> Detailed program schedule will be
+            annouced soon, stay tuned!
+          </div>
+          <!-- <table class="table table-responsive program-table">
             <thead>
               <tr>
                 <th scope="col" style="min-width: 8em;">Time</th>
@@ -126,7 +130,7 @@
                 <td>Bus journey from VISTEC back to Bangkok</td>
               </tr>
             </tbody>
-          </table>
+          </table> -->
         </div>
       </div>
     </div>
