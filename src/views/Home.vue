@@ -48,56 +48,8 @@ export default {
 };
 </script>
 
-<style>
-.header-jumbotron {
-  padding: 50px 5% 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  height: 100vh;
-  font-size: 1.25rem;
-  background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
-}
-
-@media (min-width: 992px) {
-  .header-jumbotron {
-    padding: 50px 20% 30px;
-  }
-}
-
-.container-logo {
-  width: 100%;
-  padding-bottom: 10%;
-}
-
-.img-logo {
-  margin-bottom: 0.75vh;
-  max-height: 30vh;
-}
-
-.img-separator {
-  margin: 2vh 0;
-  max-height: 5vh;
-  max-width: 10vh;
-}
-
-.img-hero-bg {
-  position: absolute;
-  width: 100%;
-  bottom: -7.5vh;
-  opacity: 0.75;
-}
-
+<style scoped>
 .bg-stripe:nth-of-type(odd) {
   background-color: #f0f0f0 !important;
-}
-
-.modal-content {
-  background-color: #323232;
-}
-
-.modal {
-  background: rgba(0, 0, 0, 0.5);
 }
 </style>
