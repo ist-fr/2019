@@ -45,19 +45,10 @@
           <li class="nav-item">
             <a
               class="scrollactive-item nav-link js-scroll-trigger"
-              href="#committee"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              >COMMITTEE</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="scrollactive-item nav-link js-scroll-trigger"
               href="#program"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              >PROGRAM</a
+              >Program</a
             >
           </li>
           <li class="nav-item">
@@ -66,7 +57,7 @@
               href="#speakers"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              >SPEAKERS</a
+              >Speakers</a
             >
           </li>
           <li class="nav-item">
@@ -75,7 +66,7 @@
               href="#registration"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              >REGISTRATION</a
+              >Register</a
             >
           </li>
           <li class="nav-item">
@@ -84,7 +75,7 @@
               href="#submission"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              >SUBMISSION</a
+              >Submit</a
             >
           </li>
           <li class="nav-item">
@@ -93,7 +84,7 @@
               href="#venue"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              >VENUE</a
+              >Venue</a
             >
           </li>
           <li class="nav-item">
@@ -102,7 +93,7 @@
               href="#contact"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              >CONTACT</a
+              >Contact</a
             >
           </li>
         </ul>
