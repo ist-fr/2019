@@ -2,10 +2,10 @@
   <section class="lead" id="registration">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 mx-auto">
-          <h2>REGISTRATION</h2>
+        <div class="col-md-6 mx-auto">
+          <h2>Register</h2>
         </div>
-        <div class="col-lg-6 text-right">
+        <div class="col-md-6 text-right">
           <h2>
             <a href="https://goo.gl/forms/r2Tlkbrq8mTWzDiy2">
               Register now
@@ -13,27 +13,31 @@
             </a>
           </h2>
         </div>
-        <div class="col-lg-12 justify-content-md-center">
-          Free registration for all participant. There will be
-          <b>60</b> seats available. Registration form in on this website, you
-          can access by click on "Register now".
-        </div>
-        <div class="col-lg-12">
-          <h3>Notes</h3>
-          <ul class="registration">
-            <li>Priority of registration base on first come first serve</li>
+        <div class="col-md-12">
+          <p>
+            Register now to reserve your seat and take part in the IST-FR 2019
+            Symposium, <span class="font-weight-bold">it's free!</span>
+          </p>
+          <h3>Registration details</h3>
+          <ul>
+            <li>Limited seats are available</li>
             <li>
-              People who register after the first 60 seats will be enroll in
-              waiting list
+              Seats are reserved on a first-come first-serve basis
             </li>
-            <li>Waiting list will get notify when the are seat available</li>
           </ul>
-          <h3>Benefits of registration</h3>
-          <ul class="registration">
+          <h3>Benefits</h3>
+          <ul>
             <li>Symposium materials</li>
-            <li>Access to all sessions</li>
-            <li>Coffee breaks and lunches</li>
-            <li>Transportation</li>
+            <li>Coffee breaks and lunch</li>
+            <li>
+              Access to all talks, panel discussion and research presentation
+              sessions
+            </li>
+            <li>
+              Free transportation from and back to many pick-up locations in
+              Bangkok Metropolitan Area, Chon Buri, and Rayong (see
+              <i>Pick-up locations</i> for more details)
+            </li>
           </ul>
         </div>
       </div>

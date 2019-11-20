@@ -5,9 +5,12 @@
         <div class="col-lg-12 mx-auto">
           <h2>Venue</h2>
           <p style="text-align: justify;">
-            Vidyasirimedhi Institute of Science and Technology (VISTEC) is a graduate research-intensive university located on Wangchan Vallery and
-            supported by Power of Innovation Foundation. VISTEC is in close collaboration with Thailand initiative megaprojects Eastern Economic
-            Corridor (EEC) in general and Eastern Economic Corridor of Innovation (EECi) in particular.
+            Vidyasirimedhi Institute of Science and Technology (VISTEC) is a
+            graduate research-intensive university located on Wangchan Vallery
+            and supported by Power of Innovation Foundation. VISTEC is in close
+            collaboration with Thailand initiative megaprojects Eastern Economic
+            Corridor (EEC) in general and Eastern Economic Corridor of
+            Innovation (EECi) in particular.
           </p>
         </div>
         <div class="col-lg-12 mx-auto">
@@ -21,7 +24,7 @@
           <img class="img-gallery" :src="image.imageSrc" width="100%" />
         </div>
         <div class="col-lg-12 mx-auto">
-          <h3>Map</h3>
+          <h3>Maps</h3>
         </div>
         <div class="sp-pad wrapper-map p-sm-0 p-md-2 col-lg-12 mx-auto">
           <iframe
@@ -107,4 +110,3 @@ export default {
   padding-bottom: 0 !important;
 }
 </style>
-
