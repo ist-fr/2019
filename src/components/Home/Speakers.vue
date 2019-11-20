@@ -6,7 +6,7 @@
           <h2>Speakers</h2>
           <div class="alert alert-info rounded-0" role="alert">
             <i class="fa fa-info-circle"></i> Detailed speaker details will be
-            annouced soon, stay tuned!
+            announced soon, stay tuned!
           </div>
         </div>
         <div

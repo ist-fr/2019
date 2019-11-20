@@ -41,6 +41,11 @@
               selection committee
             </li>
           </ul>
+          <h3>Presentation &amp; competition</h3>
+          <div class="alert alert-info rounded-0" role="alert">
+            <i class="fa fa-info-circle"></i> More details about research presentation and competition will be
+            announced soon, stay tuned!
+          </div>
           <h3>Criteria</h3>
           To be eligible for submission, your work must meet all the criteria
           set out below
