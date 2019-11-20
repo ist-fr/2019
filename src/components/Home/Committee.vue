@@ -11,9 +11,9 @@
           v-bind:key="committee.name"
         >
           <div>
-            <small>{{committee.title}}</small>
-            <h3>{{committee.name}}</h3>
-            <h6>{{committee.position}}</h6>
+            <small>{{ committee.title }}</small>
+            <h3>{{ committee.name }}</h3>
+            <h6>{{ committee.position }}</h6>
           </div>
         </div>
       </div>

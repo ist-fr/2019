@@ -15,13 +15,17 @@
         </div>
         <div class="col-lg-12 justify-content-md-center">
           Free registration for all participant. There will be
-          <b>60</b> seats available. Registration form in on this website, you can access by click on "Register now".
+          <b>60</b> seats available. Registration form in on this website, you
+          can access by click on "Register now".
         </div>
         <div class="col-lg-12">
           <h3>Notes</h3>
           <ul class="registration">
             <li>Priority of registration base on first come first serve</li>
-            <li>People who register after the first 60 seats will be enroll in waiting list</li>
+            <li>
+              People who register after the first 60 seats will be enroll in
+              waiting list
+            </li>
             <li>Waiting list will get notify when the are seat available</li>
           </ul>
           <h3>Benefits of registration</h3>

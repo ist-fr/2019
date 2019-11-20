@@ -1,4 +1,3 @@
-
 <template>
   <div id="app">
     <router-view></router-view>
@@ -6,46 +5,49 @@
 </template>
 
 <script>
-  export default {
-    name: 'app'
-  }
+export default {
+  name: "app"
+};
 </script>
 
 <style>
-  #app {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    border-radius: 0 !important;
-    max-height: 100vh;
-    overflow: hidden;
-  }
+#app {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  border-radius: 0 !important;
+  max-height: 100vh;
+  overflow: hidden;
+}
 
-  .form-control {
-    border-radius: 0;
-  }
+.form-control {
+  border-radius: 0;
+}
 
-  a, a:visited {
-    color: rgb(88, 46, 145);
-  }
+a,
+a:visited {
+  color: rgb(88, 46, 145);
+}
 
-  a:focus, a:active, a:hover     {
-    color: rgb(160, 34, 58);
-  }
+a:focus,
+a:active,
+a:hover {
+  color: rgb(160, 34, 58);
+}
 
-  .bg-dark {
-    background-color: #fff !important;
-  }
-    
-  section {
-    padding: 60px 0;
-  }
+.bg-dark {
+  background-color: #fff !important;
+}
 
-  .text-error {
-    color: red;
-  }
+section {
+  padding: 60px 0;
+}
 
-  .form-group.required .control-label:after { 
-    content: " *";
-    color: red;
-  }
+.text-error {
+  color: red;
+}
+
+.form-group.required .control-label:after {
+  content: " *";
+  color: red;
+}
 </style>

@@ -4,60 +4,26 @@
     <div class="header-jumbotron text-center">
       <div class="container-logo text-center">
         <div>
-          <img class="img-logo d-none" src="../assets/logo_istfr.svg" alt="Logo" />
+          <img
+            class="img-logo d-none"
+            src="../assets/logo_istfr.svg"
+            alt="Logo"
+          />
         </div>
         <div>
           <img class="img-separator" src="../assets/separator.svg" />
         </div>
         <div class="row">
           <div class="col-md-12 d-none">
-            Promoting academic excellence in
-            Computer Science through academic
+            Promoting academic excellence in Computer Science through academic
             industry collaborative research
           </div>
         </div>
       </div>
       <div class="div-scroll-down"></div>
       <img class="img-hero-bg" src="../assets/line_header.svg" />
-
-      <!-- Temporary modal for important updates -->
-      <div
-        class="modal fade d-block show"
-        id="newsModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="newsModalTitle"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-          <div class="modal-content">
-            <!-- <div class="modal-footer">
-              <button type="button" class="btn btn-secondary rounded-0" data-dismiss="modal">Close</button>
-            </div> -->
-            <div class="modal-body text-center text-light mt-4">
-              <img class="img-logo" src="../assets/logo_istfr_white_noyear.svg" alt="Logo" />
-              <h1>IST-FR 2019 is just up ahead</h1>
-              <p>We will be updating our website with more details soon... Stay tuned!</p>
-              <p>
-                In the meanwhile you might want to <br>
-                see our
-                <a class="text-light font-weight-bold font-italic" href="/2019_poster.png">
-                  poster
-                  <i class="fa fa-external-link"></i>
-                </a> or early
-                <a
-                  class="text-light font-weight-bold font-italic"
-                  href="https://forms.gle/ckPcdw6CiqXTWv4Z6"
-                >
-                  register
-                  <i class="fa fa-external-link"></i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
+    <overlay-modal></overlay-modal>
     <key-dates class="bg-stripe"></key-dates>
     <announcements class="bg-stripe"></announcements>
     <committee class="bg-stripe"></committee>
@@ -72,6 +38,7 @@
 </template>
 
 <script>
+import OverlayModal from "@/components/Home/OverlayModal";
 import KeyDates from "@/components/Home/KeyDates";
 import Announcements from "@/components/Home/Announcements";
 import Committee from "@/components/Home/Committee";
@@ -87,6 +54,7 @@ export default {
   name: "Home",
   methods: {},
   components: {
+    OverlayModal,
     KeyDates,
     Announcements,
     Committee,
@@ -139,7 +107,7 @@ export default {
 .img-hero-bg {
   position: absolute;
   width: 100%;
-  /* bottom: -7.5vh; */
+  bottom: -7.5vh;
   opacity: 0.75;
 }
 
@@ -152,6 +120,6 @@ export default {
 }
 
 .modal {
-  background: rgba(0,0,0,.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 </style>

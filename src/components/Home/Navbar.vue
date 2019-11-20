@@ -30,7 +30,8 @@
               href="#key-dates"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-            >KEY DATES</a>
+              >KEY DATES</a
+            >
           </li>
           <li class="nav-item">
             <a
@@ -38,7 +39,8 @@
               href="#announcements"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-            >ANNOUNCEMENTS</a>
+              >ANNOUNCEMENTS</a
+            >
           </li>
           <li class="nav-item">
             <a
@@ -46,7 +48,8 @@
               href="#committee"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-            >COMMITTEE</a>
+              >COMMITTEE</a
+            >
           </li>
           <li class="nav-item">
             <a
@@ -54,7 +57,8 @@
               href="#program"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-            >PROGRAM</a>
+              >PROGRAM</a
+            >
           </li>
           <li class="nav-item">
             <a
@@ -62,7 +66,8 @@
               href="#speakers"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-            >SPEAKERS</a>
+              >SPEAKERS</a
+            >
           </li>
           <li class="nav-item">
             <a
@@ -70,7 +75,8 @@
               href="#registration"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-            >REGISTRATION</a>
+              >REGISTRATION</a
+            >
           </li>
           <li class="nav-item">
             <a
@@ -78,7 +84,8 @@
               href="#submission"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-            >SUBMISSION</a>
+              >SUBMISSION</a
+            >
           </li>
           <li class="nav-item">
             <a
@@ -86,7 +93,8 @@
               href="#venue"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-            >VENUE</a>
+              >VENUE</a
+            >
           </li>
           <li class="nav-item">
             <a
@@ -94,7 +102,8 @@
               href="#contact"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-            >CONTACT</a>
+              >CONTACT</a
+            >
           </li>
         </ul>
       </scrollactive>
@@ -129,4 +138,3 @@
   border: transparent;
 }
 </style>
-

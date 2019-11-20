@@ -29,9 +29,7 @@
             <div class="number-box">
               <span>25 Nov</span>
             </div>
-            <h2>
-              <span class="small">Thesis</span>authors notification
-            </h2>
+            <h2><span class="small">Thesis</span>authors notification</h2>
           </div>
           <div class="body">
             <div class="holder"></div>
@@ -43,9 +41,7 @@
             <div class="number-box">
               <span>13 Dec</span>
             </div>
-            <h2>
-              <span class="small">Deadline for</span>registration
-            </h2>
+            <h2><span class="small">Deadline for</span>registration</h2>
           </div>
           <div class="body">
             <div class="holder"></div>
@@ -57,9 +53,7 @@
             <div class="number-box">
               <span>20 Dec</span>
             </div>
-            <h2>
-              <span class="small">Gather for the</span>Symposium Day
-            </h2>
+            <h2><span class="small">Gather for the</span>Symposium Day</h2>
           </div>
           <div class="body">
             <div class="holder"></div>

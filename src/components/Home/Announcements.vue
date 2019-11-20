@@ -10,12 +10,12 @@
             v-bind:key="announcement.title"
           >
             <li class="list-item-announcement">
-              <span class="announcement-title">{{announcement.title}}</span>
+              <span class="announcement-title">{{ announcement.title }}</span>
               <span class="float-right announcement-datetime">
                 <i class="fa fa-clock-o"></i>
-                {{announcement.datetime}}
+                {{ announcement.datetime }}
               </span>
-              <p class="announcement-content">{{announcement.content}}</p>
+              <p class="announcement-content">{{ announcement.content }}</p>
             </li>
           </ul>
         </div>

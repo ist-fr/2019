@@ -17,15 +17,15 @@
             <img class="img-speaker" :src="speaker.imageSrc" />
           </a>
           <div>
-            <small>{{speaker.title}}</small>
-            <h3>{{speaker.name}}</h3>
-            <h6>{{speaker.bio}}</h6>
+            <small>{{ speaker.title }}</small>
+            <h3>{{ speaker.name }}</h3>
+            <h6>{{ speaker.bio }}</h6>
             <small>FROM</small>
-            <h6>{{speaker.university}}</h6>
+            <h6>{{ speaker.university }}</h6>
             <small>ON THE TOPIC OF</small>
             <a :href="speaker.poster" target="_blank">
               <h6>
-                {{speaker.topic}}
+                {{ speaker.topic }}
                 <i class="fa fa-external-link" v-if="speaker.poster"></i>
               </h6>
             </a>
