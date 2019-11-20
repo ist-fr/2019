@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2>SPEAKERS</h2>
+          <h2>Speakers</h2>
         </div>
         <div
           class="col-lg-6 col-md-12 text-center card-speaker"

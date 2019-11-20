@@ -1,5 +1,5 @@
 <template>
-  <section id="key-dates">
+  <section id="timeline">
     <div>
       <div class="container">
         <div class="row">
@@ -146,7 +146,7 @@ $counter: $items - $rows + 2;
   $counter: $counter + 1;
 }
 
-#key-dates {
+#timeline {
   padding-top: 100px;
   padding-bottom: 30px;
 
