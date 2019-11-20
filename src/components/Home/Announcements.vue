@@ -29,42 +29,11 @@ export default {
     return {
       announcements: [
         {
-          title: "Update speaker poster",
-          content: "The poster of the speaker hss been updated",
-          datetime: "Dec 11"
-        },
-        {
-          title: "Program updated",
-          content: "The program has been updated and annoucing more speaker",
-          datetime: "Dec 07"
-        },
-        {
-          title: "Announce more talk topic",
+          title: "Website updated",
           content:
-            "More topic has been announce and poster are added (click on the topic)",
-          datetime: "Dec 07"
-        },
-        {
-          title: "Update speaker topic",
-          content: "The speaker topic has been updated",
-          datetime: "Dec 04"
-        },
-        {
-          title: "Announce talk topic",
-          content:
-            "The speaker topic has been announce and poster are added (click on the topic)",
-          datetime: "Dec 03"
-        },
-        {
-          title: "Registration deadline extension",
-          content: "The registration deadline has been extended to 13 December",
-          datetime: "Nov 30"
-        },
-        {
-          title: "Project submission deadline extension",
-          content:
-            "The project submission deadline has been extended to 18 November",
-          datetime: "Nov 11"
+            "We have just recently updated our website with the details for IST-FR 2019, please feel free to check them out. \
+             Our deepest apologies for the delayed launch of the website.",
+          datetime: "Nov 21"
         }
       ]
     };
