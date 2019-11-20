@@ -1,28 +1,7 @@
 <template>
   <div id="page-top" class="home">
-    <navbar class="d-none"></navbar>
-    <div class="header-jumbotron text-center">
-      <div class="container-logo text-center">
-        <div>
-          <img
-            class="img-logo d-none"
-            src="../assets/logo_istfr.svg"
-            alt="Logo"
-          />
-        </div>
-        <div>
-          <img class="img-separator" src="../assets/separator.svg" />
-        </div>
-        <div class="row">
-          <div class="col-md-12 d-none">
-            Promoting academic excellence in Computer Science through academic
-            industry collaborative research
-          </div>
-        </div>
-      </div>
-      <div class="div-scroll-down"></div>
-      <img class="img-hero-bg" src="../assets/line_header.svg" />
-    </div>
+    <navbar></navbar>
+    <jumbotron></jumbotron>
     <key-dates class="bg-stripe"></key-dates>
     <announcements class="bg-stripe"></announcements>
     <committee class="bg-stripe"></committee>
@@ -37,6 +16,7 @@
 </template>
 
 <script>
+import Jumbotron from "@/components/Home/Jumbotron";
 import KeyDates from "@/components/Home/KeyDates";
 import Announcements from "@/components/Home/Announcements";
 import Committee from "@/components/Home/Committee";
@@ -52,6 +32,7 @@ export default {
   name: "Home",
   methods: {},
   components: {
+    Jumbotron,
     KeyDates,
     Announcements,
     Committee,
