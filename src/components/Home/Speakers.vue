@@ -4,6 +4,10 @@
       <div class="row">
         <div class="col-lg-12 mx-auto">
           <h2>Speakers</h2>
+          <div class="alert alert-info rounded-0" role="alert">
+            <i class="fa fa-info-circle"></i> Detailed speaker details will be
+            annouced soon, stay tuned!
+          </div>
         </div>
         <div
           class="col-lg-6 col-md-12 text-center card-speaker"
@@ -40,112 +44,103 @@ export default {
   data() {
     return {
       speakers: [
-        {
-          title: "Prof. Dr.",
-          name: "Dusit Niyato",
-          bio:
-            "IEEE Fellow, 19755 citations, 67 h-index, Wireless Communications, Mobile Computing, Cognitive Communications",
-          topic:
-            "Frontier Research in Computer Science and Engineering: Singapore Story in a Nutshell",
-          university: "Nanyang Technological University, Singapore",
-          imageSrc: require("../../assets/speakers/dr_dusit_niyato.jpg"),
-          link: "http://www.ntu.edu.sg/home/dniyato/",
-          poster: require("../../assets/poster/abs_istfr_dusit.jpg")
-        },
-        {
-          title: "Dr.",
-          name: "Supasorn Suwajanakorn",
-          bio:
-            "Former Research Resident at Google Brain, Computer Vision, Synthesizing Obama: Learning Lip Sync from Audio",
-          topic: "TBA",
-          university: "VISTEC, Thailand",
-          imageSrc: require("../../assets/speakers/dr_supasorn_suwajanakorn.jpg"),
-          link: "http://www.supasorn.com/"
-        },
-        {
-          title: "Asst. Prof. Dr.",
-          name: "Thanawin Rakthanmanon",
-          bio: "Data Mining, Machine Learning, Decision Support System",
-          topic: "Advanced Research in Time Series Mining",
-          university: "Kasetsart University, Thailand",
-          imageSrc: require("../../assets/speakers/dr_thanawin_rakthanmanon.jpg"),
-          link: "https://www.cpe.ku.ac.th/?page_id=1932",
-          poster: require("../../assets/poster/abs_istfr_thanawin.jpg")
-        },
-        {
-          title: "Assoc. Prof. Dr.",
-          name: "Danupon Nanongkai",
-          bio: "Theoretical Computer Science, Graph Algorithms",
-          topic:
-            "Advances in the Theory of Graph (Network) Algorithms, and a Little Beyond",
-          university: "KTH Royal Institute of Technology, Sweden",
-          imageSrc: require("../../assets/speakers/dr_danupon_nanongkai.jpg"),
-          link: "https://sites.google.com/site/dannanongkai/",
-          poster: require("../../assets/poster/abs_istfr_danupon.jpg")
-        },
-        {
-          title: "Dr.",
-          name: "Wittawat Jitkrittum",
-          bio:
-            "Kernel methods, Nonparametric statistical tests, Bayesian inference, Generative models",
-          topic: "Recent advances in kernel methods for model criticism",
-          university: "Max Planck Institutes for Intelligent Systems, Germany",
-          imageSrc: require("../../assets/speakers/dr_wittawat_jitkrittum.jpg"),
-          link: "http://wittawat.com/",
-          poster: require("../../assets/poster/abs_istfr_wittawat.jpg")
-        },
-        {
-          title: "Dr.",
-          name: "Prachya Boonkwan",
-          bio:
-            "Computational Linguistics, Natural Language Processing, Machine Learning",
-          topic: "TBA",
-          university: "Nectec, Thailand",
-          imageSrc: require("../../assets/speakers/dr_prachya_boonkwan.jpg"),
-          link: "https://www.nectec.or.th/hccru/staff/view/68"
-        },
-        {
-          title: "Dr.",
-          name: "Xiaofeng Xiong",
-          bio:
-            "Neuromusculoskeletal Modeling of Legged Locomotion, Neuromechanical Control, Sensorimotor Learning, Biomechanics",
-          topic: "My research experience and work in Germany and Denmark",
-          university:
-            "Technical Aspects of Multimodal Systems (TAMS), University of Hamburg, Germany",
-          imageSrc: require("../../assets/speakers/dr_xiaofeng_xiong.jpg"),
-          link: "https://sites.google.com/site/xfxiongsite/home",
-          poster: require("../../assets/poster/abs_istfr_xiong.jpg")
-        },
-        {
-          title: "Dr.",
-          name: "Sira Sriswasdi",
-          bio:
-            "Computational Molecular Biology, Lecturer, Research Affairs, Faculty of Medicine",
-          topic:
-            "Accurate de novo peptide sequencing with deep learning and positional post-processing",
-          university: "Chulalongkorn University, Thailand",
-          imageSrc: require("../../assets/speakers/dr_sira_sriswasdi.jpg"),
-          link: "https://cmbcu.github.io/profile_ss.html",
-          poster: require("../../assets/poster/abs_istfr_sira.jpg")
-        },
-        {
-          title: "Dr.",
-          name: "Borom Tunwattanapong",
-          bio:
-            "3D Scanning Technologies, Computer Visions and Computer Graphics",
-          topic:
-            "High fidelity 3D Scanning: From research to startup in Thailand",
-          university: "Thailand",
-          imageSrc: require("../../assets/speakers/dr_borom_tunwattanapong.jpg")
-        }
         // {
-        //   title: 'Dr.',
-        //   name: 'Krikamol Muandet',
-        //   bio: 'Statistical learning theory, kernel methods, Bayesian nonparametric, large-scale learning, and counterfactual prediction',
-        //   topic: 'TBA',
-        //   university: 'Max Planck Institutes for Intelligent Systems, Germany',
-        //   imageSrc: require('../../assets/speakers/dr_krikamol_muandet.jpg'),
-        //   link: 'http://krikamol.org/'
+        //   title: "Prof. Dr.",
+        //   name: "Dusit Niyato",
+        //   bio:
+        //     "IEEE Fellow, 19755 citations, 67 h-index, Wireless Communications, Mobile Computing, Cognitive Communications",
+        //   topic:
+        //     "Frontier Research in Computer Science and Engineering: Singapore Story in a Nutshell",
+        //   university: "Nanyang Technological University, Singapore",
+        //   imageSrc: require("../../assets/speakers/dr_dusit_niyato.jpg"),
+        //   link: "http://www.ntu.edu.sg/home/dniyato/",
+        //   poster: require("../../assets/poster/abs_istfr_dusit.jpg")
+        // },
+        // {
+        //   title: "Dr.",
+        //   name: "Supasorn Suwajanakorn",
+        //   bio:
+        //     "Former Research Resident at Google Brain, Computer Vision, Synthesizing Obama: Learning Lip Sync from Audio",
+        //   topic: "TBA",
+        //   university: "VISTEC, Thailand",
+        //   imageSrc: require("../../assets/speakers/dr_supasorn_suwajanakorn.jpg"),
+        //   link: "http://www.supasorn.com/"
+        // },
+        // {
+        //   title: "Asst. Prof. Dr.",
+        //   name: "Thanawin Rakthanmanon",
+        //   bio: "Data Mining, Machine Learning, Decision Support System",
+        //   topic: "Advanced Research in Time Series Mining",
+        //   university: "Kasetsart University, Thailand",
+        //   imageSrc: require("../../assets/speakers/dr_thanawin_rakthanmanon.jpg"),
+        //   link: "https://www.cpe.ku.ac.th/?page_id=1932",
+        //   poster: require("../../assets/poster/abs_istfr_thanawin.jpg")
+        // },
+        // {
+        //   title: "Assoc. Prof. Dr.",
+        //   name: "Danupon Nanongkai",
+        //   bio: "Theoretical Computer Science, Graph Algorithms",
+        //   topic:
+        //     "Advances in the Theory of Graph (Network) Algorithms, and a Little Beyond",
+        //   university: "KTH Royal Institute of Technology, Sweden",
+        //   imageSrc: require("../../assets/speakers/dr_danupon_nanongkai.jpg"),
+        //   link: "https://sites.google.com/site/dannanongkai/",
+        //   poster: require("../../assets/poster/abs_istfr_danupon.jpg")
+        // },
+        // {
+        //   title: "Dr.",
+        //   name: "Wittawat Jitkrittum",
+        //   bio:
+        //     "Kernel methods, Nonparametric statistical tests, Bayesian inference, Generative models",
+        //   topic: "Recent advances in kernel methods for model criticism",
+        //   university: "Max Planck Institutes for Intelligent Systems, Germany",
+        //   imageSrc: require("../../assets/speakers/dr_wittawat_jitkrittum.jpg"),
+        //   link: "http://wittawat.com/",
+        //   poster: require("../../assets/poster/abs_istfr_wittawat.jpg")
+        // },
+        // {
+        //   title: "Dr.",
+        //   name: "Prachya Boonkwan",
+        //   bio:
+        //     "Computational Linguistics, Natural Language Processing, Machine Learning",
+        //   topic: "TBA",
+        //   university: "Nectec, Thailand",
+        //   imageSrc: require("../../assets/speakers/dr_prachya_boonkwan.jpg"),
+        //   link: "https://www.nectec.or.th/hccru/staff/view/68"
+        // },
+        // {
+        //   title: "Dr.",
+        //   name: "Xiaofeng Xiong",
+        //   bio:
+        //     "Neuromusculoskeletal Modeling of Legged Locomotion, Neuromechanical Control, Sensorimotor Learning, Biomechanics",
+        //   topic: "My research experience and work in Germany and Denmark",
+        //   university:
+        //     "Technical Aspects of Multimodal Systems (TAMS), University of Hamburg, Germany",
+        //   imageSrc: require("../../assets/speakers/dr_xiaofeng_xiong.jpg"),
+        //   link: "https://sites.google.com/site/xfxiongsite/home",
+        //   poster: require("../../assets/poster/abs_istfr_xiong.jpg")
+        // },
+        // {
+        //   title: "Dr.",
+        //   name: "Sira Sriswasdi",
+        //   bio:
+        //     "Computational Molecular Biology, Lecturer, Research Affairs, Faculty of Medicine",
+        //   topic:
+        //     "Accurate de novo peptide sequencing with deep learning and positional post-processing",
+        //   university: "Chulalongkorn University, Thailand",
+        //   imageSrc: require("../../assets/speakers/dr_sira_sriswasdi.jpg"),
+        //   link: "https://cmbcu.github.io/profile_ss.html",
+        //   poster: require("../../assets/poster/abs_istfr_sira.jpg")
+        // },
+        // {
+        //   title: "Dr.",
+        //   name: "Borom Tunwattanapong",
+        //   bio:
+        //     "3D Scanning Technologies, Computer Visions and Computer Graphics",
+        //   topic:
+        //     "High fidelity 3D Scanning: From research to startup in Thailand",
+        //   university: "Thailand",
+        //   imageSrc: require("../../assets/speakers/dr_borom_tunwattanapong.jpg")
         // }
       ]
     };

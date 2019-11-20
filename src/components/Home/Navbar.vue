@@ -27,7 +27,7 @@
           <li class="nav-item">
             <a
               class="scrollactive-item nav-link js-scroll-trigger"
-              href="#key-dates"
+              href="#timeline"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
               >Timeline</a
@@ -75,7 +75,7 @@
               href="#submission"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              >Submit</a
+              >Submit research</a
             >
           </li>
           <li class="nav-item">
