@@ -7,7 +7,7 @@
         </div>
         <div class="col-md-6 text-right">
           <h2>
-            <a href="https://goo.gl/forms/r2Tlkbrq8mTWzDiy2">
+            <a href="https://forms.gle/E33gZinz1dXwpyna7">
               Register now
               <i class="fa fa-external-link"></i>
             </a>
