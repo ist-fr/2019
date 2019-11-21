@@ -13,6 +13,14 @@
               <i class="fa fa-phone"></i>
               (+66) 33 014 307
             </a>
+            <i>(office hours)</i>
+          </h5>
+          <h5>
+            <a href="tel:+6633014444">
+              <i class="fa fa-phone"></i>
+              (+66) 33 014 444 
+            </a>
+            <i>(office hours)</i>
           </h5>
           <h5>
             <a href="mailto:ist-fr@vistec.ac.th">
