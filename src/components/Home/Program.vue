@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 mx-auto">
-          <h2>Program</h2>
+          <h2>Program &amp; Sessions</h2>
           <div class="alert alert-info rounded-0" role="alert">
             <i class="fa fa-info-circle"></i> Detailed program schedule will be
             announced soon, stay tuned!

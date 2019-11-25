@@ -18,7 +18,7 @@
           <h5>
             <a href="tel:+6633014444">
               <i class="fa fa-phone"></i>
-              (+66) 33 014 444 
+              (+66) 33 014 444
             </a>
             <i>(office hours)</i>
           </h5>

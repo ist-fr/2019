@@ -23,10 +23,18 @@
           <h2>฿30,000</h2>
           <br />
           <h3>Conditions</h3>
+          <div class="alert alert-info rounded-0" role="alert">
+            <i class="fa fa-info-circle"></i> The submission deadline has been
+            extended to <span class="font-weight-bold">23 November 2019</span>,
+            submit now if you have yet to! Selection result will be announced
+            and notified on 5 December 2019.
+          </div>
           <ul>
             <li>
               Researches are to be submitted online via the provided form and
-              are accepted until 23:59 of 17 November 2019 (Indochina Time)
+              are accepted until 23:59 of <strike>17 November 2019</strike>
+              <span class="font-weight-bold"> 23 November 2019</span> (Indochina
+              Time)
             </li>
             <li>
               Submitted researches will then be selected by the designated
@@ -34,7 +42,9 @@
             </li>
             <li>
               The result of the selection will be announced and notified to the
-              submitter via provided contact information on 25 November 2019
+              submitter via provided contact information on
+              <strike>25 November 2019</strike>
+              <span class="font-weight-bold"> 5 December 2019</span>
             </li>
             <li>
               The result of the selection will be at sole discretion of the
