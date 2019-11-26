@@ -29,6 +29,12 @@ export default {
     return {
       announcements: [
         {
+          title: "Research submission deadline extended",
+          content:
+            "The research submission deadline has been extended to the 23:59 of 29 November 2019 (Indochina time). Selection result will be announced and notified on 5 December 2019.",
+          datetime: "Nov 22"
+        },
+        {
           title: "Website updated",
           content:
             "We have just recently updated our website with the details for IST-FR 2019, please feel free to check them out. \

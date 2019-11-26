@@ -5,7 +5,7 @@
     <timeline class="bg-stripe"></timeline>
     <announcements class="bg-stripe"></announcements>
     <program class="bg-stripe"></program>
-    <speakers class="bg-stripe"></speakers>
+    <!-- <speakers class="bg-stripe"></speakers> -->
     <registration class="bg-stripe"></registration>
     <submission class="bg-stripe"></submission>
     <venue class="bg-stripe"></venue>
@@ -19,7 +19,7 @@ import Jumbotron from "@/components/Home/Jumbotron";
 import Timeline from "@/components/Home/Timeline";
 import Announcements from "@/components/Home/Announcements";
 import Program from "@/components/Home/Program";
-import Speakers from "@/components/Home/Speakers";
+// import Speakers from "@/components/Home/Speakers";
 import Registration from "@/components/Home/Registration";
 import Submission from "@/components/Home/Submission";
 import Venue from "@/components/Home/Venue";
@@ -34,7 +34,7 @@ export default {
     Timeline,
     Announcements,
     Program,
-    Speakers,
+    // Speakers,
     Registration,
     Submission,
     Venue,
