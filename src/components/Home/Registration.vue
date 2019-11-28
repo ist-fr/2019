@@ -24,6 +24,11 @@
             <li>
               Seats are reserved on a first-come first-serve basis
             </li>
+            <li>
+              Seat reservation is open until 23:59 of
+              <span class="font-weight-bold">30 November 2019</span> (Indochina
+              time)
+            </li>
           </ul>
           <h3>Benefits</h3>
           <ul>
