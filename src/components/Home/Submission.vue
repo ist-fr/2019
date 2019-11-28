@@ -71,7 +71,7 @@
           </p>
           <ul>
             <li>
-              You <span class="font-weight-bold">DO NOT</span> have to print out
+              You <span class="font-weight-bold">do not have to</span> print out
               a physical poster, though feel free to do so it helps with your
               presentation
             </li>
