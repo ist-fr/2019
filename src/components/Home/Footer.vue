@@ -1,11 +1,11 @@
 <template>
   <footer class="page-footer font-small text-white">
     <div class="container">
-      <div class="footer-copyright text-center py-3 div-no-padding">
+      <div class="text-center pt-3 pb-0">
         <a href="https://www.vistec.ac.th">
           <img class="logo-vistec" src="../../assets/vistec_logo.png" />
         </a>
-        <span>|</span>
+        <span class="separator">|</span>
         <a class="social" href="https://www.facebook.com/Vidyasirimedhi">
           <i class="fa fa-facebook fa-lg white-text mr-4 fa-2x"></i>
         </a>
@@ -40,15 +40,7 @@ footer {
   padding-bottom: 5px;
 }
 
-.footer-copyright {
-  vertical-align: middle;
-}
-
-.div-no-padding {
-  padding-bottom: 0 !important;
-}
-
-span {
+.separator {
   margin-left: 20px !important;
   margin-right: 20px !important;
   font-size: xx-large;

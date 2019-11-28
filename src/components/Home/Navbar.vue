@@ -51,7 +51,7 @@
               >Program</a
             >
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a
               class="scrollactive-item nav-link js-scroll-trigger"
               href="#speakers"
@@ -59,7 +59,7 @@
               data-target=".navbar-collapse.show"
               >Speakers</a
             >
-          </li>
+          </li> -->
           <li class="nav-item">
             <a
               class="scrollactive-item nav-link js-scroll-trigger"

@@ -6,7 +6,7 @@
           <h2>Program &amp; Sessions</h2>
           <div class="alert alert-info rounded-0" role="alert">
             <i class="fa fa-info-circle"></i> This program list is incomplete.
-            We will be updating is soon, stay tuned!
+            We will be updating it soon, stay tuned!
           </div>
           <div class="card rounded-0 my-2 shadow">
             <div class="card-body">
@@ -18,7 +18,7 @@
               </h4>
               <p class="card-text mt-2">
                 If you have chosen to use our provided transportation, be ready
-                your selected pick-up location.
+                at your selected pick-up location.
               </p>
             </div>
           </div>
