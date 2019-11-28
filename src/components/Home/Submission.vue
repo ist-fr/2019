@@ -58,12 +58,13 @@
           </div> -->
           <p>
             Once your research has been accepted to the symposium, you will have
-            to perform a 30-minute poster presentation session on the symposium day to let
-            the audience know about your work. Our panel of judges will also be
-            evaluating this presentation. Prizes will be given to the researches
-            that our judges believe are most significant and at the front of the
-            frontier. The quality of your presentation also matters a lot since
-            it will help our judges understand your research.
+            to perform a 30-minute poster presentation session on the symposium
+            day to let the audience know about your work. Our panel of judges
+            will also be evaluating this presentation. Prizes will be given to
+            the researches that our judges believe are most significant and at
+            the forefront of the frontier. The quality of your presentation also
+            matters a lot since it will help our judges understand your
+            research.
           </p>
           <p class="mb-0">
             Listed below are important details about the poster presentation
