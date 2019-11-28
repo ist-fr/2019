@@ -27,7 +27,7 @@
             <i class="fa fa-info-circle"></i> The submission deadline has been
             extended to <span class="font-weight-bold">23 November 2019</span>,
             submit now if you have yet to! Selection result will be announced
-            and notified on 5 December 2019.
+            and notified within 5 December 2019.
           </div>
           <ul>
             <li>
@@ -42,7 +42,7 @@
             </li>
             <li>
               The result of the selection will be announced and notified to the
-              submitter via provided contact information on
+              submitter via provided contact information within
               <strike>25 November 2019</strike>
               <span class="font-weight-bold"> 5 December 2019</span>
             </li>

@@ -31,7 +31,7 @@ export default {
         {
           title: "Research submission deadline extended",
           content:
-            "The research submission deadline has been extended to the 23:59 of 29 November 2019 (Indochina time). Selection result will be announced and notified on 5 December 2019.",
+            "The research submission deadline has been extended to the 23:59 of 29 November 2019 (Indochina time). Selection result will be announced and notified within 5 December 2019.",
           datetime: "Nov 22"
         },
         {
