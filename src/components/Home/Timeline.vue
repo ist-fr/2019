@@ -13,7 +13,7 @@
         <div class="demo-card demo-card--step1">
           <div class="head">
             <div class="number-box">
-              <span>17 Nov</span>
+              <span>29 Nov</span>
             </div>
             <h2><span class="small">Deadline for</span>thesis submission</h2>
           </div>
@@ -25,9 +25,9 @@
         <div class="demo-card demo-card--step2">
           <div class="head">
             <div class="number-box">
-              <span>25 Nov</span>
+              <span>30 Nov</span>
             </div>
-            <h2><span class="small">Thesis</span>authors notification</h2>
+            <h2><span class="small">Deadline for</span>seat reservation</h2>
           </div>
           <div class="body">
             <div class="holder"></div>
@@ -37,9 +37,9 @@
         <div class="demo-card demo-card--step3">
           <div class="head">
             <div class="number-box">
-              <span>30 Nov</span>
+              <span>5 Dec</span>
             </div>
-            <h2><span class="small">Deadline for</span>seat reservation</h2>
+            <h2><span class="small">Thesis</span>authors notification</h2>
           </div>
           <div class="body">
             <div class="holder"></div>
