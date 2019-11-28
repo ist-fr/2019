@@ -3,7 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 
 // @ts-ignore
-import vueScrollactive from 'vue-scrollactive';
+import vueScrollactive from "vue-scrollactive";
 
 Vue.config.productionTip = false;
 

@@ -33,10 +33,6 @@ a:hover {
   color: rgb(160, 34, 58);
 }
 
-.bg-dark {
-  background-color: #fff !important;
-}
-
 section {
   padding: 60px 0;
 }

@@ -14,7 +14,7 @@
       </button>
       <scrollactive class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
+          <li class=" nav-item">
             <a
               class="scrollactive-item nav-link js-scroll-trigger"
               href="#page-top"
@@ -45,21 +45,12 @@
           <li class="nav-item">
             <a
               class="scrollactive-item nav-link js-scroll-trigger"
-              href="#program"
+              href="#programs"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              >Program</a
+              >Programs</a
             >
           </li>
-          <!-- <li class="nav-item">
-            <a
-              class="scrollactive-item nav-link js-scroll-trigger"
-              href="#speakers"
-              data-toggle="collapse"
-              data-target=".navbar-collapse.show"
-              >Speakers</a
-            >
-          </li> -->
           <li class="nav-item">
             <a
               class="scrollactive-item nav-link js-scroll-trigger"
