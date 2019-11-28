@@ -29,6 +29,12 @@ export default {
     return {
       announcements: [
         {
+          title: "Programs & sessions list now available",
+          content:
+            "The programs & sessions list of the symposium is now available. However, this list is not yet final and will be continuously updated. Check back for updates!",
+          datetime: "Nov 28"
+        },
+        {
           title: "Research submission deadline extended",
           content:
             "The research submission deadline has been extended to the 23:59 of 29 November 2019 (Indochina time). Selection result will be announced and notified within 5 December 2019.",
@@ -92,6 +98,10 @@ ul.timeline > li:before {
 
 .announcement-title {
   font-size: 140%;
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.announcement-content {
+  font-weight: normal;
 }
 </style>
