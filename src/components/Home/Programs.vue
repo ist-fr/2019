@@ -268,7 +268,8 @@
   font-style: italic;
 }
 
-.card {
+.card,
+.alert {
   width: 100%;
 }
 </style>
