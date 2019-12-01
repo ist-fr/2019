@@ -41,7 +41,7 @@
             <li>
               Free transportation from and back to many pick-up locations in
               Bangkok Metropolitan Area, Chon Buri, and Rayong (see
-              <i>Pick-up locations</i> for more details)
+              <i><a href="#pick-up">Pick-up locations</a></i> for more details)
             </li>
           </ul>
         </div>

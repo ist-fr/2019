@@ -75,7 +75,7 @@
               href="#venue"
               data-toggle="collapse"
               data-target=".navbar-collapse.show"
-              >Venue</a
+              >Venue &amp; Transportation</a
             >
           </li>
           <li class="nav-item">
