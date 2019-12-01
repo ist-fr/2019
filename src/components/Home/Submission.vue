@@ -122,8 +122,10 @@
             <div class="col-md-4 col-sm-12 p-0">
               <div class="card rounded-0 border-0 m-2 shadow-straight gold">
                 <div class="card-body">
-                  <span class="trophy"><i class="fa fa-trophy"></i></span>
-                  <h4 class="font-weight-bold">Winner</h4>
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><br />
+                  <span class="trophy"><i class="fa fa-trophy fa-2x"></i></span>
+                  <h4 class="font-weight-bold mt-2">Winner</h4>
                   <h2>฿20,000</h2>
                 </div>
               </div>
@@ -131,8 +133,11 @@
             <div class="col-md-4 col-sm-12 p-0">
               <div class="card rounded-0 border-0 m-2 shadow-straight silver">
                 <div class="card-body">
-                  <span class="trophy"><i class="fa fa-trophy"></i></span>
-                  <h4 class="font-weight-bold">1<sup>st</sup> Runner-up</h4>
+                  <i class="fa fa-star"></i><i class="fa fa-star"></i><br />
+                  <span class="trophy"><i class="fa fa-trophy fa-2x"></i></span>
+                  <h4 class="font-weight-bold mt-2">
+                    1<sup>st</sup> Runner-up
+                  </h4>
                   <h2>฿7,500</h2>
                 </div>
               </div>
@@ -140,8 +145,11 @@
             <div class="col-md-4 col-sm-12 p-0">
               <div class="card rounded-0 border-0 m-2 shadow-straight bronze">
                 <div class="card-body">
-                  <span class="trophy"><i class="fa fa-trophy"></i></span>
-                  <h4 class="font-weight-bold">2<sup>nd</sup> Runner-up</h4>
+                  <i class="fa fa-star"></i><br />
+                  <span class="trophy"><i class="fa fa-trophy fa-2x"></i></span>
+                  <h4 class="font-weight-bold mt-2">
+                    2<sup>nd</sup> Runner-up
+                  </h4>
                   <h2>฿2,500</h2>
                 </div>
               </div>
@@ -189,7 +197,7 @@ export default {
 </script>
 <style scoped>
 .trophy {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .gold {
@@ -197,10 +205,10 @@ export default {
 }
 
 .silver {
-  background: #ebebeb;
+  background: #d9ecf1;
 }
 
 .bronze {
-  background: #cd7f32;
+  background: #e78727;
 }
 </style>
