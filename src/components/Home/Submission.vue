@@ -18,7 +18,8 @@
             class="alert alert-warning rounded-0 shadow-straight"
             role="alert"
           >
-            <i class="fa fa-info-circle"></i> Submission is now closed!
+            <i class="fa fa-info-circle"></i> Submission is now closed! Please
+            kindly wait for your result if you have already submitted.
           </div>
           <p>
             Submit your research to the
