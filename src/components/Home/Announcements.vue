@@ -29,6 +29,12 @@ export default {
     return {
       announcements: [
         {
+          title: "Research submission closed",
+          content:
+            "Submission is now closed. Please kindly wait for the result of your submission if you have already submitted.",
+          datetime: "Nov 30"
+        },
+        {
           title: "Programs & sessions list now available",
           content:
             "The programs & sessions list of the symposium is now available. However, this list is not yet final and will be continuously updated. Check back for updates!",

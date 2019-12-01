@@ -7,13 +7,19 @@
         </div>
         <div class="col-md-6 text-right">
           <h2>
-            <a href="https://forms.gle/vZTYznicbc9xMprr5">
-              Submit your work
-              <i class="fa fa-external-link"></i>
-            </a>
+            <span class="text-muted" href="#">
+              <i class="fa fa-info-circle"></i>
+              Submission closed
+            </span>
           </h2>
         </div>
         <div class="col-lg-12 mt-2 mx-auto lead text-justify">
+          <div
+            class="alert alert-warning rounded-0 shadow-straight"
+            role="alert"
+          >
+            <i class="fa fa-info-circle"></i> Submission is now closed!
+          </div>
           <p>
             Submit your research to the
             <span class="font-weight-bold">IST-FR 2019 Symposium</span> to let
@@ -23,12 +29,6 @@
           <h2>฿30,000</h2>
           <br />
           <h3>Conditions</h3>
-          <div class="alert alert-info rounded-0" role="alert">
-            <i class="fa fa-info-circle"></i> The submission deadline has been
-            extended to <span class="font-weight-bold">29 November 2019</span>,
-            submit now if you have yet to! Selection result will be announced
-            and notified within 5 December 2019.
-          </div>
           <ul>
             <li>
               Researches are to be submitted online via the provided form and
@@ -118,19 +118,44 @@
             </li>
           </ul>
           <h3>Prizes</h3>
-          <div class="alert alert-info rounded-0" role="alert">
-            <i class="fa fa-info-circle"></i> More details about prizes will be
-            announced soon, stay tuned!
+          <div class="row text-center">
+            <div class="col-md-4 col-sm-12 p-0">
+              <div class="card rounded-0 border-0 m-2 shadow-straight gold">
+                <div class="card-body">
+                  <span class="trophy"><i class="fa fa-trophy"></i></span>
+                  <h4 class="font-weight-bold">Winner</h4>
+                  <h2>฿20,000</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 p-0">
+              <div class="card rounded-0 border-0 m-2 shadow-straight silver">
+                <div class="card-body">
+                  <span class="trophy"><i class="fa fa-trophy"></i></span>
+                  <h4 class="font-weight-bold">1<sup>st</sup> Runner-up</h4>
+                  <h2>฿7,500</h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 p-0">
+              <div class="card rounded-0 border-0 m-2 shadow-straight bronze">
+                <div class="card-body">
+                  <span class="trophy"><i class="fa fa-trophy"></i></span>
+                  <h4 class="font-weight-bold">2<sup>nd</sup> Runner-up</h4>
+                  <h2>฿2,500</h2>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-12 text-right">
+        <!-- <div class="col-md-12 text-right">
           <h2>
             <a href="https://forms.gle/vZTYznicbc9xMprr5">
               Submit your work
               <i class="fa fa-external-link"></i>
             </a>
           </h2>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -162,3 +187,20 @@ export default {
   }
 };
 </script>
+<style scoped>
+.trophy {
+  font-size: 4rem;
+}
+
+.gold {
+  background: #f5d51f;
+}
+
+.silver {
+  background: #ebebeb;
+}
+
+.bronze {
+  background: #cd7f32;
+}
+</style>

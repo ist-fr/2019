@@ -45,4 +45,8 @@ section {
   content: " *";
   color: red;
 }
+
+.shadow-straight {
+  box-shadow: 0px 0px 40px -6px rgba(0, 0, 0, 0.75);
+}
 </style>
