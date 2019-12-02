@@ -15,7 +15,9 @@
                 <i class="fa fa-clock-o"></i>
                 {{ announcement.datetime }}
               </span>
-              <p class="announcement-content">{{ announcement.content }}</p>
+              <p class="announcement-content text-justify">
+                {{ announcement.content }}
+              </p>
             </li>
           </ul>
         </div>
@@ -28,6 +30,12 @@ export default {
   data() {
     return {
       announcements: [
+        {
+          title: "Research submission result announced",
+          content:
+            "We have already sent out emails from ist-fr@vistec.ac.th to all submitters regarding the result of the submission. If you have yet to receive the email, first check your spam folder, if you still cannot find it then please contact us as soon as possible using the contact information provided at the bottom of this page.",
+          datetime: "Dec 3"
+        },
         {
           title: "Research submission closed",
           content:

@@ -18,8 +18,12 @@
             class="alert alert-warning rounded-0 shadow-straight"
             role="alert"
           >
-            <i class="fa fa-info-circle"></i> Submission is now closed! Please
-            kindly wait for your result if you have already submitted.
+            <i class="fa fa-info-circle"></i> We have already sent out emails
+            from ist-fr@vistec.ac.th to all submitters regarding the result of
+            the submission. If you have yet to receive the email, first check
+            your spam folder, if you still cannot find it then please contact us
+            as soon as possible using the contact information provided at the
+            bottom of this page.
           </div>
           <p>
             Submit your research to the
