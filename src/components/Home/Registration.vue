@@ -7,10 +7,14 @@
         </div>
         <div class="col-md-6 text-right">
           <h2>
-            <a href="https://forms.gle/E33gZinz1dXwpyna7">
+            <!-- <a href="https://forms.gle/E33gZinz1dXwpyna7">
               Register now
               <i class="fa fa-external-link"></i>
-            </a>
+            </a> -->
+            <span class="text-muted" href="#">
+              <i class="fa fa-info-circle"></i>
+              Registration closed
+            </span>
           </h2>
         </div>
         <div class="col-md-12">
